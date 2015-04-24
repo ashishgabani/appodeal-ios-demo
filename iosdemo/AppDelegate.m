@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AppodealAds/Appodeal.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSString* appId = @"afd6c3905816e70ba8a15e13eaa5739b0541a7df52ec3151";
+    
+    [Appodeal initWithAppId:appId];
+    
     return YES;
 }
 

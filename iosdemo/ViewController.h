@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)showInterstitialBanner:(id)sender;
 
 @end
 
