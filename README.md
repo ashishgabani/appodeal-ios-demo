@@ -32,7 +32,7 @@ You will need the latest developer tools in order to build Appodeal iOS SDK. Old
 
 You can also add Appodeal iOS SDK as a static library to your project or workspace. 
 
-1. Download the [latest ios sdk version](http://dl.dropbox.com/s/didmniwmtgudlbu/Appodeal-iOS-SDK_0.1.1.zip) and extract Appodeal iOS SDK.
+1. Download the [latest ios sdk version](http://dl.dropbox.com/s/tandgz79v1t971q/Appodeal-iOS-SDK.zip) and extract Appodeal iOS SDK.
 2. Open your project in Xcode, then drag and drop `AppodealAds` folder onto your project or workspace (use the "Product Navigator view") and choose "Copy items into destination group's folder and click Finish".  
 
 ![](http://dl.dropbox.com/s/8z80aridd4gqxub/Screen%20Shot%202015-04-23%20at%204.30.58%20PM.png)
