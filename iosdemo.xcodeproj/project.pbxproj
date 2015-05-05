@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A211E761AF8BA10008A09E5 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A211E741AF8BA0F008A09E5 /* UnityAds.bundle */; };
+		9A211E771AF8BA10008A09E5 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A211E751AF8BA0F008A09E5 /* UnityAds.framework */; };
 		9A76A49E1AE8B1E1004A434D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A49D1AE8B1E1004A434D /* main.m */; };
 		9A76A4A11AE8B1E1004A434D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A4A01AE8B1E1004A434D /* AppDelegate.m */; };
 		9A76A4A41AE8B1E1004A434D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A4A31AE8B1E1004A434D /* ViewController.m */; };
@@ -35,7 +37,6 @@
 		9A76A7871AE8E5CC004A434D /* AmazonAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A6751AE8E5CA004A434D /* AmazonAd.framework */; };
 		9A76A78A1AE8E5CD004A434D /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A68B1AE8E5CA004A434D /* Chartboost.framework */; };
 		9A76A78B1AE8E5CD004A434D /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A68C1AE8E5CA004A434D /* GoogleMobileAds.framework */; };
-		9A76A78C1AE8E5CD004A434D /* HeyzapAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A68D1AE8E5CA004A434D /* HeyzapAds.framework */; };
 		9A76A78D1AE8E5CD004A434D /* MPBannerAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A6921AE8E5CA004A434D /* MPBannerAdManager.m */; };
 		9A76A78E1AE8E5CD004A434D /* MPBannerCustomEventAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A6951AE8E5CA004A434D /* MPBannerCustomEventAdapter.m */; };
 		9A76A78F1AE8E5CD004A434D /* MPBaseBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A6971AE8E5CA004A434D /* MPBaseBannerAdapter.m */; };
@@ -161,6 +162,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A211E741AF8BA0F008A09E5 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UnityAds.bundle; path = ../AppodealAds/AdNetworks/UnityAds.bundle; sourceTree = "<group>"; };
+		9A211E751AF8BA0F008A09E5 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = ../AppodealAds/AdNetworks/UnityAds.framework; sourceTree = "<group>"; };
 		9A76A4981AE8B1E1004A434D /* iosdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A76A49C1AE8B1E1004A434D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A76A49D1AE8B1E1004A434D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -443,7 +446,6 @@
 				9A76A7FC1AE8E5CD004A434D /* AppodealAds.framework in Frameworks */,
 				9A76A7871AE8E5CC004A434D /* AmazonAd.framework in Frameworks */,
 				9A76A4E01AE8E3B6004A434D /* MediaPlayer.framework in Frameworks */,
-				9A76A78C1AE8E5CD004A434D /* HeyzapAds.framework in Frameworks */,
 				9A76A4DE1AE8E3A3004A434D /* CoreMedia.framework in Frameworks */,
 				9A76A4DC1AE8E395004A434D /* UIKit.framework in Frameworks */,
 				9A76A4DA1AE8E38D004A434D /* CoreLocation.framework in Frameworks */,
@@ -459,6 +461,7 @@
 				9A76A4C81AE8E320004A434D /* AVFoundation.framework in Frameworks */,
 				9A76A4C61AE8E318004A434D /* AdSupport.framework in Frameworks */,
 				9A76A78A1AE8E5CD004A434D /* Chartboost.framework in Frameworks */,
+				9A211E771AF8BA10008A09E5 /* UnityAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +539,8 @@
 		9A76A4C41AE8E2BE004A434D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A211E741AF8BA0F008A09E5 /* UnityAds.bundle */,
+				9A211E751AF8BA0F008A09E5 /* UnityAds.framework */,
 				9A76A4E71AE8E3EA004A434D /* libz.dylib */,
 				9A76A4E51AE8E3DC004A434D /* CoreFoundation.framework */,
 				9A76A4E31AE8E3D2004A434D /* CoreImage.framework */,
@@ -1027,6 +1032,7 @@
 				9A76A4AC1AE8B1E1004A434D /* LaunchScreen.xib in Resources */,
 				9A76A4A91AE8B1E1004A434D /* Images.xcassets in Resources */,
 				9A76A7F41AE8E5CD004A434D /* MRAID.bundle in Resources */,
+				9A211E761AF8BA10008A09E5 /* UnityAds.bundle in Resources */,
 				9A76A7F11AE8E5CD004A434D /* MPCloseButtonX.png in Resources */,
 				9A76A7AB1AE8E5CD004A434D /* LICENSE in Resources */,
 			);

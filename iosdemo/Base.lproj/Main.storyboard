@@ -16,14 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAo-1u-L9X">
-                                <rect key="frame" x="167" y="191" width="266" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAo-1u-L9X" userLabel="Show Interstitial">
+                                <rect key="frame" x="167" y="88" width="266" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Show Interstitial">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showInterstitialBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2SH-Q8-do5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8P-QP-kuG">
+                                <rect key="frame" x="167" y="316" width="266" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Show Banner">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showInterstitialBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2SH-Q8-do5"/>
+                                    <action selector="showSmallBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHs-Oq-XFf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Appodeal iOS SDK Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSE-yE-NDw">
@@ -32,13 +42,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="336-Dj-FYw" userLabel="Show Video">
+                                <rect key="frame" x="167" y="189" width="266" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Show Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showVideoAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2YR-E7-8n8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="336-Dj-FYw" secondAttribute="centerY" constant="30" id="5ap-tP-qAI"/>
+                            <constraint firstAttribute="centerY" secondItem="j8P-QP-kuG" secondAttribute="centerY" constant="-30" id="9SR-yi-amc"/>
+                            <constraint firstItem="336-Dj-FYw" firstAttribute="centerX" secondItem="RAo-1u-L9X" secondAttribute="centerX" id="Goj-3Z-AfG"/>
+                            <constraint firstAttribute="centerX" secondItem="j8P-QP-kuG" secondAttribute="centerX" id="TJV-Sp-Bpi"/>
                             <constraint firstAttribute="centerX" secondItem="RAo-1u-L9X" secondAttribute="centerX" id="kVW-VW-sMl"/>
+                            <constraint firstAttribute="centerX" secondItem="336-Dj-FYw" secondAttribute="centerX" id="kXt-ae-RX0"/>
                             <constraint firstItem="sSE-yE-NDw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="l8h-Gd-WYo"/>
                             <constraint firstAttribute="centerX" secondItem="sSE-yE-NDw" secondAttribute="centerX" id="lNd-HY-2He"/>
-                            <constraint firstAttribute="centerY" secondItem="RAo-1u-L9X" secondAttribute="centerY" constant="75.5" id="mZ8-XZ-HZp"/>
+                            <constraint firstAttribute="centerY" secondItem="RAo-1u-L9X" secondAttribute="centerY" constant="90" id="mZ8-XZ-HZp"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -11,6 +11,8 @@
 @interface ViewController : UIViewController
 
 - (IBAction)showInterstitialBanner:(id)sender;
+- (IBAction)showVideoAd:(id)sender;
+- (IBAction)showSmallBanner:(id)sender;
 
 @end
 
