@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		23E6633B1B0B1934003B7D14 /* AODUBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E663371B0B1934003B7D14 /* AODUBanner.m */; };
 		23E6633C1B0B1934003B7D14 /* EmptyUnityAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633A1B0B1934003B7D14 /* EmptyUnityAppController.m */; };
+		23E6633F1B0B21AF003B7D14 /* AODUInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633E1B0B21AF003B7D14 /* AODUInterface.m */; };
 		9A211E761AF8BA10008A09E5 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A211E741AF8BA0F008A09E5 /* UnityAds.bundle */; };
 		9A211E771AF8BA10008A09E5 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A211E751AF8BA0F008A09E5 /* UnityAds.framework */; };
 		9A76A49E1AE8B1E1004A434D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A49D1AE8B1E1004A434D /* main.m */; };
@@ -169,6 +170,8 @@
 		23E663381B0B1934003B7D14 /* AODUTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUTypes.h; path = Plugins/Unity/AODUTypes.h; sourceTree = "<group>"; };
 		23E663391B0B1934003B7D14 /* EmptyUnityAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmptyUnityAppController.h; path = Plugins/Unity/EmptyUnityAppController.h; sourceTree = "<group>"; };
 		23E6633A1B0B1934003B7D14 /* EmptyUnityAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmptyUnityAppController.m; path = Plugins/Unity/EmptyUnityAppController.m; sourceTree = "<group>"; };
+		23E6633D1B0B21AF003B7D14 /* AODUInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUInterface.h; path = Plugins/Unity/AODUInterface.h; sourceTree = "<group>"; };
+		23E6633E1B0B21AF003B7D14 /* AODUInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AODUInterface.m; path = Plugins/Unity/AODUInterface.m; sourceTree = "<group>"; };
 		9A211E741AF8BA0F008A09E5 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UnityAds.bundle; path = ../AppodealAds/AdNetworks/UnityAds.bundle; sourceTree = "<group>"; };
 		9A211E751AF8BA0F008A09E5 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = ../AppodealAds/AdNetworks/UnityAds.framework; sourceTree = "<group>"; };
 		9A76A4981AE8B1E1004A434D /* iosdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -498,6 +501,8 @@
 				23E663381B0B1934003B7D14 /* AODUTypes.h */,
 				23E663391B0B1934003B7D14 /* EmptyUnityAppController.h */,
 				23E6633A1B0B1934003B7D14 /* EmptyUnityAppController.m */,
+				23E6633D1B0B21AF003B7D14 /* AODUInterface.h */,
+				23E6633E1B0B21AF003B7D14 /* AODUInterface.m */,
 			);
 			name = Unity;
 			sourceTree = "<group>";
@@ -1110,6 +1115,7 @@
 				9A76A7CB1AE8E5CD004A434D /* MPStoreKitProvider.m in Sources */,
 				9A76A7F81AE8E5CD004A434D /* MPRewardedVideoCustomEvent.m in Sources */,
 				9A76A7981AE8E5CD004A434D /* MPAdServerURLBuilder.m in Sources */,
+				23E6633F1B0B21AF003B7D14 /* AODUInterface.m in Sources */,
 				9A76A7BD1AE8E5CD004A434D /* NSJSONSerialization+MPAdditions.m in Sources */,
 				9A76A7901AE8E5CD004A434D /* MPLegacyBannerCustomEventAdapter.m in Sources */,
 				9A76A7931AE8E5CD004A434D /* MPAdBrowserController.m in Sources */,
