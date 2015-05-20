@@ -45,6 +45,7 @@
     self.bannerView = [[AODAdView alloc] init];
     self.bannerView.delegate = self;
     self.bannerView.rootController = self;
+    [self.bannerView disableAutoRefresh]; // optional
     [self.bannerView loadAd];
     [self.view addSubview:self.bannerView];
 }
