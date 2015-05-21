@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		234E1A361B0DD1AD001EEA71 /* CCAppodeal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A351B0DD1AD001EEA71 /* CCAppodeal.mm */; };
+		234E1A391B0E1774001EEA71 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A381B0E1774001EEA71 /* AppController.m */; };
 		23E6633B1B0B1934003B7D14 /* AODUBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E663371B0B1934003B7D14 /* AODUBanner.m */; };
 		23E6633C1B0B1934003B7D14 /* EmptyUnityAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633A1B0B1934003B7D14 /* EmptyUnityAppController.m */; };
 		23E6633F1B0B21AF003B7D14 /* AODUInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633E1B0B21AF003B7D14 /* AODUInterface.m */; };
@@ -168,6 +169,8 @@
 /* Begin PBXFileReference section */
 		234E1A341B0DD1AD001EEA71 /* CCAppodeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAppodeal.h; path = "Cocos2d-x/CCAppodeal.h"; sourceTree = "<group>"; };
 		234E1A351B0DD1AD001EEA71 /* CCAppodeal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCAppodeal.mm; path = "Cocos2d-x/CCAppodeal.mm"; sourceTree = "<group>"; };
+		234E1A371B0E1774001EEA71 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = "Cocos2d-x/AppController.h"; sourceTree = "<group>"; };
+		234E1A381B0E1774001EEA71 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = "Cocos2d-x/AppController.m"; sourceTree = "<group>"; };
 		23E663361B0B1934003B7D14 /* AODUBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUBanner.h; path = Plugins/Unity/AODUBanner.h; sourceTree = "<group>"; };
 		23E663371B0B1934003B7D14 /* AODUBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AODUBanner.m; path = Plugins/Unity/AODUBanner.m; sourceTree = "<group>"; };
 		23E663381B0B1934003B7D14 /* AODUTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUTypes.h; path = Plugins/Unity/AODUTypes.h; sourceTree = "<group>"; };
@@ -493,6 +496,8 @@
 			children = (
 				234E1A341B0DD1AD001EEA71 /* CCAppodeal.h */,
 				234E1A351B0DD1AD001EEA71 /* CCAppodeal.mm */,
+				234E1A371B0E1774001EEA71 /* AppController.h */,
+				234E1A381B0E1774001EEA71 /* AppController.m */,
 			);
 			name = "Cocos2d-x";
 			sourceTree = "<group>";
@@ -1193,6 +1198,7 @@
 				9A76A7BA1AE8E5CD004A434D /* MRProperty.m in Sources */,
 				9A76A7AF1AE8E5CD004A434D /* MRBridge.m in Sources */,
 				9A76A7CD1AE8E5CD004A434D /* MPUserInteractionGestureRecognizer.m in Sources */,
+				234E1A391B0E1774001EEA71 /* AppController.m in Sources */,
 				9A76A7C51AE8E5CD004A434D /* MPIdentityProvider.m in Sources */,
 				9A76A7E81AE8E5CD004A434D /* MPNativeAdRequest.m in Sources */,
 				9A76A7ED1AE8E5CD004A434D /* MPStreamAdPlacementData.m in Sources */,

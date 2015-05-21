@@ -44,7 +44,7 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
     bannerView.delegate = self;
     bannerView.rootController = [appController viewController];
     [bannerView loadAd];
-    [bannerView.rootViewController.view addSubview:bannerView];
+    [bannerView.rootController.view addSubview:bannerView];
 }
 
 - (void)showInterstitial
