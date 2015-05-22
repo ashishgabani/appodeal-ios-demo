@@ -9,6 +9,10 @@
 #ifndef CCAPPODEAL_H_
 #define CCAPPODEAL_H_
 
+class CCAppodealBannerDelegate;
+class CCAppodealInterstitialDelegate;
+class CCAppodealVideoDelegate;
+
 class CCAppodeal {
     
 public:
@@ -21,6 +25,19 @@ public:
     void showInterstitial();
     // show video
     void showVideo();
+    
+    CCAppodealBannerDelegate* getBannerDelegate();
+    CCAppodealInterstitialDelegate* getInterstitialDelegate();
+    CCAppodealVideoDelegate* getVideoDelegate();
+    
+    void setBannerDelegate(CCAppodealBannerDelegate* delegate);
+    void setInterstitialDelegate(CCAppodealInterstitialDelegate* delegate);
+    void setVideoDelegate(CCAppodealVideoDelegate* delegate);
+    
+private:
+    CCAppodealBannerDelegate* bannerDelegate;
+    CCAppodealInterstitialDelegate* interstitialDelegate;
+    CCAppodealVideoDelegate* videoDelegate;
 };
 
 class CCAppodealBannerDelegate
@@ -38,11 +55,11 @@ class CCAppodealInterstitialDelegate
 {
 public:
     
-    virtual void adInterstitialReceived() {}
-    virtual void adInterstitialFailed() {}
-    virtual void adInterstitialShown() {}
-    virtual void adInterstitialClosed() {}
-    virtual void adInterstitialClicked() {}
+    virtual void interstitialAdReceived() {}
+    virtual void interstitialAdFailed() {}
+    virtual void interstitialAdShown() {}
+    virtual void interstitialAdClosed() {}
+    virtual void interstitialAdClicked() {}
     
 };
 
@@ -50,12 +67,12 @@ class CCAppodealVideoDelegate
 {
 public:
     
-    virtual void adVideoRewardedUser(int amount) {}
-    virtual void adVideoReceived() {}
-    virtual void adVideoFailed() {}
-    virtual void adVideoShown() {}
-    virtual void adVideoClosed() {}
-    virtual void adVideoClicked() {}
+    virtual void videoAdRewardedUser(int amount) {}
+    virtual void videoAdReceived() {}
+    virtual void videoAdFailed() {}
+    virtual void videoAdShown() {}
+    virtual void videoAdClosed() {}
+    virtual void videoAdClicked() {}
     
 };
 

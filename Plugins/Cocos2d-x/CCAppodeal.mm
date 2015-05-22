@@ -71,6 +71,8 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
     }
 }
 
+///////////////////////////////////////////////////////////////////
+
 #pragma mark - <AODAdViewDelegate>
 
 - (UIViewController *)viewControllerForPresentingModalView {
@@ -80,22 +82,55 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
 
 - (void)adViewDidLoadAd:(AODAdView *)bannerView {
     NSLog(@"AdBanner did load");
+    CCAppodeal::getInstance()->getBannerDelegate()->adBannerReceived();
 }
 
 - (void)adViewDidFailToLoadAd:(AODAdView *)view {
     NSLog(@"AdBanner did failed to load");
+    CCAppodeal::getInstance()->getBannerDelegate()->adBannerFailed();
 }
 
 - (void)willPresentModalViewForAd:(AODAdView *)view {
     NSLog(@"AdBanner has been shown");
+    CCAppodeal::getInstance()->getBannerDelegate()->adBannerShown();
 }
 
 - (void)didDismissModalViewForAd:(AODAdView *)view {
-    
+    CCAppodeal::getInstance()->getBannerDelegate()->adBannerClosed();
 }
 
 - (void)willLeaveApplicationFromAd:(AODAdView *)view {
     NSLog(@"onAdBanner has been clicked");
+    CCAppodeal::getInstance()->getBannerDelegate()->adBannerClosed();
+}
+
+///////////////////////////////////////////////////////////////////
+
+#pragma mark - <AODInterstitialDelegate>
+
+- (void)onInterstitialAdLoaded:(NSString*)adName isPrecache:(BOOL)isPrecache {
+    NSLog(@"interstitial from %@ did load", adName);
+    CCAppodeal::getInstance()->getInterstitialDelegate()->interstitialAdReceived();
+}
+
+- (void)onInterstitialAdFailedToLoad:(NSString*)adName {
+    NSLog(@"interstitial from %@ failed to load", adName);
+    CCAppodeal::getInstance()->getInterstitialDelegate()->interstitialAdFailed();
+}
+
+- (void)onInterstitialAdShown:(NSString*)adName {
+    NSLog(@"interstitial from %@ failed to load", adName);
+    CCAppodeal::getInstance()->getInterstitialDelegate()->interstitialAdShown();
+}
+
+- (void)onInterstitialAdClicked:(NSString*)adName {
+    NSLog(@"interstitial from %@ has been clicked", adName);
+    CCAppodeal::getInstance()->getInterstitialDelegate()->interstitialAdClicked();
+}
+
+- (void)onInterstitialAdClosed:(NSString*)adName {
+    NSLog(@"interstitial from %@ has been closed or dismissed", adName);
+    CCAppodeal::getInstance()->getInterstitialDelegate()->interstitialAdClosed();
 }
 
 ///////////////////////////////////////////////////////////////////
@@ -104,29 +139,37 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
 
 - (void)onVideoAdDidLoad:(NSString*)adName {
     NSLog(@"video ad from %@ did load", adName);
+    CCAppodeal::getInstance()->getVideoDelegate()->videoAdReceived();
 }
 
 - (void)onVideoAdDidFailToLoad:(NSString*)adName {
     NSLog(@"video ad from %@ failed to load", adName);
+    CCAppodeal::getInstance()->getVideoDelegate()->videoAdFailed();
 }
 
 - (void)onVideoAdDidAppear:(NSString*)adName {
     NSLog(@"video ad from %@ failed to load", adName);
+    CCAppodeal::getInstance()->getVideoDelegate()->videoAdShown();
 }
 
 - (void)onVideoAdDidReceiveTapEvent:(NSString*)adName {
     NSLog(@"video ad from %@ has been clicked", adName);
+    CCAppodeal::getInstance()->getVideoDelegate()->videoAdClicked();
 }
 
 - (void)onVideoAdDidDisappear:(NSString*)adName {
     NSLog(@"video ad from %@ has been closed or dismissed", adName);
+    CCAppodeal::getInstance()->getVideoDelegate()->videoAdClosed();
 }
 
 - (void)onVideoAdShouldRewardUser:(NSString*)adName reward:(int)amount {
     NSLog(@"video ad from %@ has been completed and user rewarded %d virtual currency", adName, amount);
+    CCAppodeal::getInstance()->getVideoDelegate()->videoAdRewardedUser(amount);
 }
 
 @end
+
+#pragma mark - C++ code
 
 static CCAppodeal * s_pWrapper = NULL;
 
@@ -162,5 +205,35 @@ void CCAppodeal::showInterstitial()
 void CCAppodeal::showVideo()
 {
     [appodeal showVideo];
+}
+
+CCAppodealBannerDelegate* CCAppodeal::getBannerDelegate()
+{
+    return bannerDelegate;
+}
+
+CCAppodealInterstitialDelegate* CCAppodeal::getInterstitialDelegate()
+{
+    return interstitialDelegate;
+}
+
+CCAppodealVideoDelegate* CCAppodeal::getVideoDelegate()
+{
+    return videoDelegate;
+}
+
+void CCAppodeal::setBannerDelegate(CCAppodealBannerDelegate *delegate)
+{
+    bannerDelegate = delegate;
+}
+
+void CCAppodeal::setInterstitialDelegate(CCAppodealInterstitialDelegate *delegate)
+{
+    interstitialDelegate = delegate;
+}
+
+void CCAppodeal::setVideoDelegate(CCAppodealVideoDelegate *delegate)
+{
+    videoDelegate = delegate;
 }
 
