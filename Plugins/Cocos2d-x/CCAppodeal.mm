@@ -36,11 +36,11 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
     [Appodeal initWithAppId:appKey];
 }
 
-- (void)showBanner
+- (void)showBanner:(AODCCBannerType)type
 {
     AppController* appController = (AppController*) [UIApplication sharedApplication].delegate;
     
-    bannerView = [[AODAdView alloc] init];
+    bannerView = [[AODAdView alloc] initWithBannerType:(AODBannerType)type];
     bannerView.delegate = self;
     bannerView.rootController = [appController viewController];
     [bannerView loadAd];
@@ -101,7 +101,7 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
 
 - (void)willLeaveApplicationFromAd:(AODAdView *)view {
     NSLog(@"onAdBanner has been clicked");
-    CCAppodeal::getInstance()->getBannerDelegate()->adBannerClosed();
+    CCAppodeal::getInstance()->getBannerDelegate()->adBannerClicked();
 }
 
 ///////////////////////////////////////////////////////////////////
@@ -160,6 +160,7 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
 - (void)onVideoAdDidDisappear:(NSString*)adName {
     NSLog(@"video ad from %@ has been closed or dismissed", adName);
     CCAppodeal::getInstance()->getVideoDelegate()->videoAdClosed();
+    CCAppodeal::getInstance()->showBanner(kBannerPortraitBottom);
 }
 
 - (void)onVideoAdShouldRewardUser:(NSString*)adName reward:(int)amount {
@@ -192,9 +193,9 @@ void CCAppodeal::init(const char *appkey)
     [appodeal initWithAppId:AODUStringFromUTF8String(appkey)];
 }
 
-void CCAppodeal::showBanner()
+void CCAppodeal::showBanner(AODCCBannerType type)
 {
-    [appodeal showBanner];
+    [appodeal showBanner:type];
 }
 
 void CCAppodeal::showInterstitial()

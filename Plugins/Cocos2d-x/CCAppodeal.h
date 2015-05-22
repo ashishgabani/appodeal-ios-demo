@@ -9,6 +9,15 @@
 #ifndef CCAPPODEAL_H_
 #define CCAPPODEAL_H_
 
+typedef enum _aodccBannerType
+{
+    kBannerPortraitTop,
+    kBannerPortraitBottom,
+    kBannerLandscapeTop,
+    kBannerLandscapeBottom,
+}
+AODCCBannerType;
+
 class CCAppodealBannerDelegate;
 class CCAppodealInterstitialDelegate;
 class CCAppodealVideoDelegate;
@@ -20,7 +29,7 @@ public:
     
     void init(const char *appkey);
     // show banner ad
-    void showBanner();
+    void showBanner(AODCCBannerType type);
     // show interstitial
     void showInterstitial();
     // show video
