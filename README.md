@@ -10,7 +10,7 @@ The Appodeal SDK is distributed as static library.
 
 - **[Appodeal SDK.zip](http://dl.dropbox.com/s/tandgz79v1t971q/Appodeal-iOS-SDK.zip)**
 
-The current version of the SDK is 0.1.6
+The current version of the SDK is 0.1.7
 
 ## Integrate
 
@@ -19,8 +19,8 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 ## New in this Version
 
 - **Fixed**.
-    - Fixed AODAdview.
-    - Fixed Video Ads callbacks.
+    - Fixed banner orientation.
+    - Fixed craches.
 
 
 ## Requirements
