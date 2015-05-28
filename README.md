@@ -16,13 +16,24 @@ The current version of the SDK is 0.1.9
 
 Integration instructions are available on the [wiki](https://github.com/appodeal/appodeal-ios-demo/wiki).
 
-## New in this Version
-
-- **Fixed**.
-    - Fixed mraid banner sizes.
-    - Fixed craches.
-
-
 ## Requirements
 
 iOS 6.0 and up
+
+0.1.9 Change Log:
+----------------------------------
+* Fixes mraid banner sizes.
+* Fixes device rotation craches.
+
+0.1.8 Change Log:
+----------------------------------
+* Fixes banner position when device orientation changed
+* Fixes craches.
+
+0.1.7 Change Log:
+----------------------------------
+* Fixes reward user callback
+
+0.1.6 Change Log:
+----------------------------------
+* Added AODAdView
