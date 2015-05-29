@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		234E1A3E1B0EF9EA001EEA71 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A3B1B0EF9EA001EEA71 /* AppController.m */; };
 		234E1A3F1B0EF9EA001EEA71 /* CCAppodeal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A3D1B0EF9EA001EEA71 /* CCAppodeal.mm */; };
+		23AC11101B18773400F259B3 /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = 23AC11091B18773400F259B3 /* __vungle.db */; };
+		23AC11111B18773400F259B3 /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AC110A1B18773400F259B3 /* vg_close.png */; };
+		23AC11121B18773400F259B3 /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AC110B1B18773400F259B3 /* vg_cta.png */; };
+		23AC11131B18773400F259B3 /* vg_mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AC110C1B18773400F259B3 /* vg_mute_off.png */; };
+		23AC11141B18773400F259B3 /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AC110D1B18773400F259B3 /* vg_mute_on.png */; };
+		23AC11151B18773400F259B3 /* vg_timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AC110E1B18773400F259B3 /* vg_timer.png */; };
+		23AC11161B18773400F259B3 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC110F1B18773400F259B3 /* VungleSDK.framework */; };
+		23AC11181B18773F00F259B3 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC11171B18773F00F259B3 /* AdColony.framework */; };
+		23AC111A1B18777700F259B3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC11191B18777700F259B3 /* WebKit.framework */; };
+		23AC111C1B18777E00F259B3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC111B1B18777E00F259B3 /* Social.framework */; };
+		23AC111E1B18779C00F259B3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC111D1B18779C00F259B3 /* libsqlite3.dylib */; };
+		23AC11201B1877A300F259B3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC111F1B1877A300F259B3 /* CFNetwork.framework */; };
 		23E6633B1B0B1934003B7D14 /* AODUBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E663371B0B1934003B7D14 /* AODUBanner.m */; };
 		23E6633C1B0B1934003B7D14 /* EmptyUnityAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633A1B0B1934003B7D14 /* EmptyUnityAppController.m */; };
 		23E6633F1B0B21AF003B7D14 /* AODUInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633E1B0B21AF003B7D14 /* AODUInterface.m */; };
@@ -171,6 +183,18 @@
 		234E1A3B1B0EF9EA001EEA71 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = "Plugins/Cocos2d-x/AppController.m"; sourceTree = "<group>"; };
 		234E1A3C1B0EF9EA001EEA71 /* CCAppodeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAppodeal.h; path = "Plugins/Cocos2d-x/CCAppodeal.h"; sourceTree = "<group>"; };
 		234E1A3D1B0EF9EA001EEA71 /* CCAppodeal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCAppodeal.mm; path = "Plugins/Cocos2d-x/CCAppodeal.mm"; sourceTree = "<group>"; };
+		23AC11091B18773400F259B3 /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
+		23AC110A1B18773400F259B3 /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
+		23AC110B1B18773400F259B3 /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
+		23AC110C1B18773400F259B3 /* vg_mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_off.png; sourceTree = "<group>"; };
+		23AC110D1B18773400F259B3 /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
+		23AC110E1B18773400F259B3 /* vg_timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_timer.png; sourceTree = "<group>"; };
+		23AC110F1B18773400F259B3 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
+		23AC11171B18773F00F259B3 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../AppodealAds/AdNetworks/AdColony.framework; sourceTree = "<group>"; };
+		23AC11191B18777700F259B3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		23AC111B1B18777E00F259B3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		23AC111D1B18779C00F259B3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		23AC111F1B1877A300F259B3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		23E663361B0B1934003B7D14 /* AODUBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUBanner.h; path = Plugins/Unity/AODUBanner.h; sourceTree = "<group>"; };
 		23E663371B0B1934003B7D14 /* AODUBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AODUBanner.m; path = Plugins/Unity/AODUBanner.m; sourceTree = "<group>"; };
 		23E663381B0B1934003B7D14 /* AODUTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUTypes.h; path = Plugins/Unity/AODUTypes.h; sourceTree = "<group>"; };
@@ -455,9 +479,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23AC11201B1877A300F259B3 /* CFNetwork.framework in Frameworks */,
+				23AC111E1B18779C00F259B3 /* libsqlite3.dylib in Frameworks */,
+				23AC111C1B18777E00F259B3 /* Social.framework in Frameworks */,
+				23AC111A1B18777700F259B3 /* WebKit.framework in Frameworks */,
 				9A76A4E81AE8E3EA004A434D /* libz.dylib in Frameworks */,
 				9A76A4E61AE8E3DC004A434D /* CoreFoundation.framework in Frameworks */,
+				23AC11161B18773400F259B3 /* VungleSDK.framework in Frameworks */,
 				9A76A4E41AE8E3D2004A434D /* CoreImage.framework in Frameworks */,
+				23AC11181B18773F00F259B3 /* AdColony.framework in Frameworks */,
 				9A76A4E21AE8E3C7004A434D /* QuartzCore.framework in Frameworks */,
 				9A76A7FC1AE8E5CD004A434D /* AppodealAds.framework in Frameworks */,
 				9A76A7871AE8E5CC004A434D /* AmazonAd.framework in Frameworks */,
@@ -500,6 +530,29 @@
 				234E1A3D1B0EF9EA001EEA71 /* CCAppodeal.mm */,
 			);
 			name = "Cocos2d-x";
+			sourceTree = "<group>";
+		};
+		23AC11071B18773400F259B3 /* VungleSDK */ = {
+			isa = PBXGroup;
+			children = (
+				23AC11081B18773400F259B3 /* Resources */,
+				23AC110F1B18773400F259B3 /* VungleSDK.framework */,
+			);
+			name = VungleSDK;
+			path = ../AppodealAds/AdNetworks/VungleSDK;
+			sourceTree = "<group>";
+		};
+		23AC11081B18773400F259B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23AC11091B18773400F259B3 /* __vungle.db */,
+				23AC110A1B18773400F259B3 /* vg_close.png */,
+				23AC110B1B18773400F259B3 /* vg_cta.png */,
+				23AC110C1B18773400F259B3 /* vg_mute_off.png */,
+				23AC110D1B18773400F259B3 /* vg_mute_on.png */,
+				23AC110E1B18773400F259B3 /* vg_timer.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		23E6632D1B0B0FAC003B7D14 /* Plugins */ = {
@@ -590,6 +643,12 @@
 		9A76A4C41AE8E2BE004A434D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23AC111F1B1877A300F259B3 /* CFNetwork.framework */,
+				23AC111D1B18779C00F259B3 /* libsqlite3.dylib */,
+				23AC111B1B18777E00F259B3 /* Social.framework */,
+				23AC11191B18777700F259B3 /* WebKit.framework */,
+				23AC11171B18773F00F259B3 /* AdColony.framework */,
+				23AC11071B18773400F259B3 /* VungleSDK */,
 				9A211E741AF8BA0F008A09E5 /* UnityAds.bundle */,
 				9A211E751AF8BA0F008A09E5 /* UnityAds.framework */,
 				9A76A4E71AE8E3EA004A434D /* libz.dylib */,
@@ -1078,14 +1137,20 @@
 				9A76A7941AE8E5CD004A434D /* MPAdBrowserController.xib in Resources */,
 				9A76A4A71AE8B1E1004A434D /* Main.storyboard in Resources */,
 				9A76A7F31AE8E5CD004A434D /* MPCloseButtonX@3x.png in Resources */,
+				23AC11131B18773400F259B3 /* vg_mute_off.png in Resources */,
+				23AC11141B18773400F259B3 /* vg_mute_on.png in Resources */,
 				9A76A7F21AE8E5CD004A434D /* MPCloseButtonX@2x.png in Resources */,
+				23AC11111B18773400F259B3 /* vg_close.png in Resources */,
 				9A76A7FB1AE8E5CD004A434D /* README.txt in Resources */,
 				9A76A4AC1AE8B1E1004A434D /* LaunchScreen.xib in Resources */,
 				9A76A4A91AE8B1E1004A434D /* Images.xcassets in Resources */,
+				23AC11151B18773400F259B3 /* vg_timer.png in Resources */,
 				9A76A7F41AE8E5CD004A434D /* MRAID.bundle in Resources */,
 				9A211E761AF8BA10008A09E5 /* UnityAds.bundle in Resources */,
 				9A76A7F11AE8E5CD004A434D /* MPCloseButtonX.png in Resources */,
+				23AC11101B18773400F259B3 /* __vungle.db in Resources */,
 				9A76A7AB1AE8E5CD004A434D /* LICENSE in Resources */,
+				23AC11121B18773400F259B3 /* vg_cta.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1343,6 +1408,8 @@
 					../AppodealAds/AdNetworks,
 					"../AppodealAds/AdNetworks/applovin-ios-sdk-2.5.4",
 					../AppodealAds,
+					"/Users/supergoodd/Desktop/Appodeal-iOS-SDK/AppodealAds/AdNetworks/VungleSDK",
+					"/Users/supergoodd/Desktop/Appodeal-iOS-SDK/AppodealAds/AdNetworks",
 				);
 				INFOPLIST_FILE = iosdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1365,6 +1432,8 @@
 					../AppodealAds/AdNetworks,
 					"../AppodealAds/AdNetworks/applovin-ios-sdk-2.5.4",
 					../AppodealAds,
+					"/Users/supergoodd/Desktop/Appodeal-iOS-SDK/AppodealAds/AdNetworks/VungleSDK",
+					"/Users/supergoodd/Desktop/Appodeal-iOS-SDK/AppodealAds/AdNetworks",
 				);
 				INFOPLIST_FILE = iosdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
