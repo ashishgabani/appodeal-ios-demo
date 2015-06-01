@@ -3,10 +3,12 @@ Pod::Spec.new do |s|
   s.version = '1.4.2'
   s.license = 'Commercial'
   s.summary = 'UnityAds rewarded ads'
-  s.homepage = 'https://unity.com/'
+  s.homepage = "https://github.com/Applifier/unity-ads-sdk"
   s.author = { "Unity" }
   s.source = { :git => 'https://github.com/Applifier/unity-ads-sdk.git' }
   s.description = 'UnityAds rewarded ads'
-  s.platform = :ios
+  s.platform     = :ios, '6.0'
+  s.requires_arc = true
+  s.resource = "UnityAds.bundle"
   s.vendored_frameworks = "UnityAds.framework"
 end
