@@ -1,14 +1,15 @@
 Pod::Spec.new do |s|
-  s.name = 'UnityAds'
-  s.version = '1.4.2'
+  s.name = 'AmazonAds'
+  s.version = '2.2.5'
   s.license = 'Commercial'
-  s.summary = 'UnityAds rewarded ads'
-  s.homepage = "https://github.com/Applifier/unity-ads-sdk"
-  s.author = { "Unity" }
-  s.source = { :http => "http://sdk.applovin.com/applovin-ios-sdk-2.5.4.zip" }
-  s.description = 'UnityAds rewarded ads'
+  s.summary = 'AmazonAds'
+  s.homepage = "https://developer.amazon.com/public/resources/development-tools/sdk"
+  s.author = { "spdd" => "defaultqp@gmail.com" }
+  s.source = { :http => "http://dl.dropbox.com/s/kjjh51v6jksg1wd/AmazonAd.framework.zip" }  
+  s.description = 'AmazonAds'
   s.platform     = :ios, '6.0'
   s.requires_arc = true
-  s.resource = "UnityAds.bundle"
-  s.vendored_frameworks = "UnityAds.framework"
+  s.frameworks = "AdSupport", "CoreLocation", "SystemConfiguration", "CoreTelefony", "CoreGraphics", "MediaPlayer", "EventKit", "EventKitUI"
+  s.vendored_frameworks = "AmazonAd.framework"
+
 end
