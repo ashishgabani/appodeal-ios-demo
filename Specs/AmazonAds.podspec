@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.description = 'AmazonAds'
   s.platform     = :ios, '6.0'
   s.requires_arc = true
-  s.frameworks = "AdSupport", "CoreLocation", "SystemConfiguration", "CoreTelefony", "CoreGraphics", "MediaPlayer", "EventKit", "EventKitUI"
+  s.frameworks = "AdSupport", "CoreLocation", "SystemConfiguration", "CoreTelephony", "CoreGraphics", "MediaPlayer", "EventKit", "EventKitUI"
   s.vendored_frameworks = "AmazonAd.framework"
 
 end
