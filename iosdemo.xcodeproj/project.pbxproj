@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		234E1A3E1B0EF9EA001EEA71 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A3B1B0EF9EA001EEA71 /* AppController.m */; };
 		234E1A3F1B0EF9EA001EEA71 /* CCAppodeal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A3D1B0EF9EA001EEA71 /* CCAppodeal.mm */; };
+		235746AF1B1DA908009D7A9C /* AerServSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235746AE1B1DA908009D7A9C /* AerServSDK.framework */; };
+		235746B11B1DAA16009D7A9C /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 235746B01B1DAA16009D7A9C /* libxml2.2.dylib */; };
 		23AC11101B18773400F259B3 /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = 23AC11091B18773400F259B3 /* __vungle.db */; };
 		23AC11111B18773400F259B3 /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AC110A1B18773400F259B3 /* vg_close.png */; };
 		23AC11121B18773400F259B3 /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AC110B1B18773400F259B3 /* vg_cta.png */; };
@@ -183,6 +185,8 @@
 		234E1A3B1B0EF9EA001EEA71 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = "Plugins/Cocos2d-x/AppController.m"; sourceTree = "<group>"; };
 		234E1A3C1B0EF9EA001EEA71 /* CCAppodeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAppodeal.h; path = "Plugins/Cocos2d-x/CCAppodeal.h"; sourceTree = "<group>"; };
 		234E1A3D1B0EF9EA001EEA71 /* CCAppodeal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCAppodeal.mm; path = "Plugins/Cocos2d-x/CCAppodeal.mm"; sourceTree = "<group>"; };
+		235746AE1B1DA908009D7A9C /* AerServSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerServSDK.framework; path = ../AppodealAds/AdNetworks/AerServSDK.framework; sourceTree = "<group>"; };
+		235746B01B1DAA16009D7A9C /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		23AC11091B18773400F259B3 /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
 		23AC110A1B18773400F259B3 /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
 		23AC110B1B18773400F259B3 /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
@@ -479,6 +483,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235746B11B1DAA16009D7A9C /* libxml2.2.dylib in Frameworks */,
 				23AC11201B1877A300F259B3 /* CFNetwork.framework in Frameworks */,
 				23AC111E1B18779C00F259B3 /* libsqlite3.dylib in Frameworks */,
 				23AC111C1B18777E00F259B3 /* Social.framework in Frameworks */,
@@ -495,6 +500,7 @@
 				9A76A4DE1AE8E3A3004A434D /* CoreMedia.framework in Frameworks */,
 				9A76A4DC1AE8E395004A434D /* UIKit.framework in Frameworks */,
 				9A76A4DA1AE8E38D004A434D /* CoreLocation.framework in Frameworks */,
+				235746AF1B1DA908009D7A9C /* AerServSDK.framework in Frameworks */,
 				9A76A4D81AE8E381004A434D /* SystemConfiguration.framework in Frameworks */,
 				9A76A4D61AE8E370004A434D /* StoreKit.framework in Frameworks */,
 				9A76A78B1AE8E5CD004A434D /* GoogleMobileAds.framework in Frameworks */,
@@ -643,6 +649,8 @@
 		9A76A4C41AE8E2BE004A434D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				235746B01B1DAA16009D7A9C /* libxml2.2.dylib */,
+				235746AE1B1DA908009D7A9C /* AerServSDK.framework */,
 				23AC111F1B1877A300F259B3 /* CFNetwork.framework */,
 				23AC111D1B18779C00F259B3 /* libsqlite3.dylib */,
 				23AC111B1B18777E00F259B3 /* Social.framework */,

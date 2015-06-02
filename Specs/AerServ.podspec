@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary = 'AerServ'
   s.homepage = "https://support.aerserv.com/hc/en-us/articles/204160170"
   s.author = { "spdd" => "defaultqp@gmail.com" }
-  s.source = { :http => "http://dl.dropbox.com/s/bd47cc7w6gshn4x/AerServSDK.framework.zip" }  
+  s.source = { :http => "https://s3.amazonaws.com/aerserv-sdk/aerserv-ios-sdk-latest.zip" }  
   s.description = 'AerServ'
   s.platform     = :ios, '6.0'
   s.requires_arc = true
