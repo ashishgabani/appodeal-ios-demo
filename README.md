@@ -10,7 +10,7 @@ The Appodeal SDK is distributed as static library.
 
 - **[Appodeal SDK.zip](http://dl.dropbox.com/s/tandgz79v1t971q/Appodeal-iOS-SDK.zip)**
 
-The current version of the SDK is 0.2.2
+The current version of the SDK is 0.2.3
 
 ## Integrate
 
@@ -19,6 +19,11 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 ## Requirements
 
 iOS 6.0 and up
+
+0.2.3 Change Log:
+----------------------------------
+* Fixed banner sizes for large screens
+* Fixes bugs
 
 0.2.2 Change Log:
 ----------------------------------
