@@ -26,6 +26,7 @@
 		23E6633B1B0B1934003B7D14 /* AODUBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E663371B0B1934003B7D14 /* AODUBanner.m */; };
 		23E6633C1B0B1934003B7D14 /* EmptyUnityAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633A1B0B1934003B7D14 /* EmptyUnityAppController.m */; };
 		23E6633F1B0B21AF003B7D14 /* AODUInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633E1B0B21AF003B7D14 /* AODUInterface.m */; };
+		23FB7C3C1B25B23800DE1A4A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB7C3B1B25B23800DE1A4A /* GoogleMobileAds.framework */; };
 		9A211E761AF8BA10008A09E5 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A211E741AF8BA0F008A09E5 /* UnityAds.bundle */; };
 		9A211E771AF8BA10008A09E5 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A211E751AF8BA0F008A09E5 /* UnityAds.framework */; };
 		9A76A49E1AE8B1E1004A434D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A49D1AE8B1E1004A434D /* main.m */; };
@@ -55,7 +56,6 @@
 		9A76A4E81AE8E3EA004A434D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4E71AE8E3EA004A434D /* libz.dylib */; };
 		9A76A7871AE8E5CC004A434D /* AmazonAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A6751AE8E5CA004A434D /* AmazonAd.framework */; };
 		9A76A78A1AE8E5CD004A434D /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A68B1AE8E5CA004A434D /* Chartboost.framework */; };
-		9A76A78B1AE8E5CD004A434D /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A68C1AE8E5CA004A434D /* GoogleMobileAds.framework */; };
 		9A76A78D1AE8E5CD004A434D /* MPBannerAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A6921AE8E5CA004A434D /* MPBannerAdManager.m */; };
 		9A76A78E1AE8E5CD004A434D /* MPBannerCustomEventAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A6951AE8E5CA004A434D /* MPBannerCustomEventAdapter.m */; };
 		9A76A78F1AE8E5CD004A434D /* MPBaseBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A6971AE8E5CA004A434D /* MPBaseBannerAdapter.m */; };
@@ -206,6 +206,7 @@
 		23E6633A1B0B1934003B7D14 /* EmptyUnityAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmptyUnityAppController.m; path = Plugins/Unity/EmptyUnityAppController.m; sourceTree = "<group>"; };
 		23E6633D1B0B21AF003B7D14 /* AODUInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUInterface.h; path = Plugins/Unity/AODUInterface.h; sourceTree = "<group>"; };
 		23E6633E1B0B21AF003B7D14 /* AODUInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AODUInterface.m; path = Plugins/Unity/AODUInterface.m; sourceTree = "<group>"; };
+		23FB7C3B1B25B23800DE1A4A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9A211E741AF8BA0F008A09E5 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UnityAds.bundle; path = ../AppodealAds/AdNetworks/UnityAds.bundle; sourceTree = "<group>"; };
 		9A211E751AF8BA0F008A09E5 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = ../AppodealAds/AdNetworks/UnityAds.framework; sourceTree = "<group>"; };
 		9A76A4981AE8B1E1004A434D /* iosdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,8 +242,6 @@
 		9A76A4E71AE8E3EA004A434D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		9A76A6751AE8E5CA004A434D /* AmazonAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AmazonAd.framework; sourceTree = "<group>"; };
 		9A76A68B1AE8E5CA004A434D /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
-		9A76A68C1AE8E5CA004A434D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		9A76A68D1AE8E5CA004A434D /* HeyzapAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeyzapAds.framework; sourceTree = "<group>"; };
 		9A76A6911AE8E5CA004A434D /* MPBannerAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBannerAdManager.h; sourceTree = "<group>"; };
 		9A76A6921AE8E5CA004A434D /* MPBannerAdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBannerAdManager.m; sourceTree = "<group>"; };
 		9A76A6931AE8E5CA004A434D /* MPBannerAdManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBannerAdManagerDelegate.h; sourceTree = "<group>"; };
@@ -484,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				235746B11B1DAA16009D7A9C /* libxml2.2.dylib in Frameworks */,
+				23FB7C3C1B25B23800DE1A4A /* GoogleMobileAds.framework in Frameworks */,
 				23AC11201B1877A300F259B3 /* CFNetwork.framework in Frameworks */,
 				23AC111E1B18779C00F259B3 /* libsqlite3.dylib in Frameworks */,
 				23AC111C1B18777E00F259B3 /* Social.framework in Frameworks */,
@@ -503,7 +503,6 @@
 				235746AF1B1DA908009D7A9C /* AerServSDK.framework in Frameworks */,
 				9A76A4D81AE8E381004A434D /* SystemConfiguration.framework in Frameworks */,
 				9A76A4D61AE8E370004A434D /* StoreKit.framework in Frameworks */,
-				9A76A78B1AE8E5CD004A434D /* GoogleMobileAds.framework in Frameworks */,
 				9A76A4D41AE8E361004A434D /* MessageUI.framework in Frameworks */,
 				9A76A4D11AE8E356004A434D /* EventKit.framework in Frameworks */,
 				9A76A4D21AE8E356004A434D /* EventKitUI.framework in Frameworks */,
@@ -694,10 +693,9 @@
 		9A76A6741AE8E5CA004A434D /* AdNetworks */ = {
 			isa = PBXGroup;
 			children = (
+				23FB7C3B1B25B23800DE1A4A /* GoogleMobileAds.framework */,
 				9A76A6751AE8E5CA004A434D /* AmazonAd.framework */,
 				9A76A68B1AE8E5CA004A434D /* Chartboost.framework */,
-				9A76A68C1AE8E5CA004A434D /* GoogleMobileAds.framework */,
-				9A76A68D1AE8E5CA004A434D /* HeyzapAds.framework */,
 				9A76A68E1AE8E5CA004A434D /* MoPubSDK */,
 				9A76A7851AE8E5CC004A434D /* README.txt */,
 			);
@@ -1414,19 +1412,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../AppodealAds/AdNetworks,
-					"../AppodealAds/AdNetworks/applovin-ios-sdk-2.5.4",
 					../AppodealAds,
-					"/Users/supergoodd/Desktop/Appodeal-iOS-SDK/AppodealAds/AdNetworks/VungleSDK",
-					"/Users/supergoodd/Desktop/Appodeal-iOS-SDK/AppodealAds/AdNetworks",
+					../AppodealAds/AdNetworks/VungleSDK,
 				);
 				INFOPLIST_FILE = iosdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AppodealAds/AdNetworks/applovin-ios-sdk-2.5.4",
-					"/Users/Guest1/Desktop/Appodeal-iOS-SDK_0.1/AppodealAds/AdNetworks/applovin-ios-sdk-2.5.4",
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-weak_framework",
+					GoogleMobileAds,
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1438,19 +1434,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../AppodealAds/AdNetworks,
-					"../AppodealAds/AdNetworks/applovin-ios-sdk-2.5.4",
 					../AppodealAds,
-					"/Users/supergoodd/Desktop/Appodeal-iOS-SDK/AppodealAds/AdNetworks/VungleSDK",
-					"/Users/supergoodd/Desktop/Appodeal-iOS-SDK/AppodealAds/AdNetworks",
+					../AppodealAds/AdNetworks/VungleSDK,
 				);
 				INFOPLIST_FILE = iosdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AppodealAds/AdNetworks/applovin-ios-sdk-2.5.4",
-					"/Users/Guest1/Desktop/Appodeal-iOS-SDK_0.1/AppodealAds/AdNetworks/applovin-ios-sdk-2.5.4",
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-weak_framework",
+					GoogleMobileAds,
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
