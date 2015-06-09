@@ -20,6 +20,10 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 
 iOS 6.0 and up
 
+0.2.5 Change Log:
+----------------------------------
+* fixed banners fillrate
+
 0.2.4 Change Log:
 ----------------------------------
 * Added Chartboost video
