@@ -10,7 +10,7 @@ The Appodeal SDK is distributed as static library.
 
 - **[Appodeal SDK.zip](http://dl.dropbox.com/s/tandgz79v1t971q/Appodeal-iOS-SDK.zip)**
 
-The current version of the SDK is 0.2.8
+The current version of the SDK is 0.2.9
 
 ## Integrate
 
@@ -19,6 +19,12 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 ## Requirements
 
 iOS 6.0 and up
+
+0.2.9 Change Log:
+----------------------------------
+* fixed cacheBanner timeout
+* fixed disable admob precache
+* fixed Interstitial networks
 
 0.2.8 Change Log:
 ----------------------------------
