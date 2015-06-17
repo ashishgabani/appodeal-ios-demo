@@ -9,9 +9,7 @@
 #import "ViewController.h"
 #import <AppodealAds/Appodeal.h>
 
-@interface ViewController () <AODInterstitialDelegate, AODVideoAdDelegate, AODAdViewDelegate>
-
-@property (nonatomic, strong) AODAdView *bannerView;
+@interface ViewController () <AODInterstitialDelegate, AODVideoAdDelegate, AODAdBannerDelegate>
 
 @end
 
@@ -32,22 +30,18 @@
 
 - (IBAction)showInterstitialBanner:(id)sender {
     // show full screen banner
-    [Appodeal showInterstitial:self];
+    [Appodeal show:self adType:INTERSTITIAL];
 }
 
 - (IBAction)showVideoAd:(id)sender {
     // show video ads
-    [Appodeal showVideoAd:self];
+    [Appodeal show:self adType:VIDEO];
 }
 
 - (IBAction)showSmallBanner:(id)sender {
     // show small banner and set small banner delegate
-    self.bannerView = [[AODAdView alloc] init];
-    self.bannerView.delegate = self;
-    self.bannerView.rootController = self;
-    [self.bannerView disableAutoRefresh]; // optional
-    [self.bannerView loadAd];
-    [self.view addSubview:self.bannerView];
+    [Appodeal setBannerDelegate:self];
+    [Appodeal show:self adType:BANNER_BOTTOM];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -81,29 +75,21 @@
 
 ///////////////////////////////////////////////////////////////////
 
-#pragma mark - <AODAdViewDelegate>
+#pragma mark - <AODAdBannerDelegate>
 
-- (UIViewController *)viewControllerForPresentingModalView {
-    return self;
+- (void)onAdBannerLoaded:(UIView*)bannerView {
+    NSLog(@"AdBanner loaded");
 }
 
-- (void)adViewDidLoadAd:(AODAdView *)bannerView {
-    NSLog(@"AdBanner did load");
-}
-
-- (void)adViewDidFailToLoadAd:(AODAdView *)view {
+- (void)onAdBannerFailedToLoad {
     NSLog(@"AdBanner did failed to load");
 }
 
-- (void)willPresentModalViewForAd:(AODAdView *)view {
+- (void)onAdBannerShown {
     NSLog(@"AdBanner has been shown");
 }
 
-- (void)didDismissModalViewForAd:(AODAdView *)view {
-    
-}
-
-- (void)willLeaveApplicationFromAd:(AODAdView *)view {
+- (void)onAdBannerClicked {
     NSLog(@"onAdBanner has been clicked");
 }
 

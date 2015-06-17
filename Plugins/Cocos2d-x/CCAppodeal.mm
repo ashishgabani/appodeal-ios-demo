@@ -21,9 +21,9 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
 }
 
 #pragma mark Obj-C  code for delegates
-@interface CCAppodeal2 : NSObject <AODAdViewDelegate, AODInterstitialDelegate, AODVideoAdDelegate>
+@interface CCAppodeal2 : NSObject <AODVideoAdDelegate, AODInterstitialDelegate>
 {
-    AODAdView *bannerView;
+    
 }
 
 @end
@@ -39,23 +39,17 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
 - (void)showBanner:(AODCCBannerType)type
 {
     AppController* appController = (AppController*) [UIApplication sharedApplication].delegate;
-    
-    bannerView = [[AODAdView alloc] initWithBannerType:(AODBannerType)type];
-    bannerView.delegate = self;
-    bannerView.rootController = [appController viewController];
-    [bannerView loadAd];
-    [bannerView.rootController.view addSubview:bannerView];
 }
 
 - (void)showInterstitial
 {
     [Appodeal setInterstitialDelegate:self];
     NSLog(@"showInterstitial");
-    if ([Appodeal isInterstitialLoaded]) {
+    if ([Appodeal isLoaded:INTERSTITIAL]) {
         NSLog(@"mInterstitial.isReady");
         AppController* appController = (AppController*) [UIApplication sharedApplication].delegate;
         UIViewController *vc = [appController viewController];
-        [Appodeal showInterstitial:vc];
+        [Appodeal show:vc adType:INTERSTITIAL];
     }
 }
 
@@ -63,46 +57,16 @@ static NSString *AODUStringFromUTF8String(const char *bytes) {
 {
     [Appodeal setVideoAdDelegate:self];
     NSLog(@"showVideo");
-    if ([Appodeal isVideoAdReady]) {
+    if ([Appodeal isLoaded:VIDEO]) {
         NSLog(@"Video isReady");
         AppController* appController = (AppController*) [UIApplication sharedApplication].delegate;
         UIViewController *vc = [appController viewController];
-        [Appodeal showVideoAd:vc];
+        [Appodeal show:vc adType:VIDEO];
     }
 }
 
 ///////////////////////////////////////////////////////////////////
 
-#pragma mark - <AODAdViewDelegate>
-
-- (UIViewController *)viewControllerForPresentingModalView {
-    AppController* appController = (AppController*) [UIApplication sharedApplication].delegate;
-    return [appController viewController];
-}
-
-- (void)adViewDidLoadAd:(AODAdView *)bannerView {
-    NSLog(@"AdBanner did load");
-    CCAppodeal::getInstance()->getBannerDelegate()->adBannerReceived();
-}
-
-- (void)adViewDidFailToLoadAd:(AODAdView *)view {
-    NSLog(@"AdBanner did failed to load");
-    CCAppodeal::getInstance()->getBannerDelegate()->adBannerFailed();
-}
-
-- (void)willPresentModalViewForAd:(AODAdView *)view {
-    NSLog(@"AdBanner has been shown");
-    CCAppodeal::getInstance()->getBannerDelegate()->adBannerShown();
-}
-
-- (void)didDismissModalViewForAd:(AODAdView *)view {
-    CCAppodeal::getInstance()->getBannerDelegate()->adBannerClosed();
-}
-
-- (void)willLeaveApplicationFromAd:(AODAdView *)view {
-    NSLog(@"onAdBanner has been clicked");
-    CCAppodeal::getInstance()->getBannerDelegate()->adBannerClicked();
-}
 
 ///////////////////////////////////////////////////////////////////
 
