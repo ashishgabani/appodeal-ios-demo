@@ -142,6 +142,9 @@
 		23AC111C1B18777E00F259B3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC111B1B18777E00F259B3 /* Social.framework */; };
 		23AC111E1B18779C00F259B3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC111D1B18779C00F259B3 /* libsqlite3.dylib */; };
 		23AC11201B1877A300F259B3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC111F1B1877A300F259B3 /* CFNetwork.framework */; };
+		23E22EFA1B32946D00E5AA40 /* AODUInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E22EF51B32946D00E5AA40 /* AODUInterstitial.m */; };
+		23E22EFB1B32946D00E5AA40 /* AODUObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E22EF71B32946D00E5AA40 /* AODUObjectCache.m */; };
+		23E22EFC1B32946D00E5AA40 /* AODUVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E22EF91B32946D00E5AA40 /* AODUVideo.m */; };
 		23E6633B1B0B1934003B7D14 /* AODUBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E663371B0B1934003B7D14 /* AODUBanner.m */; };
 		23E6633C1B0B1934003B7D14 /* EmptyUnityAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633A1B0B1934003B7D14 /* EmptyUnityAppController.m */; };
 		23E6633F1B0B21AF003B7D14 /* AODUInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6633E1B0B21AF003B7D14 /* AODUInterface.m */; };
@@ -457,6 +460,12 @@
 		23AC111B1B18777E00F259B3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		23AC111D1B18779C00F259B3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		23AC111F1B1877A300F259B3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		23E22EF41B32946D00E5AA40 /* AODUInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUInterstitial.h; path = Plugins/Unity/AODUInterstitial.h; sourceTree = "<group>"; };
+		23E22EF51B32946D00E5AA40 /* AODUInterstitial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AODUInterstitial.m; path = Plugins/Unity/AODUInterstitial.m; sourceTree = "<group>"; };
+		23E22EF61B32946D00E5AA40 /* AODUObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUObjectCache.h; path = Plugins/Unity/AODUObjectCache.h; sourceTree = "<group>"; };
+		23E22EF71B32946D00E5AA40 /* AODUObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AODUObjectCache.m; path = Plugins/Unity/AODUObjectCache.m; sourceTree = "<group>"; };
+		23E22EF81B32946D00E5AA40 /* AODUVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUVideo.h; path = Plugins/Unity/AODUVideo.h; sourceTree = "<group>"; };
+		23E22EF91B32946D00E5AA40 /* AODUVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AODUVideo.m; path = Plugins/Unity/AODUVideo.m; sourceTree = "<group>"; };
 		23E663361B0B1934003B7D14 /* AODUBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUBanner.h; path = Plugins/Unity/AODUBanner.h; sourceTree = "<group>"; };
 		23E663371B0B1934003B7D14 /* AODUBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AODUBanner.m; path = Plugins/Unity/AODUBanner.m; sourceTree = "<group>"; };
 		23E663381B0B1934003B7D14 /* AODUTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AODUTypes.h; path = Plugins/Unity/AODUTypes.h; sourceTree = "<group>"; };
@@ -983,6 +992,12 @@
 		23E6632E1B0B0FBB003B7D14 /* Unity */ = {
 			isa = PBXGroup;
 			children = (
+				23E22EF41B32946D00E5AA40 /* AODUInterstitial.h */,
+				23E22EF51B32946D00E5AA40 /* AODUInterstitial.m */,
+				23E22EF61B32946D00E5AA40 /* AODUObjectCache.h */,
+				23E22EF71B32946D00E5AA40 /* AODUObjectCache.m */,
+				23E22EF81B32946D00E5AA40 /* AODUVideo.h */,
+				23E22EF91B32946D00E5AA40 /* AODUVideo.m */,
 				23E663361B0B1934003B7D14 /* AODUBanner.h */,
 				23E663371B0B1934003B7D14 /* AODUBanner.m */,
 				23E663381B0B1934003B7D14 /* AODUTypes.h */,
@@ -1240,6 +1255,7 @@
 				2371FE781B273F3400382051 /* MPInterstitialCustomEventAdapter.m in Sources */,
 				2371FEB21B273F3400382051 /* MPTableViewCellImpressionTracker.m in Sources */,
 				2371FE641B273F3400382051 /* MPAPIEndpoints.m in Sources */,
+				23E22EFB1B32946D00E5AA40 /* AODUObjectCache.m in Sources */,
 				2371FE951B273F3400382051 /* MPGeolocationProvider.m in Sources */,
 				2371FE8A1B273F3400382051 /* MRNativeCommandHandler.m in Sources */,
 				2371FE851B273F3400382051 /* MRConstants.m in Sources */,
@@ -1315,10 +1331,12 @@
 				2371FEB81B273F3400382051 /* MPNativeAdData.m in Sources */,
 				2371FE5B1B273F3400382051 /* MPAdAlertManager.m in Sources */,
 				9A76A49E1AE8B1E1004A434D /* main.m in Sources */,
+				23E22EFA1B32946D00E5AA40 /* AODUInterstitial.m in Sources */,
 				2371FE801B273F3400382051 /* MPMRAIDInterstitialViewController.m in Sources */,
 				2371FE651B273F3400382051 /* MPClosableView.m in Sources */,
 				2371FE861B273F3400382051 /* MRController.m in Sources */,
 				234E1A3F1B0EF9EA001EEA71 /* CCAppodeal.mm in Sources */,
+				23E22EFC1B32946D00E5AA40 /* AODUVideo.m in Sources */,
 				2371FE941B273F3400382051 /* MPError.m in Sources */,
 				2371FE891B273F3400382051 /* MRImageDownloader.m in Sources */,
 				2371FE6B1B273F3400382051 /* MPLogEvent.m in Sources */,

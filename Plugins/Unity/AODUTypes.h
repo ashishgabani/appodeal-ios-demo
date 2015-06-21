@@ -88,7 +88,7 @@ AODUTypeVideoClientRef *videoClient);
 
 /// Callback for when an video ad request failed.
 typedef void (*AODUVideoDidFailToReceiveAdWithErrorCallback)(
-AODUTypeInterstitialClientRef *videoClient, const char *error);
+AODUTypeVideoClientRef *videoClient, const char *error);
 
 /// Callback for when an video is about to be presented.
 typedef void (*AODUVideoWillPresentScreenCallback)(

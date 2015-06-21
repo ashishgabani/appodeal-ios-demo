@@ -11,6 +11,6 @@
 
 @interface UnityAppController : NSObject
 
-@property(nonatomic, strong) UIViewController* rootController;
+@property(nonatomic, strong) UIViewController* rootViewController;
 
 @end

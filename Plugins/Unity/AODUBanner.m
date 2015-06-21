@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 if3. All rights reserved.
 //
 
-@import CoreGraphics;
-@import Foundation;
-@import UIKit;
+#import <CoreGraphics/CoreGraphics.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #import <AppodealAds/Appodeal.h>
 
@@ -20,10 +20,10 @@
     #import "EmptyUnityAppController.h"
 #endif
 
-@interface AODUBanner () <AODAdViewDelegate>
+@interface AODUBanner () <AODAdBannerDelegate>
 
 /// Defines where the ad should be positioned on the screen.
-@property(nonatomic, assign) AODBannerType adPosition;
+@property(nonatomic, assign) int adPosition;
 
 @end
 
@@ -42,7 +42,7 @@
                            appKey:(NSString *)appKey
                               width:(CGFloat)width
                              height:(CGFloat)height
-                         adPosition:(AODBannerType)adPosition {
+                         adPosition:(int)adPosition {
     return [self initWithBannerClientReference:bannerClient
                                       appKey:appKey
                                     adPosition:adPosition];
@@ -50,68 +50,86 @@
 
 - (id)initWithSmartBannerSizeAndBannerClientReference:(AODUTypeBannerClientRef *)bannerClient
                                              appKey:(NSString *)appKey
-                                           adPosition:(AODBannerType)adPosition {
+                                           adPosition:(int)adPosition {
     // Choose the correct Smart Banner constant according to orientation.
     UIDeviceOrientation currentOrientation = [UIApplication sharedApplication].statusBarOrientation;
-    AODBannerType adType;
+    int adType;
     if (UIInterfaceOrientationIsPortrait(currentOrientation)) {
-        adType = kAODBannerPortraitBottom;
+        adType = BANNER_BOTTOM;
     } else {
-        adType = kAODBannerLandscapeBottom;
+        adType = BANNER_BOTTOM;
     }
     return [self initWithBannerClientReference:bannerClient
                                       appKey:appKey
-                                    adPosition:adPosition];
+                                    adPosition:BANNER_BOTTOM];
 }
 
 - (id)initWithBannerClientReference:(AODUTypeBannerClientRef *)bannerClient
                            appKey:(NSString *)appKey
-                         adPosition:(AODBannerType)adPosition {
+                         adPosition:(int)adPosition {
     self = [super init];
     if (self) {
         _bannerClient = bannerClient;
         _adPosition = adPosition;
-        _bannerView = [[AODAdView alloc] initWithBannerType:adPosition];
-        _bannerView.delegate = self;
-        _bannerView.rootController = [AODUBanner unityGLViewController];
     }
     return self;
 }
 
 - (void)dealloc {
-    _bannerView.delegate = nil;
 }
 
 - (void)loadRequest:(AODAdRequestConfig *)request {
-    if (!self.bannerView) {
         NSLog(@"AppodealAdsPlugin: BannerView is nil. Ignoring ad request.");
         return;
-    }
-    [self.bannerView loadAd];
 }
 
 - (void)hideBannerView {
-    if (!self.bannerView) {
         NSLog(@"AppodealAdsPlugin: BannerView is nil. Ignoring call to hideBannerView");
         return;
-    }
-    self.bannerView.hidden = YES;
 }
 
-- (void)showBannerView {
-    if (!self.bannerView) {
-        NSLog(@"AppodealAdsPlugin: BannerView is nil. Ignoring call to showBannerView");
-        return;
-    }
-    self.bannerView.hidden = NO;
+- (void)showBannerView:(int)adTypes {
+    NSLog(@"AppodealAdsPlugin: showBannerView");
+    UIViewController *unityController = [AODUBanner unityGLViewController];
+    [Appodeal show:unityController adType:adTypes];
+    return;
+}
+
+- (BOOL)isReady {
+    return [Appodeal isLoaded:BANNER];
 }
 
 - (void)removeBannerView {
-    if (!self.bannerView) {
         NSLog(@"AppodealAdsPlugin: BannerView is nil. Ignoring call to removeBannerView");
         return;
+}
+
+- (void)cache {
+    [Appodeal cache:BANNER];
+}
+
+- (void)setAutoCache:(BOOL)autoCache {
+    [Appodeal setAutoCache:BANNER autoCache:autoCache];
+}
+
+- (void)disableNetwork:(NSString*)adName {
+    [Appodeal disableAdNetwork:BANNER adName:adName];
+}
+
+- (void)showWithAdName:(NSString*)adName {
+    NSLog(@"AppodealAdsPlugin: show Banner from %@", adName);
+    UIViewController *unityController = [AODUBanner unityGLViewController];
+    [Appodeal showWithAdNetworkName:adName adType:BANNER rootController:unityController];
+}
+
+- (void)show:(int)adType {
+    if ([Appodeal isLoaded:BANNER]) {
+        NSLog(@"AppodealAdsPlugin: Banner show.");
+        UIViewController *unityController = [AODUBanner unityGLViewController];
+        [Appodeal show:unityController adType:adType];
+    } else {
+        NSLog(@"AppodealAdsPlugin: Banner is not ready to be shown.");
     }
-    [self.bannerView removeFromSuperview];
 }
 
 #pragma mark AODAdViewDelegate implementation
@@ -120,23 +138,21 @@
     return [AODUBanner unityGLViewController];
 }
 
-- (void)adViewDidLoadAd:(AODAdView *)adView {
+- (void)onAdBannerLoaded:(UIView*)bannerView {
     UIView *unityView = [[AODUBanner unityGLViewController] view];
-    CGPoint center = CGPointMake(CGRectGetMidX(unityView.bounds), CGRectGetMidY(_bannerView.bounds));
+    CGPoint center = CGPointMake(CGRectGetMidX(unityView.bounds), CGRectGetMidY(bannerView.bounds));
     // Position the AODBannerView.
     switch (self.adPosition) {
-        case kAODBannerPortraitTop:
-            center = CGPointMake(CGRectGetMidX(unityView.bounds), CGRectGetMidY(_bannerView.bounds));
+        case BANNER_TOP:
+            center = CGPointMake(CGRectGetMidX(unityView.bounds), CGRectGetMidY(bannerView.bounds));
             break;
-        case kAODBannerPortraitBottom:
+        case BANNER_BOTTOM:
             center = CGPointMake(CGRectGetMidX(unityView.bounds),
-                                 CGRectGetMaxY(unityView.bounds) - CGRectGetMidY(_bannerView.bounds));
+                                 CGRectGetMaxY(unityView.bounds) - CGRectGetMidY(bannerView.bounds));
             break;
-        case kAODBannerLandscapeBottom:
-            NSLog(@"AppodealAdsPlugin: LandscapeBottom position");
-            break;
-        case kAODBannerLandscapeTop:
-            NSLog(@"AppodealAdsPlugin: LandscapeTop position");
+        default:
+            center = CGPointMake(CGRectGetMidX(unityView.bounds),
+                                 CGRectGetMaxY(unityView.bounds) - CGRectGetMidY(bannerView.bounds));
             break;
             /*
         case kAODAdPositionTopLeftOfScreen:
@@ -158,19 +174,18 @@
     }
     
     // Remove existing banner view from superview.
-    [self.bannerView removeFromSuperview];
+    [bannerView removeFromSuperview];
     
     // Add the new banner view.
-    self.bannerView = adView;
-    self.bannerView.center = center;
-    [unityView addSubview:self.bannerView];
+    bannerView.center = center;
+    [unityView addSubview:bannerView];
     
     if (self.adReceivedCallback) {
         self.adReceivedCallback(self.bannerClient);
     }
 }
 
-- (void)adViewDidFailToLoadAd:(AODAdView *)adView {
+- (void)onAdBannerFailedToLoad {
     if (self.adFailedCallback) {
         NSString *errorMsg = [NSString
                               stringWithFormat:@"Failed to receive ad error"];
@@ -178,19 +193,13 @@
     }
 }
 
-- (void)willPresentModalViewForAd:(AODAdView *)adView {
+- (void)onAdBannerShown {
     if (self.willPresentCallback) {
         self.willPresentCallback(self.bannerClient);
     }
 }
 
-- (void)didDismissModalViewForAd:(AODAdView *)adView {
-    if (self.didDismissCallback) {
-        self.didDismissCallback(self.bannerClient);
-    }
-}
-
-- (void)willLeaveApplicationFromAd:(AODAdView *)adView {
+- (void)onAdBannerClicked {
     if (self.willLeaveCallback) {
         self.willLeaveCallback(self.bannerClient);
     }

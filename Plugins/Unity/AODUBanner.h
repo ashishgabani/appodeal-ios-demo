@@ -10,9 +10,7 @@
 #import <Foundation/Foundation.h>
 
 #import "AODUTypes.h"
-#import <AppodealAds/AODAdView.h>
 
-@class AODAdView;
 @class AODAdRequestConfig;
 
 /// Positions to place a banner.
@@ -33,18 +31,15 @@ typedef NS_ENUM(NSUInteger, AODAdPosition) {
 /// bottom of the screen.
 - (id)initWithBannerClientReference:(AODUTypeBannerClientRef *)bannerClient
                            appKey:(NSString *)appKey
-                         adPosition:(AODBannerType)adPosition;
+                         adPosition:(int)adPosition;
 
 /// Initializes a full-width AODUBanner, positioned at either the top or bottom of the screen.
 - (id)initWithSmartBannerSizeAndBannerClientReference:(AODUTypeBannerClientRef *)bannerClient
                                              appKey:(NSString *)appKey
-                                           adPosition:(AODBannerType)adPosition;
+                                           adPosition:(int)adPosition;
 
 /// A reference to the Unity banner client.
 @property(nonatomic, assign) AODUTypeBannerClientRef *bannerClient;
-
-/// A AODBannerView which contains the ad.
-@property(nonatomic, strong) AODAdView *bannerView;
 
 /// The ad received callback into Unity.
 @property(nonatomic, assign) AODUAdViewDidReceiveAdCallback adReceivedCallback;
@@ -71,9 +66,22 @@ typedef NS_ENUM(NSUInteger, AODAdPosition) {
 - (void)hideBannerView;
 
 /// Makes the AODBannerView visible on the screen.
-- (void)showBannerView;
+- (void)showBannerView:(int)adTypes;
 
 /// Removes the AODBannerView from the view hierarchy.
 - (void)removeBannerView;
+
+/// cache
+- (void)cache;
+
+/// set auto cache
+- (void)setAutoCache:(BOOL)autoCache;
+
+/// disable ad network
+- (void)disableNetwork:(NSString*)adName;
+
+- (void)showWithAdName:(NSString*)adName;
+
+- (BOOL)isReady;
 
 @end
