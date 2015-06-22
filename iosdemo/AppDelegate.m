@@ -21,6 +21,7 @@
     NSString* appId = @"914fdb6d1757ead0524f2c9d8f1f040d372f7ad356213f83";
     
     [Appodeal initWithAppId:appId];
+    [Fabric with:@[CrashlyticsKit]];
     
     return YES;
 }
