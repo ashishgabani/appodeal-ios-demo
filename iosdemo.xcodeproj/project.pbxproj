@@ -142,6 +142,8 @@
 		068464231B382C43005ABF40 /* vg_timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0684639C1B382C42005ABF40 /* vg_timer.png */; };
 		068464241B382C43005ABF40 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0684639D1B382C42005ABF40 /* VungleSDK.framework */; };
 		068464251B382C43005ABF40 /* AppodealAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0684639E1B382C42005ABF40 /* AppodealAds.framework */; };
+		06967B361B38498100AFEAD5 /* SplunkMint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06967B351B38498100AFEAD5 /* SplunkMint.framework */; };
+		06967C0E1B3849E700AFEAD5 /* SplunkMint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06967C0D1B3849E700AFEAD5 /* SplunkMint.framework */; };
 		234E1A3E1B0EF9EA001EEA71 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A3B1B0EF9EA001EEA71 /* AppController.m */; };
 		234E1A3F1B0EF9EA001EEA71 /* CCAppodeal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A3D1B0EF9EA001EEA71 /* CCAppodeal.mm */; };
 		235746B11B1DAA16009D7A9C /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 235746B01B1DAA16009D7A9C /* libxml2.2.dylib */; };
@@ -456,6 +458,214 @@
 		0684639C1B382C42005ABF40 /* vg_timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_timer.png; sourceTree = "<group>"; };
 		0684639D1B382C42005ABF40 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
 		0684639E1B382C42005ABF40 /* AppodealAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppodealAds.framework; sourceTree = "<group>"; };
+		06967B351B38498100AFEAD5 /* SplunkMint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SplunkMint.framework; sourceTree = "<group>"; };
+		06967B381B3849A700AFEAD5 /* BugSenseEventFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugSenseEventFactory.h; sourceTree = "<group>"; };
+		06967B391B3849A700AFEAD5 /* ContentTypeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentTypeDelegate.h; sourceTree = "<group>"; };
+		06967B3A1B3849A700AFEAD5 /* CrashOnLastRun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashOnLastRun.h; sourceTree = "<group>"; };
+		06967B3B1B3849A700AFEAD5 /* DataErrorResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataErrorResponse.h; sourceTree = "<group>"; };
+		06967B3C1B3849A700AFEAD5 /* DataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataFixture.h; sourceTree = "<group>"; };
+		06967B3D1B3849A700AFEAD5 /* DeviceInfoDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfoDelegate.h; sourceTree = "<group>"; };
+		06967B3E1B3849A700AFEAD5 /* EnumStringHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumStringHelper.h; sourceTree = "<group>"; };
+		06967B3F1B3849A700AFEAD5 /* EventDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventDataFixture.h; sourceTree = "<group>"; };
+		06967B401B3849A700AFEAD5 /* ExceptionDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionDataFixture.h; sourceTree = "<group>"; };
+		06967B411B3849A700AFEAD5 /* ExceptionManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionManagerDelegate.h; sourceTree = "<group>"; };
+		06967B421B3849A700AFEAD5 /* ExtraData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtraData.h; sourceTree = "<group>"; };
+		06967B431B3849A700AFEAD5 /* FileClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileClientDelegate.h; sourceTree = "<group>"; };
+		06967B441B3849A700AFEAD5 /* JsonRequestType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonRequestType.h; sourceTree = "<group>"; };
+		06967B451B3849A700AFEAD5 /* LimitedBreadcrumbList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LimitedBreadcrumbList.h; sourceTree = "<group>"; };
+		06967B461B3849A700AFEAD5 /* LimitedExtraDataList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LimitedExtraDataList.h; sourceTree = "<group>"; };
+		06967B471B3849A700AFEAD5 /* LoggedRequestEventArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggedRequestEventArgs.h; sourceTree = "<group>"; };
+		06967B481B3849A700AFEAD5 /* Mint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mint.h; sourceTree = "<group>"; };
+		06967B491B3849A700AFEAD5 /* MintAppEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintAppEnvironment.h; sourceTree = "<group>"; };
+		06967B4A1B3849A700AFEAD5 /* MintBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintBase.h; sourceTree = "<group>"; };
+		06967B4B1B3849A700AFEAD5 /* MintClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintClient.h; sourceTree = "<group>"; };
+		06967B4C1B3849A700AFEAD5 /* MintConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintConstants.h; sourceTree = "<group>"; };
+		06967B4D1B3849A700AFEAD5 /* MintEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintEnums.h; sourceTree = "<group>"; };
+		06967B4E1B3849A700AFEAD5 /* MintErrorResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintErrorResponse.h; sourceTree = "<group>"; };
+		06967B4F1B3849A700AFEAD5 /* MintException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintException.h; sourceTree = "<group>"; };
+		06967B501B3849A700AFEAD5 /* MintExceptionRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintExceptionRequest.h; sourceTree = "<group>"; };
+		06967B511B3849A700AFEAD5 /* MintInternalRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintInternalRequest.h; sourceTree = "<group>"; };
+		06967B521B3849A700AFEAD5 /* MintLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintLogger.h; sourceTree = "<group>"; };
+		06967B531B3849A700AFEAD5 /* MintLogResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintLogResult.h; sourceTree = "<group>"; };
+		06967B541B3849A700AFEAD5 /* MintMessageException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintMessageException.h; sourceTree = "<group>"; };
+		06967B551B3849A700AFEAD5 /* MintNotificationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintNotificationDelegate.h; sourceTree = "<group>"; };
+		06967B561B3849A700AFEAD5 /* MintPerformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintPerformance.h; sourceTree = "<group>"; };
+		06967B571B3849A700AFEAD5 /* MintProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintProperties.h; sourceTree = "<group>"; };
+		06967B581B3849A700AFEAD5 /* MintRequestContentType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintRequestContentType.h; sourceTree = "<group>"; };
+		06967B591B3849A700AFEAD5 /* MintResponseResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintResponseResult.h; sourceTree = "<group>"; };
+		06967B5A1B3849A700AFEAD5 /* MintResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintResult.h; sourceTree = "<group>"; };
+		06967B5B1B3849A700AFEAD5 /* MintTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintTransaction.h; sourceTree = "<group>"; };
+		06967B5C1B3849A700AFEAD5 /* MintUIWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintUIWebView.h; sourceTree = "<group>"; };
+		06967B5D1B3849A700AFEAD5 /* MintWKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintWKWebView.h; sourceTree = "<group>"; };
+		06967B5E1B3849A700AFEAD5 /* NetworkDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDataFixture.h; sourceTree = "<group>"; };
+		06967B5F1B3849A700AFEAD5 /* NSArray+SPLJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SPLJSONModel.h"; sourceTree = "<group>"; };
+		06967B601B3849A700AFEAD5 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		06967B611B3849A700AFEAD5 /* RemoteSettingsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteSettingsData.h; sourceTree = "<group>"; };
+		06967B621B3849A700AFEAD5 /* RequestJsonSerializerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestJsonSerializerDelegate.h; sourceTree = "<group>"; };
+		06967B631B3849A700AFEAD5 /* RequestWorkerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestWorkerDelegate.h; sourceTree = "<group>"; };
+		06967B641B3849A700AFEAD5 /* RequestWorkerFacadeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestWorkerFacadeDelegate.h; sourceTree = "<group>"; };
+		06967B651B3849A700AFEAD5 /* ScreenDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenDataFixture.h; sourceTree = "<group>"; };
+		06967B661B3849A700AFEAD5 /* ScreenProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenProperties.h; sourceTree = "<group>"; };
+		06967B671B3849A700AFEAD5 /* SerializeResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerializeResult.h; sourceTree = "<group>"; };
+		06967B681B3849A700AFEAD5 /* ServiceClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceClientDelegate.h; sourceTree = "<group>"; };
+		06967B691B3849A700AFEAD5 /* SPLJSONKeyMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONKeyMapper.h; sourceTree = "<group>"; };
+		06967B6A1B3849A700AFEAD5 /* SPLJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModel.h; sourceTree = "<group>"; };
+		06967B6B1B3849A700AFEAD5 /* SPLJSONModelArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelArray.h; sourceTree = "<group>"; };
+		06967B6C1B3849A700AFEAD5 /* SPLJSONModelClassProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelClassProperty.h; sourceTree = "<group>"; };
+		06967B6D1B3849A700AFEAD5 /* SPLJSONModelError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelError.h; sourceTree = "<group>"; };
+		06967B6E1B3849A700AFEAD5 /* SPLJSONModelLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelLib.h; sourceTree = "<group>"; };
+		06967B6F1B3849A700AFEAD5 /* SPLJSONValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONValueTransformer.h; sourceTree = "<group>"; };
+		06967B701B3849A700AFEAD5 /* SPLTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLTransaction.h; sourceTree = "<group>"; };
+		06967B711B3849A700AFEAD5 /* SplunkMint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplunkMint.h; sourceTree = "<group>"; };
+		06967B721B3849A700AFEAD5 /* TransactionResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionResult.h; sourceTree = "<group>"; };
+		06967B731B3849A700AFEAD5 /* TransactionStartResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionStartResult.h; sourceTree = "<group>"; };
+		06967B741B3849A700AFEAD5 /* TransactionStopResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionStopResult.h; sourceTree = "<group>"; };
+		06967B751B3849A700AFEAD5 /* TrStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrStart.h; sourceTree = "<group>"; };
+		06967B761B3849A700AFEAD5 /* TrStop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrStop.h; sourceTree = "<group>"; };
+		06967B771B3849A700AFEAD5 /* TypeBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeBlocks.h; sourceTree = "<group>"; };
+		06967B781B3849A700AFEAD5 /* UnhandledCrashExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnhandledCrashExtra.h; sourceTree = "<group>"; };
+		06967B791B3849A700AFEAD5 /* UnhandledCrashReportArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnhandledCrashReportArgs.h; sourceTree = "<group>"; };
+		06967B7A1B3849A700AFEAD5 /* XamarinHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XamarinHelper.h; sourceTree = "<group>"; };
+		06967B7C1B3849A700AFEAD5 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		06967B7E1B3849A700AFEAD5 /* splunkmint_postbuild_dsym_upload_script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = splunkmint_postbuild_dsym_upload_script.sh; sourceTree = "<group>"; };
+		06967B7F1B3849A700AFEAD5 /* SplunkMint */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = SplunkMint; path = SplunkMint.framework/Versions/A/SplunkMint; sourceTree = "<group>"; };
+		06967B831B3849A700AFEAD5 /* BugSenseEventFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugSenseEventFactory.h; sourceTree = "<group>"; };
+		06967B841B3849A700AFEAD5 /* ContentTypeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentTypeDelegate.h; sourceTree = "<group>"; };
+		06967B851B3849A700AFEAD5 /* CrashOnLastRun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashOnLastRun.h; sourceTree = "<group>"; };
+		06967B861B3849A700AFEAD5 /* DataErrorResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataErrorResponse.h; sourceTree = "<group>"; };
+		06967B871B3849A700AFEAD5 /* DataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataFixture.h; sourceTree = "<group>"; };
+		06967B881B3849A700AFEAD5 /* DeviceInfoDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfoDelegate.h; sourceTree = "<group>"; };
+		06967B891B3849A700AFEAD5 /* EnumStringHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumStringHelper.h; sourceTree = "<group>"; };
+		06967B8A1B3849A700AFEAD5 /* EventDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventDataFixture.h; sourceTree = "<group>"; };
+		06967B8B1B3849A700AFEAD5 /* ExceptionDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionDataFixture.h; sourceTree = "<group>"; };
+		06967B8C1B3849A700AFEAD5 /* ExceptionManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionManagerDelegate.h; sourceTree = "<group>"; };
+		06967B8D1B3849A700AFEAD5 /* ExtraData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtraData.h; sourceTree = "<group>"; };
+		06967B8E1B3849A700AFEAD5 /* FileClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileClientDelegate.h; sourceTree = "<group>"; };
+		06967B8F1B3849A700AFEAD5 /* JsonRequestType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonRequestType.h; sourceTree = "<group>"; };
+		06967B901B3849A700AFEAD5 /* LimitedBreadcrumbList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LimitedBreadcrumbList.h; sourceTree = "<group>"; };
+		06967B911B3849A700AFEAD5 /* LimitedExtraDataList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LimitedExtraDataList.h; sourceTree = "<group>"; };
+		06967B921B3849A700AFEAD5 /* LoggedRequestEventArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggedRequestEventArgs.h; sourceTree = "<group>"; };
+		06967B931B3849A700AFEAD5 /* Mint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mint.h; sourceTree = "<group>"; };
+		06967B941B3849A700AFEAD5 /* MintAppEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintAppEnvironment.h; sourceTree = "<group>"; };
+		06967B951B3849A700AFEAD5 /* MintBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintBase.h; sourceTree = "<group>"; };
+		06967B961B3849A700AFEAD5 /* MintClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintClient.h; sourceTree = "<group>"; };
+		06967B971B3849A700AFEAD5 /* MintConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintConstants.h; sourceTree = "<group>"; };
+		06967B981B3849A700AFEAD5 /* MintEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintEnums.h; sourceTree = "<group>"; };
+		06967B991B3849A700AFEAD5 /* MintErrorResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintErrorResponse.h; sourceTree = "<group>"; };
+		06967B9A1B3849A700AFEAD5 /* MintException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintException.h; sourceTree = "<group>"; };
+		06967B9B1B3849A700AFEAD5 /* MintExceptionRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintExceptionRequest.h; sourceTree = "<group>"; };
+		06967B9C1B3849A700AFEAD5 /* MintInternalRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintInternalRequest.h; sourceTree = "<group>"; };
+		06967B9D1B3849A700AFEAD5 /* MintLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintLogger.h; sourceTree = "<group>"; };
+		06967B9E1B3849A700AFEAD5 /* MintLogResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintLogResult.h; sourceTree = "<group>"; };
+		06967B9F1B3849A700AFEAD5 /* MintMessageException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintMessageException.h; sourceTree = "<group>"; };
+		06967BA01B3849A700AFEAD5 /* MintNotificationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintNotificationDelegate.h; sourceTree = "<group>"; };
+		06967BA11B3849A700AFEAD5 /* MintPerformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintPerformance.h; sourceTree = "<group>"; };
+		06967BA21B3849A700AFEAD5 /* MintProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintProperties.h; sourceTree = "<group>"; };
+		06967BA31B3849A700AFEAD5 /* MintRequestContentType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintRequestContentType.h; sourceTree = "<group>"; };
+		06967BA41B3849A700AFEAD5 /* MintResponseResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintResponseResult.h; sourceTree = "<group>"; };
+		06967BA51B3849A700AFEAD5 /* MintResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintResult.h; sourceTree = "<group>"; };
+		06967BA61B3849A700AFEAD5 /* MintTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintTransaction.h; sourceTree = "<group>"; };
+		06967BA71B3849A700AFEAD5 /* MintUIWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintUIWebView.h; sourceTree = "<group>"; };
+		06967BA81B3849A700AFEAD5 /* MintWKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintWKWebView.h; sourceTree = "<group>"; };
+		06967BA91B3849A700AFEAD5 /* NetworkDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDataFixture.h; sourceTree = "<group>"; };
+		06967BAA1B3849A700AFEAD5 /* NSArray+SPLJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SPLJSONModel.h"; sourceTree = "<group>"; };
+		06967BAB1B3849A700AFEAD5 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		06967BAC1B3849A700AFEAD5 /* RemoteSettingsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteSettingsData.h; sourceTree = "<group>"; };
+		06967BAD1B3849A700AFEAD5 /* RequestJsonSerializerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestJsonSerializerDelegate.h; sourceTree = "<group>"; };
+		06967BAE1B3849A700AFEAD5 /* RequestWorkerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestWorkerDelegate.h; sourceTree = "<group>"; };
+		06967BAF1B3849A700AFEAD5 /* RequestWorkerFacadeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestWorkerFacadeDelegate.h; sourceTree = "<group>"; };
+		06967BB01B3849A700AFEAD5 /* ScreenDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenDataFixture.h; sourceTree = "<group>"; };
+		06967BB11B3849A700AFEAD5 /* ScreenProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenProperties.h; sourceTree = "<group>"; };
+		06967BB21B3849A700AFEAD5 /* SerializeResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerializeResult.h; sourceTree = "<group>"; };
+		06967BB31B3849A700AFEAD5 /* ServiceClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceClientDelegate.h; sourceTree = "<group>"; };
+		06967BB41B3849A700AFEAD5 /* SPLJSONKeyMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONKeyMapper.h; sourceTree = "<group>"; };
+		06967BB51B3849A700AFEAD5 /* SPLJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModel.h; sourceTree = "<group>"; };
+		06967BB61B3849A700AFEAD5 /* SPLJSONModelArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelArray.h; sourceTree = "<group>"; };
+		06967BB71B3849A700AFEAD5 /* SPLJSONModelClassProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelClassProperty.h; sourceTree = "<group>"; };
+		06967BB81B3849A700AFEAD5 /* SPLJSONModelError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelError.h; sourceTree = "<group>"; };
+		06967BB91B3849A700AFEAD5 /* SPLJSONModelLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelLib.h; sourceTree = "<group>"; };
+		06967BBA1B3849A700AFEAD5 /* SPLJSONValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONValueTransformer.h; sourceTree = "<group>"; };
+		06967BBB1B3849A700AFEAD5 /* SPLTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLTransaction.h; sourceTree = "<group>"; };
+		06967BBC1B3849A700AFEAD5 /* SplunkMint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplunkMint.h; sourceTree = "<group>"; };
+		06967BBD1B3849A700AFEAD5 /* TransactionResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionResult.h; sourceTree = "<group>"; };
+		06967BBE1B3849A700AFEAD5 /* TransactionStartResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionStartResult.h; sourceTree = "<group>"; };
+		06967BBF1B3849A700AFEAD5 /* TransactionStopResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionStopResult.h; sourceTree = "<group>"; };
+		06967BC01B3849A700AFEAD5 /* TrStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrStart.h; sourceTree = "<group>"; };
+		06967BC11B3849A700AFEAD5 /* TrStop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrStop.h; sourceTree = "<group>"; };
+		06967BC21B3849A700AFEAD5 /* TypeBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeBlocks.h; sourceTree = "<group>"; };
+		06967BC31B3849A700AFEAD5 /* UnhandledCrashExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnhandledCrashExtra.h; sourceTree = "<group>"; };
+		06967BC41B3849A700AFEAD5 /* UnhandledCrashReportArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnhandledCrashReportArgs.h; sourceTree = "<group>"; };
+		06967BC51B3849A700AFEAD5 /* XamarinHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XamarinHelper.h; sourceTree = "<group>"; };
+		06967BC61B3849A700AFEAD5 /* SplunkMint */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SplunkMint; sourceTree = "<group>"; };
+		06967BC91B3849A700AFEAD5 /* BugSenseEventFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugSenseEventFactory.h; sourceTree = "<group>"; };
+		06967BCA1B3849A700AFEAD5 /* ContentTypeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentTypeDelegate.h; sourceTree = "<group>"; };
+		06967BCB1B3849A700AFEAD5 /* CrashOnLastRun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashOnLastRun.h; sourceTree = "<group>"; };
+		06967BCC1B3849A700AFEAD5 /* DataErrorResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataErrorResponse.h; sourceTree = "<group>"; };
+		06967BCD1B3849A700AFEAD5 /* DataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataFixture.h; sourceTree = "<group>"; };
+		06967BCE1B3849A700AFEAD5 /* DeviceInfoDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfoDelegate.h; sourceTree = "<group>"; };
+		06967BCF1B3849A700AFEAD5 /* EnumStringHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumStringHelper.h; sourceTree = "<group>"; };
+		06967BD01B3849A700AFEAD5 /* EventDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventDataFixture.h; sourceTree = "<group>"; };
+		06967BD11B3849A700AFEAD5 /* ExceptionDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionDataFixture.h; sourceTree = "<group>"; };
+		06967BD21B3849A700AFEAD5 /* ExceptionManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionManagerDelegate.h; sourceTree = "<group>"; };
+		06967BD31B3849A700AFEAD5 /* ExtraData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtraData.h; sourceTree = "<group>"; };
+		06967BD41B3849A700AFEAD5 /* FileClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileClientDelegate.h; sourceTree = "<group>"; };
+		06967BD51B3849A700AFEAD5 /* JsonRequestType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonRequestType.h; sourceTree = "<group>"; };
+		06967BD61B3849A700AFEAD5 /* LimitedBreadcrumbList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LimitedBreadcrumbList.h; sourceTree = "<group>"; };
+		06967BD71B3849A700AFEAD5 /* LimitedExtraDataList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LimitedExtraDataList.h; sourceTree = "<group>"; };
+		06967BD81B3849A700AFEAD5 /* LoggedRequestEventArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggedRequestEventArgs.h; sourceTree = "<group>"; };
+		06967BD91B3849A700AFEAD5 /* Mint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mint.h; sourceTree = "<group>"; };
+		06967BDA1B3849A700AFEAD5 /* MintAppEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintAppEnvironment.h; sourceTree = "<group>"; };
+		06967BDB1B3849A700AFEAD5 /* MintBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintBase.h; sourceTree = "<group>"; };
+		06967BDC1B3849A700AFEAD5 /* MintClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintClient.h; sourceTree = "<group>"; };
+		06967BDD1B3849A700AFEAD5 /* MintConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintConstants.h; sourceTree = "<group>"; };
+		06967BDE1B3849A700AFEAD5 /* MintEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintEnums.h; sourceTree = "<group>"; };
+		06967BDF1B3849A700AFEAD5 /* MintErrorResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintErrorResponse.h; sourceTree = "<group>"; };
+		06967BE01B3849A700AFEAD5 /* MintException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintException.h; sourceTree = "<group>"; };
+		06967BE11B3849A700AFEAD5 /* MintExceptionRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintExceptionRequest.h; sourceTree = "<group>"; };
+		06967BE21B3849A700AFEAD5 /* MintInternalRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintInternalRequest.h; sourceTree = "<group>"; };
+		06967BE31B3849A700AFEAD5 /* MintLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintLogger.h; sourceTree = "<group>"; };
+		06967BE41B3849A700AFEAD5 /* MintLogResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintLogResult.h; sourceTree = "<group>"; };
+		06967BE51B3849A700AFEAD5 /* MintMessageException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintMessageException.h; sourceTree = "<group>"; };
+		06967BE61B3849A700AFEAD5 /* MintNotificationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintNotificationDelegate.h; sourceTree = "<group>"; };
+		06967BE71B3849A700AFEAD5 /* MintPerformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintPerformance.h; sourceTree = "<group>"; };
+		06967BE81B3849A700AFEAD5 /* MintProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintProperties.h; sourceTree = "<group>"; };
+		06967BE91B3849A700AFEAD5 /* MintRequestContentType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintRequestContentType.h; sourceTree = "<group>"; };
+		06967BEA1B3849A700AFEAD5 /* MintResponseResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintResponseResult.h; sourceTree = "<group>"; };
+		06967BEB1B3849A700AFEAD5 /* MintResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintResult.h; sourceTree = "<group>"; };
+		06967BEC1B3849A700AFEAD5 /* MintTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintTransaction.h; sourceTree = "<group>"; };
+		06967BED1B3849A700AFEAD5 /* MintUIWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintUIWebView.h; sourceTree = "<group>"; };
+		06967BEE1B3849A700AFEAD5 /* MintWKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintWKWebView.h; sourceTree = "<group>"; };
+		06967BEF1B3849A700AFEAD5 /* NetworkDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDataFixture.h; sourceTree = "<group>"; };
+		06967BF01B3849A700AFEAD5 /* NSArray+SPLJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SPLJSONModel.h"; sourceTree = "<group>"; };
+		06967BF11B3849A700AFEAD5 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		06967BF21B3849A700AFEAD5 /* RemoteSettingsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteSettingsData.h; sourceTree = "<group>"; };
+		06967BF31B3849A700AFEAD5 /* RequestJsonSerializerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestJsonSerializerDelegate.h; sourceTree = "<group>"; };
+		06967BF41B3849A700AFEAD5 /* RequestWorkerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestWorkerDelegate.h; sourceTree = "<group>"; };
+		06967BF51B3849A700AFEAD5 /* RequestWorkerFacadeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestWorkerFacadeDelegate.h; sourceTree = "<group>"; };
+		06967BF61B3849A700AFEAD5 /* ScreenDataFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenDataFixture.h; sourceTree = "<group>"; };
+		06967BF71B3849A700AFEAD5 /* ScreenProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenProperties.h; sourceTree = "<group>"; };
+		06967BF81B3849A700AFEAD5 /* SerializeResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerializeResult.h; sourceTree = "<group>"; };
+		06967BF91B3849A700AFEAD5 /* ServiceClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceClientDelegate.h; sourceTree = "<group>"; };
+		06967BFA1B3849A700AFEAD5 /* SPLJSONKeyMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONKeyMapper.h; sourceTree = "<group>"; };
+		06967BFB1B3849A700AFEAD5 /* SPLJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModel.h; sourceTree = "<group>"; };
+		06967BFC1B3849A700AFEAD5 /* SPLJSONModelArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelArray.h; sourceTree = "<group>"; };
+		06967BFD1B3849A700AFEAD5 /* SPLJSONModelClassProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelClassProperty.h; sourceTree = "<group>"; };
+		06967BFE1B3849A700AFEAD5 /* SPLJSONModelError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelError.h; sourceTree = "<group>"; };
+		06967BFF1B3849A700AFEAD5 /* SPLJSONModelLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONModelLib.h; sourceTree = "<group>"; };
+		06967C001B3849A700AFEAD5 /* SPLJSONValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLJSONValueTransformer.h; sourceTree = "<group>"; };
+		06967C011B3849A700AFEAD5 /* SPLTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLTransaction.h; sourceTree = "<group>"; };
+		06967C021B3849A700AFEAD5 /* SplunkMint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplunkMint.h; sourceTree = "<group>"; };
+		06967C031B3849A700AFEAD5 /* TransactionResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionResult.h; sourceTree = "<group>"; };
+		06967C041B3849A700AFEAD5 /* TransactionStartResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionStartResult.h; sourceTree = "<group>"; };
+		06967C051B3849A700AFEAD5 /* TransactionStopResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionStopResult.h; sourceTree = "<group>"; };
+		06967C061B3849A700AFEAD5 /* TrStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrStart.h; sourceTree = "<group>"; };
+		06967C071B3849A700AFEAD5 /* TrStop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrStop.h; sourceTree = "<group>"; };
+		06967C081B3849A700AFEAD5 /* TypeBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeBlocks.h; sourceTree = "<group>"; };
+		06967C091B3849A700AFEAD5 /* UnhandledCrashExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnhandledCrashExtra.h; sourceTree = "<group>"; };
+		06967C0A1B3849A700AFEAD5 /* UnhandledCrashReportArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnhandledCrashReportArgs.h; sourceTree = "<group>"; };
+		06967C0B1B3849A700AFEAD5 /* XamarinHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XamarinHelper.h; sourceTree = "<group>"; };
+		06967C0C1B3849A700AFEAD5 /* SplunkMint */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SplunkMint; sourceTree = "<group>"; };
+		06967C0D1B3849E700AFEAD5 /* SplunkMint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SplunkMint.framework; sourceTree = "<group>"; };
 		234E1A3A1B0EF9EA001EEA71 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = "Plugins/Cocos2d-x/AppController.h"; sourceTree = "<group>"; };
 		234E1A3B1B0EF9EA001EEA71 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = "Plugins/Cocos2d-x/AppController.m"; sourceTree = "<group>"; };
 		234E1A3C1B0EF9EA001EEA71 /* CCAppodeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAppodeal.h; path = "Plugins/Cocos2d-x/CCAppodeal.h"; sourceTree = "<group>"; };
@@ -527,6 +737,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06967B361B38498100AFEAD5 /* SplunkMint.framework in Frameworks */,
 				235746B11B1DAA16009D7A9C /* libxml2.2.dylib in Frameworks */,
 				23AC11201B1877A300F259B3 /* CFNetwork.framework in Frameworks */,
 				068463A31B382C43005ABF40 /* GoogleMobileAds.framework in Frameworks */,
@@ -535,6 +746,7 @@
 				0684641D1B382C43005ABF40 /* UnityAds.framework in Frameworks */,
 				23AC111A1B18777700F259B3 /* WebKit.framework in Frameworks */,
 				068463A21B382C43005ABF40 /* Chartboost.framework in Frameworks */,
+				06967C0E1B3849E700AFEAD5 /* SplunkMint.framework in Frameworks */,
 				9A76A4E81AE8E3EA004A434D /* libz.dylib in Frameworks */,
 				9A76A4E61AE8E3DC004A434D /* CoreFoundation.framework in Frameworks */,
 				068464241B382C43005ABF40 /* VungleSDK.framework in Frameworks */,
@@ -1003,6 +1215,275 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		06967B371B3849A700AFEAD5 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				06967B381B3849A700AFEAD5 /* BugSenseEventFactory.h */,
+				06967B391B3849A700AFEAD5 /* ContentTypeDelegate.h */,
+				06967B3A1B3849A700AFEAD5 /* CrashOnLastRun.h */,
+				06967B3B1B3849A700AFEAD5 /* DataErrorResponse.h */,
+				06967B3C1B3849A700AFEAD5 /* DataFixture.h */,
+				06967B3D1B3849A700AFEAD5 /* DeviceInfoDelegate.h */,
+				06967B3E1B3849A700AFEAD5 /* EnumStringHelper.h */,
+				06967B3F1B3849A700AFEAD5 /* EventDataFixture.h */,
+				06967B401B3849A700AFEAD5 /* ExceptionDataFixture.h */,
+				06967B411B3849A700AFEAD5 /* ExceptionManagerDelegate.h */,
+				06967B421B3849A700AFEAD5 /* ExtraData.h */,
+				06967B431B3849A700AFEAD5 /* FileClientDelegate.h */,
+				06967B441B3849A700AFEAD5 /* JsonRequestType.h */,
+				06967B451B3849A700AFEAD5 /* LimitedBreadcrumbList.h */,
+				06967B461B3849A700AFEAD5 /* LimitedExtraDataList.h */,
+				06967B471B3849A700AFEAD5 /* LoggedRequestEventArgs.h */,
+				06967B481B3849A700AFEAD5 /* Mint.h */,
+				06967B491B3849A700AFEAD5 /* MintAppEnvironment.h */,
+				06967B4A1B3849A700AFEAD5 /* MintBase.h */,
+				06967B4B1B3849A700AFEAD5 /* MintClient.h */,
+				06967B4C1B3849A700AFEAD5 /* MintConstants.h */,
+				06967B4D1B3849A700AFEAD5 /* MintEnums.h */,
+				06967B4E1B3849A700AFEAD5 /* MintErrorResponse.h */,
+				06967B4F1B3849A700AFEAD5 /* MintException.h */,
+				06967B501B3849A700AFEAD5 /* MintExceptionRequest.h */,
+				06967B511B3849A700AFEAD5 /* MintInternalRequest.h */,
+				06967B521B3849A700AFEAD5 /* MintLogger.h */,
+				06967B531B3849A700AFEAD5 /* MintLogResult.h */,
+				06967B541B3849A700AFEAD5 /* MintMessageException.h */,
+				06967B551B3849A700AFEAD5 /* MintNotificationDelegate.h */,
+				06967B561B3849A700AFEAD5 /* MintPerformance.h */,
+				06967B571B3849A700AFEAD5 /* MintProperties.h */,
+				06967B581B3849A700AFEAD5 /* MintRequestContentType.h */,
+				06967B591B3849A700AFEAD5 /* MintResponseResult.h */,
+				06967B5A1B3849A700AFEAD5 /* MintResult.h */,
+				06967B5B1B3849A700AFEAD5 /* MintTransaction.h */,
+				06967B5C1B3849A700AFEAD5 /* MintUIWebView.h */,
+				06967B5D1B3849A700AFEAD5 /* MintWKWebView.h */,
+				06967B5E1B3849A700AFEAD5 /* NetworkDataFixture.h */,
+				06967B5F1B3849A700AFEAD5 /* NSArray+SPLJSONModel.h */,
+				06967B601B3849A700AFEAD5 /* NSString+Extensions.h */,
+				06967B611B3849A700AFEAD5 /* RemoteSettingsData.h */,
+				06967B621B3849A700AFEAD5 /* RequestJsonSerializerDelegate.h */,
+				06967B631B3849A700AFEAD5 /* RequestWorkerDelegate.h */,
+				06967B641B3849A700AFEAD5 /* RequestWorkerFacadeDelegate.h */,
+				06967B651B3849A700AFEAD5 /* ScreenDataFixture.h */,
+				06967B661B3849A700AFEAD5 /* ScreenProperties.h */,
+				06967B671B3849A700AFEAD5 /* SerializeResult.h */,
+				06967B681B3849A700AFEAD5 /* ServiceClientDelegate.h */,
+				06967B691B3849A700AFEAD5 /* SPLJSONKeyMapper.h */,
+				06967B6A1B3849A700AFEAD5 /* SPLJSONModel.h */,
+				06967B6B1B3849A700AFEAD5 /* SPLJSONModelArray.h */,
+				06967B6C1B3849A700AFEAD5 /* SPLJSONModelClassProperty.h */,
+				06967B6D1B3849A700AFEAD5 /* SPLJSONModelError.h */,
+				06967B6E1B3849A700AFEAD5 /* SPLJSONModelLib.h */,
+				06967B6F1B3849A700AFEAD5 /* SPLJSONValueTransformer.h */,
+				06967B701B3849A700AFEAD5 /* SPLTransaction.h */,
+				06967B711B3849A700AFEAD5 /* SplunkMint.h */,
+				06967B721B3849A700AFEAD5 /* TransactionResult.h */,
+				06967B731B3849A700AFEAD5 /* TransactionStartResult.h */,
+				06967B741B3849A700AFEAD5 /* TransactionStopResult.h */,
+				06967B751B3849A700AFEAD5 /* TrStart.h */,
+				06967B761B3849A700AFEAD5 /* TrStop.h */,
+				06967B771B3849A700AFEAD5 /* TypeBlocks.h */,
+				06967B781B3849A700AFEAD5 /* UnhandledCrashExtra.h */,
+				06967B791B3849A700AFEAD5 /* UnhandledCrashReportArgs.h */,
+				06967B7A1B3849A700AFEAD5 /* XamarinHelper.h */,
+			);
+			name = Headers;
+			path = SplunkMint.framework/Versions/A/Headers;
+			sourceTree = "<group>";
+		};
+		06967B7B1B3849A700AFEAD5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				06967B7C1B3849A700AFEAD5 /* module.modulemap */,
+			);
+			name = Modules;
+			path = SplunkMint.framework/Modules;
+			sourceTree = "<group>";
+		};
+		06967B7D1B3849A700AFEAD5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				06967B7E1B3849A700AFEAD5 /* splunkmint_postbuild_dsym_upload_script.sh */,
+			);
+			name = Resource;
+			path = SplunkMint.framework/Resource;
+			sourceTree = "<group>";
+		};
+		06967B801B3849A700AFEAD5 /* Versions */ = {
+			isa = PBXGroup;
+			children = (
+				06967B811B3849A700AFEAD5 /* A */,
+				06967BC71B3849A700AFEAD5 /* Current */,
+			);
+			name = Versions;
+			path = SplunkMint.framework/Versions;
+			sourceTree = "<group>";
+		};
+		06967B811B3849A700AFEAD5 /* A */ = {
+			isa = PBXGroup;
+			children = (
+				06967B821B3849A700AFEAD5 /* Headers */,
+				06967BC61B3849A700AFEAD5 /* SplunkMint */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		06967B821B3849A700AFEAD5 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				06967B831B3849A700AFEAD5 /* BugSenseEventFactory.h */,
+				06967B841B3849A700AFEAD5 /* ContentTypeDelegate.h */,
+				06967B851B3849A700AFEAD5 /* CrashOnLastRun.h */,
+				06967B861B3849A700AFEAD5 /* DataErrorResponse.h */,
+				06967B871B3849A700AFEAD5 /* DataFixture.h */,
+				06967B881B3849A700AFEAD5 /* DeviceInfoDelegate.h */,
+				06967B891B3849A700AFEAD5 /* EnumStringHelper.h */,
+				06967B8A1B3849A700AFEAD5 /* EventDataFixture.h */,
+				06967B8B1B3849A700AFEAD5 /* ExceptionDataFixture.h */,
+				06967B8C1B3849A700AFEAD5 /* ExceptionManagerDelegate.h */,
+				06967B8D1B3849A700AFEAD5 /* ExtraData.h */,
+				06967B8E1B3849A700AFEAD5 /* FileClientDelegate.h */,
+				06967B8F1B3849A700AFEAD5 /* JsonRequestType.h */,
+				06967B901B3849A700AFEAD5 /* LimitedBreadcrumbList.h */,
+				06967B911B3849A700AFEAD5 /* LimitedExtraDataList.h */,
+				06967B921B3849A700AFEAD5 /* LoggedRequestEventArgs.h */,
+				06967B931B3849A700AFEAD5 /* Mint.h */,
+				06967B941B3849A700AFEAD5 /* MintAppEnvironment.h */,
+				06967B951B3849A700AFEAD5 /* MintBase.h */,
+				06967B961B3849A700AFEAD5 /* MintClient.h */,
+				06967B971B3849A700AFEAD5 /* MintConstants.h */,
+				06967B981B3849A700AFEAD5 /* MintEnums.h */,
+				06967B991B3849A700AFEAD5 /* MintErrorResponse.h */,
+				06967B9A1B3849A700AFEAD5 /* MintException.h */,
+				06967B9B1B3849A700AFEAD5 /* MintExceptionRequest.h */,
+				06967B9C1B3849A700AFEAD5 /* MintInternalRequest.h */,
+				06967B9D1B3849A700AFEAD5 /* MintLogger.h */,
+				06967B9E1B3849A700AFEAD5 /* MintLogResult.h */,
+				06967B9F1B3849A700AFEAD5 /* MintMessageException.h */,
+				06967BA01B3849A700AFEAD5 /* MintNotificationDelegate.h */,
+				06967BA11B3849A700AFEAD5 /* MintPerformance.h */,
+				06967BA21B3849A700AFEAD5 /* MintProperties.h */,
+				06967BA31B3849A700AFEAD5 /* MintRequestContentType.h */,
+				06967BA41B3849A700AFEAD5 /* MintResponseResult.h */,
+				06967BA51B3849A700AFEAD5 /* MintResult.h */,
+				06967BA61B3849A700AFEAD5 /* MintTransaction.h */,
+				06967BA71B3849A700AFEAD5 /* MintUIWebView.h */,
+				06967BA81B3849A700AFEAD5 /* MintWKWebView.h */,
+				06967BA91B3849A700AFEAD5 /* NetworkDataFixture.h */,
+				06967BAA1B3849A700AFEAD5 /* NSArray+SPLJSONModel.h */,
+				06967BAB1B3849A700AFEAD5 /* NSString+Extensions.h */,
+				06967BAC1B3849A700AFEAD5 /* RemoteSettingsData.h */,
+				06967BAD1B3849A700AFEAD5 /* RequestJsonSerializerDelegate.h */,
+				06967BAE1B3849A700AFEAD5 /* RequestWorkerDelegate.h */,
+				06967BAF1B3849A700AFEAD5 /* RequestWorkerFacadeDelegate.h */,
+				06967BB01B3849A700AFEAD5 /* ScreenDataFixture.h */,
+				06967BB11B3849A700AFEAD5 /* ScreenProperties.h */,
+				06967BB21B3849A700AFEAD5 /* SerializeResult.h */,
+				06967BB31B3849A700AFEAD5 /* ServiceClientDelegate.h */,
+				06967BB41B3849A700AFEAD5 /* SPLJSONKeyMapper.h */,
+				06967BB51B3849A700AFEAD5 /* SPLJSONModel.h */,
+				06967BB61B3849A700AFEAD5 /* SPLJSONModelArray.h */,
+				06967BB71B3849A700AFEAD5 /* SPLJSONModelClassProperty.h */,
+				06967BB81B3849A700AFEAD5 /* SPLJSONModelError.h */,
+				06967BB91B3849A700AFEAD5 /* SPLJSONModelLib.h */,
+				06967BBA1B3849A700AFEAD5 /* SPLJSONValueTransformer.h */,
+				06967BBB1B3849A700AFEAD5 /* SPLTransaction.h */,
+				06967BBC1B3849A700AFEAD5 /* SplunkMint.h */,
+				06967BBD1B3849A700AFEAD5 /* TransactionResult.h */,
+				06967BBE1B3849A700AFEAD5 /* TransactionStartResult.h */,
+				06967BBF1B3849A700AFEAD5 /* TransactionStopResult.h */,
+				06967BC01B3849A700AFEAD5 /* TrStart.h */,
+				06967BC11B3849A700AFEAD5 /* TrStop.h */,
+				06967BC21B3849A700AFEAD5 /* TypeBlocks.h */,
+				06967BC31B3849A700AFEAD5 /* UnhandledCrashExtra.h */,
+				06967BC41B3849A700AFEAD5 /* UnhandledCrashReportArgs.h */,
+				06967BC51B3849A700AFEAD5 /* XamarinHelper.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		06967BC71B3849A700AFEAD5 /* Current */ = {
+			isa = PBXGroup;
+			children = (
+				06967BC81B3849A700AFEAD5 /* Headers */,
+				06967C0C1B3849A700AFEAD5 /* SplunkMint */,
+			);
+			path = Current;
+			sourceTree = "<group>";
+		};
+		06967BC81B3849A700AFEAD5 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				06967BC91B3849A700AFEAD5 /* BugSenseEventFactory.h */,
+				06967BCA1B3849A700AFEAD5 /* ContentTypeDelegate.h */,
+				06967BCB1B3849A700AFEAD5 /* CrashOnLastRun.h */,
+				06967BCC1B3849A700AFEAD5 /* DataErrorResponse.h */,
+				06967BCD1B3849A700AFEAD5 /* DataFixture.h */,
+				06967BCE1B3849A700AFEAD5 /* DeviceInfoDelegate.h */,
+				06967BCF1B3849A700AFEAD5 /* EnumStringHelper.h */,
+				06967BD01B3849A700AFEAD5 /* EventDataFixture.h */,
+				06967BD11B3849A700AFEAD5 /* ExceptionDataFixture.h */,
+				06967BD21B3849A700AFEAD5 /* ExceptionManagerDelegate.h */,
+				06967BD31B3849A700AFEAD5 /* ExtraData.h */,
+				06967BD41B3849A700AFEAD5 /* FileClientDelegate.h */,
+				06967BD51B3849A700AFEAD5 /* JsonRequestType.h */,
+				06967BD61B3849A700AFEAD5 /* LimitedBreadcrumbList.h */,
+				06967BD71B3849A700AFEAD5 /* LimitedExtraDataList.h */,
+				06967BD81B3849A700AFEAD5 /* LoggedRequestEventArgs.h */,
+				06967BD91B3849A700AFEAD5 /* Mint.h */,
+				06967BDA1B3849A700AFEAD5 /* MintAppEnvironment.h */,
+				06967BDB1B3849A700AFEAD5 /* MintBase.h */,
+				06967BDC1B3849A700AFEAD5 /* MintClient.h */,
+				06967BDD1B3849A700AFEAD5 /* MintConstants.h */,
+				06967BDE1B3849A700AFEAD5 /* MintEnums.h */,
+				06967BDF1B3849A700AFEAD5 /* MintErrorResponse.h */,
+				06967BE01B3849A700AFEAD5 /* MintException.h */,
+				06967BE11B3849A700AFEAD5 /* MintExceptionRequest.h */,
+				06967BE21B3849A700AFEAD5 /* MintInternalRequest.h */,
+				06967BE31B3849A700AFEAD5 /* MintLogger.h */,
+				06967BE41B3849A700AFEAD5 /* MintLogResult.h */,
+				06967BE51B3849A700AFEAD5 /* MintMessageException.h */,
+				06967BE61B3849A700AFEAD5 /* MintNotificationDelegate.h */,
+				06967BE71B3849A700AFEAD5 /* MintPerformance.h */,
+				06967BE81B3849A700AFEAD5 /* MintProperties.h */,
+				06967BE91B3849A700AFEAD5 /* MintRequestContentType.h */,
+				06967BEA1B3849A700AFEAD5 /* MintResponseResult.h */,
+				06967BEB1B3849A700AFEAD5 /* MintResult.h */,
+				06967BEC1B3849A700AFEAD5 /* MintTransaction.h */,
+				06967BED1B3849A700AFEAD5 /* MintUIWebView.h */,
+				06967BEE1B3849A700AFEAD5 /* MintWKWebView.h */,
+				06967BEF1B3849A700AFEAD5 /* NetworkDataFixture.h */,
+				06967BF01B3849A700AFEAD5 /* NSArray+SPLJSONModel.h */,
+				06967BF11B3849A700AFEAD5 /* NSString+Extensions.h */,
+				06967BF21B3849A700AFEAD5 /* RemoteSettingsData.h */,
+				06967BF31B3849A700AFEAD5 /* RequestJsonSerializerDelegate.h */,
+				06967BF41B3849A700AFEAD5 /* RequestWorkerDelegate.h */,
+				06967BF51B3849A700AFEAD5 /* RequestWorkerFacadeDelegate.h */,
+				06967BF61B3849A700AFEAD5 /* ScreenDataFixture.h */,
+				06967BF71B3849A700AFEAD5 /* ScreenProperties.h */,
+				06967BF81B3849A700AFEAD5 /* SerializeResult.h */,
+				06967BF91B3849A700AFEAD5 /* ServiceClientDelegate.h */,
+				06967BFA1B3849A700AFEAD5 /* SPLJSONKeyMapper.h */,
+				06967BFB1B3849A700AFEAD5 /* SPLJSONModel.h */,
+				06967BFC1B3849A700AFEAD5 /* SPLJSONModelArray.h */,
+				06967BFD1B3849A700AFEAD5 /* SPLJSONModelClassProperty.h */,
+				06967BFE1B3849A700AFEAD5 /* SPLJSONModelError.h */,
+				06967BFF1B3849A700AFEAD5 /* SPLJSONModelLib.h */,
+				06967C001B3849A700AFEAD5 /* SPLJSONValueTransformer.h */,
+				06967C011B3849A700AFEAD5 /* SPLTransaction.h */,
+				06967C021B3849A700AFEAD5 /* SplunkMint.h */,
+				06967C031B3849A700AFEAD5 /* TransactionResult.h */,
+				06967C041B3849A700AFEAD5 /* TransactionStartResult.h */,
+				06967C051B3849A700AFEAD5 /* TransactionStopResult.h */,
+				06967C061B3849A700AFEAD5 /* TrStart.h */,
+				06967C071B3849A700AFEAD5 /* TrStop.h */,
+				06967C081B3849A700AFEAD5 /* TypeBlocks.h */,
+				06967C091B3849A700AFEAD5 /* UnhandledCrashExtra.h */,
+				06967C0A1B3849A700AFEAD5 /* UnhandledCrashReportArgs.h */,
+				06967C0B1B3849A700AFEAD5 /* XamarinHelper.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		234E1A331B0DD0E2001EEA71 /* Cocos2d-x */ = {
 			isa = PBXGroup;
 			children = (
@@ -1069,6 +1550,7 @@
 		9A76A48F1AE8B1E1004A434D = {
 			isa = PBXGroup;
 			children = (
+				06967C0D1B3849E700AFEAD5 /* SplunkMint.framework */,
 				068462811B382C41005ABF40 /* AppodealAds */,
 				23E6632D1B0B0FAC003B7D14 /* Plugins */,
 				9A76A4C41AE8E2BE004A434D /* Frameworks */,
@@ -1131,6 +1613,12 @@
 		9A76A4C41AE8E2BE004A434D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06967B371B3849A700AFEAD5 /* Headers */,
+				06967B7B1B3849A700AFEAD5 /* Modules */,
+				06967B7D1B3849A700AFEAD5 /* Resource */,
+				06967B7F1B3849A700AFEAD5 /* SplunkMint */,
+				06967B801B3849A700AFEAD5 /* Versions */,
+				06967B351B38498100AFEAD5 /* SplunkMint.framework */,
 				235746B01B1DAA16009D7A9C /* libxml2.2.dylib */,
 				235746AE1B1DA908009D7A9C /* AerServSDK.framework */,
 				23AC111F1B1877A300F259B3 /* CFNetwork.framework */,
@@ -1174,6 +1662,7 @@
 				9A76A4951AE8B1E1004A434D /* Frameworks */,
 				9A76A4961AE8B1E1004A434D /* Resources */,
 				068464261B3836DA005ABF40 /* ShellScript */,
+				06E70B901B3854FA00874FC8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1284,6 +1773,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "";
+		};
+		06E70B901B3854FA00874FC8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1540,6 +2043,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../AppodealAds/AdNetworks,
@@ -1554,9 +2058,13 @@
 				INFOPLIST_FILE = iosdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "40a448cf-7ba3-4d75-bb45-7b32af47b305";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -1565,6 +2073,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../AppodealAds/AdNetworks,
@@ -1579,9 +2088,13 @@
 				INFOPLIST_FILE = iosdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "40a448cf-7ba3-4d75-bb45-7b32af47b305";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};

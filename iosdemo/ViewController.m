@@ -20,6 +20,7 @@
     // set interstitial delegate
     [Appodeal setInterstitialDelegate:self];
     
+   
     // set video ad delegate
     [Appodeal setVideoAdDelegate:self];
 }
@@ -43,6 +44,8 @@
     [Appodeal setBannerDelegate:self];
     [Appodeal show:self adType:BANNER_BOTTOM];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

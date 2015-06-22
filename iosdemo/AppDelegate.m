@@ -17,6 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+   [[Mint sharedInstance] initAndStartSession:@"721c2790"];
     
     NSString* appId = @"914fdb6d1757ead0524f2c9d8f1f040d372f7ad356213f83";
     

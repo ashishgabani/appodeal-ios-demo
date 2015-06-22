@@ -10,7 +10,6 @@
 #import <UIKit/UIKit.h>
 
 enum {
-    NONE            = 0,
     INTERSTITIAL    = 1,
     VIDEO           = 2,
     BANNER          = 4,
