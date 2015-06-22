@@ -8,7 +8,7 @@ Sign up for an account at [http://appodeal.com/](http://appodeal.com/).
 
 The Appodeal SDK is distributed as static library.
 
-- **[Appodeal SDK.zip](http://dl.dropbox.com/s/tandgz79v1t971q/Appodeal-iOS-SDK.zip)**
+- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.3.3/Appodeal-iOS-SDK.zip)**
 
 The current version of the SDK is 0.3.3
 
