@@ -4,6 +4,12 @@ Thanks for taking a look at Appodeal! We take pride in having an easy-to-use, fl
 
 Sign up for an account at [http://appodeal.com/](http://appodeal.com/).
 
+## Run
+
+Clone project
+
+Run Project in Xcode
+
 ## Download
 
 The Appodeal SDK is distributed as static library.
