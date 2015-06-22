@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    NSString* appId = @"a23f1c3c5f3a996c6f92ffdb6cb7f52ba14b26e45aab3188";
+    NSString* appId = @"914fdb6d1757ead0524f2c9d8f1f040d372f7ad356213f83";
     
     [Appodeal initWithAppId:appId];
     
