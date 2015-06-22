@@ -10,7 +10,7 @@ The Appodeal SDK is distributed as static library.
 
 - **[Appodeal SDK.zip](http://dl.dropbox.com/s/tandgz79v1t971q/Appodeal-iOS-SDK.zip)**
 
-The current version of the SDK is 0.3.2
+The current version of the SDK is 0.3.3
 
 ## Integrate
 
@@ -19,6 +19,12 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 ## Requirements
 
 iOS 6.0 and up
+
+0.3.3 Change Log:
+----------------------------------
+* updated admob
+* fixed mraid  banners/interstitials  
+* fixed bugs
 
 0.3.2 Change Log:
 ----------------------------------
