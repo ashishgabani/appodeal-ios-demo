@@ -142,8 +142,6 @@
 		068464231B382C43005ABF40 /* vg_timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0684639C1B382C42005ABF40 /* vg_timer.png */; };
 		068464241B382C43005ABF40 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0684639D1B382C42005ABF40 /* VungleSDK.framework */; };
 		068464251B382C43005ABF40 /* AppodealAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0684639E1B382C42005ABF40 /* AppodealAds.framework */; };
-		068464291B3836F8005ABF40 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068464271B3836F8005ABF40 /* Fabric.framework */; };
-		0684642A1B3836F8005ABF40 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068464281B3836F8005ABF40 /* Crashlytics.framework */; };
 		234E1A3E1B0EF9EA001EEA71 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A3B1B0EF9EA001EEA71 /* AppController.m */; };
 		234E1A3F1B0EF9EA001EEA71 /* CCAppodeal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 234E1A3D1B0EF9EA001EEA71 /* CCAppodeal.mm */; };
 		235746B11B1DAA16009D7A9C /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 235746B01B1DAA16009D7A9C /* libxml2.2.dylib */; };
@@ -458,8 +456,6 @@
 		0684639C1B382C42005ABF40 /* vg_timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_timer.png; sourceTree = "<group>"; };
 		0684639D1B382C42005ABF40 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
 		0684639E1B382C42005ABF40 /* AppodealAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppodealAds.framework; sourceTree = "<group>"; };
-		068464271B3836F8005ABF40 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
-		068464281B3836F8005ABF40 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		234E1A3A1B0EF9EA001EEA71 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = "Plugins/Cocos2d-x/AppController.h"; sourceTree = "<group>"; };
 		234E1A3B1B0EF9EA001EEA71 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = "Plugins/Cocos2d-x/AppController.m"; sourceTree = "<group>"; };
 		234E1A3C1B0EF9EA001EEA71 /* CCAppodeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAppodeal.h; path = "Plugins/Cocos2d-x/CCAppodeal.h"; sourceTree = "<group>"; };
@@ -541,7 +537,6 @@
 				068463A21B382C43005ABF40 /* Chartboost.framework in Frameworks */,
 				9A76A4E81AE8E3EA004A434D /* libz.dylib in Frameworks */,
 				9A76A4E61AE8E3DC004A434D /* CoreFoundation.framework in Frameworks */,
-				0684642A1B3836F8005ABF40 /* Crashlytics.framework in Frameworks */,
 				068464241B382C43005ABF40 /* VungleSDK.framework in Frameworks */,
 				9A76A4E41AE8E3D2004A434D /* CoreImage.framework in Frameworks */,
 				9A76A4E21AE8E3C7004A434D /* QuartzCore.framework in Frameworks */,
@@ -551,7 +546,6 @@
 				9A76A4DC1AE8E395004A434D /* UIKit.framework in Frameworks */,
 				9A76A4DA1AE8E38D004A434D /* CoreLocation.framework in Frameworks */,
 				9A76A4D81AE8E381004A434D /* SystemConfiguration.framework in Frameworks */,
-				068464291B3836F8005ABF40 /* Fabric.framework in Frameworks */,
 				068463A01B382C43005ABF40 /* AerServSDK.framework in Frameworks */,
 				9A76A4D61AE8E370004A434D /* StoreKit.framework in Frameworks */,
 				9A76A4D41AE8E361004A434D /* MessageUI.framework in Frameworks */,
@@ -1096,8 +1090,6 @@
 		9A76A49A1AE8B1E1004A434D /* iosdemo */ = {
 			isa = PBXGroup;
 			children = (
-				068464271B3836F8005ABF40 /* Fabric.framework */,
-				068464281B3836F8005ABF40 /* Crashlytics.framework */,
 				9A76A49F1AE8B1E1004A434D /* AppDelegate.h */,
 				9A76A4A01AE8B1E1004A434D /* AppDelegate.m */,
 				9A76A4A21AE8B1E1004A434D /* ViewController.h */,
@@ -1291,7 +1283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 6e45d7657f54942afa5f5f36e1f06aca77895f13 a265c23afa962751322cd15e15f01ed15095ca9ea4d447acf7a4c6e7af2fb020";
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
