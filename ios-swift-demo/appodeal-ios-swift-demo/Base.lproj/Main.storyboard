@@ -47,11 +47,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="1k7-YB-RhH" secondAttribute="centerX" id="ARq-CZ-syq"/>
+                            <constraint firstItem="1k7-YB-RhH" firstAttribute="top" secondItem="xC3-lA-HyH" secondAttribute="bottom" constant="39" id="D8c-Cw-3N0"/>
                             <constraint firstAttribute="centerX" secondItem="yHD-41-uMV" secondAttribute="centerX" id="NFt-ys-B18"/>
                             <constraint firstAttribute="centerX" secondItem="xC3-lA-HyH" secondAttribute="centerX" id="Xj4-Ce-J7e"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1k7-YB-RhH" secondAttribute="bottom" constant="363" id="b4X-pX-CBb"/>
+                            <constraint firstItem="xC3-lA-HyH" firstAttribute="top" secondItem="yHD-41-uMV" secondAttribute="bottom" constant="50" id="Z9I-L4-O1y"/>
                             <constraint firstItem="yHD-41-uMV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="45" id="cm4-HU-zYx"/>
-                            <constraint firstAttribute="centerY" secondItem="xC3-lA-HyH" secondAttribute="centerY" constant="140" id="nkc-vz-J4s"/>
                         </constraints>
                     </view>
                 </viewController>

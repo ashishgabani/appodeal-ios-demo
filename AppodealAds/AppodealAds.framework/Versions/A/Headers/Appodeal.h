@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-enum {
-  //  NONE            = 0,
+typedef NS_OPTIONS(NSInteger, AODAppodealAdType) {
+    NONE            = 0,
     INTERSTITIAL    = 1,
     VIDEO           = 2,
     BANNER          = 4,
@@ -21,7 +21,6 @@ enum {
     ALL             = 255,
     ANY             = 255
 };
-typedef int AODAppodeal;
 
 @protocol AODInterstitialDelegate <NSObject>
 
@@ -149,7 +148,7 @@ typedef int AODAppodeal;
  Ad types can be combined using "|" operator. For example INTERSTITIAL | VIDEO
  @discussion This method must be executed before any other Appodeal SDK methods can be used.
  */
-+ (instancetype)initWithAppId:(NSString*)appId adTypes:(int)adTypes;
++ (instancetype)initWithAppId:(NSString*)appId adTypes:(AODAppodealAdType)adTypes;
 
 /*!
  @abstract
@@ -161,7 +160,7 @@ typedef int AODAppodeal;
     Ad types can be combined using "|" operator. For example INTERSTITIAL | VIDEO
  @discussion This method must be executed before any other Appodeal SDK methods can be used.
  */
-+ (instancetype)initWithAppId:(NSString*)appId adTypes:(int)adTypes autoCache:(BOOL)autoCache;
++ (instancetype)initWithAppId:(NSString*)appId adTypes:(AODAppodealAdType)adTypes autoCache:(BOOL)autoCache;
 
 /*!
  @abstract
@@ -171,7 +170,7 @@ typedef int AODAppodeal;
  @param adType (ex. INTERSTITIAL, VIDEO, BANNER, BANNER_BOTTOM, BANNER_CENTER, BANNER_VIEW).
 @discussion This method must be executed after Appodeal intialization.
  */
-+ (void)show:(UIViewController*)rootController adType:(int)adType;
++ (void)show:(UIViewController*)rootController adType:(AODAppodealAdType)adType;
 
 /*!
  @abstract
@@ -184,7 +183,7 @@ typedef int AODAppodeal;
  @param adType (ex. INTERSTITIAL, VIDEO, BANNER, BANNER_BOTTOM, BANNER_CENTER, BANNER_VIEW).
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (void)showWithPriceFloor:(UIViewController*)rootController adType:(int)adType;
++ (void)showWithPriceFloor:(UIViewController*)rootController adType:(AODAppodealAdType)adType;
 
 /*!
  @abstract
@@ -197,7 +196,7 @@ typedef int AODAppodeal;
  @param autoCache Enable or disable automatic caching.
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (void)setAutoCache:(int)adType autoCache:(BOOL)autoCache;
++ (void)setAutoCache:(AODAppodealAdType)adType autoCache:(BOOL)autoCache;
 
 /*!
  @abstract
@@ -211,7 +210,7 @@ typedef int AODAppodeal;
  @param onLoadedTriggerBoth Enable or disable twice on<ADTYPE>AdLoaded callback.
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (void)setOnLoadedTriggerBoth:(int)adType onLoadedTriggerBoth:(BOOL)onLoadedTriggerBoth;
++ (void)setOnLoadedTriggerBoth:(AODAppodealAdType)adType onLoadedTriggerBoth:(BOOL)onLoadedTriggerBoth;
 
 /*!
  @abstract
@@ -226,7 +225,7 @@ typedef int AODAppodeal;
  @param adType (ex. INTERSTITIAL, VIDEO, BANNER, BANNER_BOTTOM, BANNER_CENTER, BANNER_VIEW).
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (BOOL)isLoaded:(int)adType;
++ (BOOL)isLoaded:(AODAppodealAdType)adType;
 
 /*!
  @abstract
@@ -236,7 +235,7 @@ typedef int AODAppodeal;
  @param adType (ex. INTERSTITIAL, VIDEO, BANNER, BANNER_BOTTOM, BANNER_CENTER, BANNER_VIEW).
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (BOOL)isPrecache:(int)adType;
++ (BOOL)isPrecache:(AODAppodealAdType)adType;
 
 /*!
  @abstract
@@ -252,7 +251,7 @@ typedef int AODAppodeal;
  @param adType (ex. INTERSTITIAL, VIDEO, BANNER, BANNER_BOTTOM, BANNER_CENTER, BANNER_VIEW).
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (void)cache:(int)adType;
++ (void)cache:(AODAppodealAdType)adType;
 
 /*!
  @abstract
@@ -262,7 +261,7 @@ typedef int AODAppodeal;
  @param adType (ex. INTERSTITIAL, VIDEO, BANNER, BANNER_BOTTOM, BANNER_CENTER, BANNER_VIEW).
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (void)hide:(int)adType;
++ (void)hide:(AODAppodealAdType)adType;
 
 /*!
  @abstract
@@ -279,7 +278,7 @@ typedef int AODAppodeal;
  @param rootController Required reference to the current root view controller.
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (void)showWithAdNetworkName:(NSString*)adName adType:(int)adType rootController:(UIViewController *)rootController;
++ (void)showWithAdNetworkName:(NSString*)adName adType:(AODAppodealAdType)adType rootController:(UIViewController *)rootController;
 
 /*!
  @abstract
@@ -331,7 +330,7 @@ typedef int AODAppodeal;
   @param adName ad network name.
   @param adType (ex. INTERSTITIAL, VIDEO, BANNER, BANNER_BOTTOM, BANNER_CENTER, BANNER_VIEW).
 */
-+ (BOOL)adNetworkIsAvailable:(NSString*)adName adType:(int)adType;
++ (BOOL)adNetworkIsAvailable:(NSString*)adName adType:(AODAppodealAdType)adType;
 
 /*!
  @abstract
@@ -340,7 +339,7 @@ typedef int AODAppodeal;
  @param adType (ex. INTERSTITIAL, VIDEO, BANNER, BANNER_BOTTOM, BANNER_CENTER, BANNER_VIEW or ALL).
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (NSArray*)getNetworks:(int)adType;
++ (NSArray*)getNetworks:(AODAppodealAdType)adType;
 
 /*!
  @abstract
@@ -349,7 +348,7 @@ typedef int AODAppodeal;
  @param adName You can disable following ad network: admob, chartboost, unity_ads, adcolony, smaato, amazon_ads, applovin, appnexus, mopub, mraid, nexage, openx, tapsense.
  @discussion This method must be executed after Appodeal intialization.
  */
-+ (void)disableAdNetwork:(int)adType adName:(NSString*)adName;
++ (void)disableAdNetwork:(AODAppodealAdType)adType adName:(NSString*)adName;
 
 /*!
  @abstract

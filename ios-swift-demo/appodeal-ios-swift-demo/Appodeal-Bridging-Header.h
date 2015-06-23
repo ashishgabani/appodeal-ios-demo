@@ -9,7 +9,6 @@
 #ifndef appodeal_ios_swift_demo_Appodeal_Bridging_Header_h
 #define appodeal_ios_swift_demo_Appodeal_Bridging_Header_h
 
-#import <AppodealAds/AODAdView.h>
 #import <AppodealAds/Appodeal.h>
 
 #endif

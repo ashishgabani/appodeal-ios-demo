@@ -8,51 +8,48 @@
 
 import UIKit
 
-class ViewController: UIViewController, AODInterstitialDelegate, AODAdViewDelegate, AODVideoAdDelegate {
-    var bannerView: AODAdView  =   AODAdView()
-    
+class ViewController: UIViewController, AODInterstitialDelegate, AODAdBannerDelegate, AODVideoAdDelegate {
+   
     @IBAction func showInterstitialBanner(sender: UIButton) {
-        Appodeal.showInterstitial(self);
+        Appodeal.show(self, adType: AODAppodealAdType.INTERSTITIAL)
     }
     
     @IBAction func showVideoAd(sender: UIButton) {
-        Appodeal.showVideoAd(self);
+        Appodeal.show(self, adType: AODAppodealAdType.VIDEO)
     }
     
     @IBAction func showSmallBanner(sender: UIButton) {
-        self.bannerView.delegate = self;
-        self.bannerView.rootController = self;
-        self.bannerView.disableAutoRefresh();
-        self.bannerView.loadAd();
-        self.view.addSubview(self.bannerView);
+        Appodeal.show(self, adType: AODAppodealAdType.BANNER_BOTTOM)
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Appodeal.setInterstitialDelegate(self);
-        Appodeal.setVideoAdDelegate(self);
+        Appodeal.setInterstitialDelegate(self)
+        Appodeal.setVideoAdDelegate(self)
+        Appodeal.setBannerDelegate(self)
     }
     
     //MARK: - AODInterstitialDelegate
     
     func onInterstitialAdLoaded(adName: String!, isPrecache: Bool) {
-        NSLog("interstitial from %@ did load", adName);
+        NSLog("interstitial from %@ did load", adName)
     }
     
     func onInterstitialAdFailedToLoad(adName: String!) {
-        NSLog("interstitial from %@ failed to load", adName);
+        NSLog("interstitial from %@ failed to load", adName)
     }
     
     func onInterstitialAdShown(adName: String!) {
-        NSLog("interstitial from %@ failed to load", adName);
+        NSLog("interstitial from %@ failed to load", adName)
     }
     
     func onInterstitialAdClicked(adName: String!) {
-        NSLog("interstitial from %@ has been clicked", adName);
+        NSLog("interstitial from %@ has been clicked", adName)
     }
     
     func onInterstitialAdClosed(adName: String!) {
-        NSLog("interstitial from %@ has been closed or dismissed", adName);
+        NSLog("interstitial from %@ has been closed or dismissed", adName)
     }
     
     //MARK: - AODAdViewDelegate
@@ -61,26 +58,26 @@ class ViewController: UIViewController, AODInterstitialDelegate, AODAdViewDelega
         return self;
     }
     
-    func adViewDidLoadAd(view: AODAdView!) {
-        NSLog("AdBanner did load");
+    func onAdBannerLoaded(bannerView: UIView!) {
+         NSLog("AdBanner did load")
     }
     
-    func adViewDidFailToLoadAd(view: AODAdView!) {
-        NSLog("AdBanner did failed to load");
+    func onAdBannerFailedToLoad() {
+        NSLog("AdBanner did failed to load")
     }
     
-    func willPresentModalViewForAd(view: AODAdView!) {
-        NSLog("AdBanner has been shown");
+    func onAdBannerClicked() {
+        NSLog("AdBanner has been clicked")
     }
     
-    func didDismissModalViewForAd(view: AODAdView!) {
-        NSLog("Did Dismiss Modal View For Ad");
+    func onAdBannerClosed() {
+        NSLog("AdBanner has been closed")
     }
     
-    func willLeaveApplicationFromAd(view: AODAdView!) {
-        NSLog("Will Leave Application From Ad");
+    func onAdBannerShown() {
+        NSLog("AdBanner has been shown")
     }
-    
+       
     //MARK: - AODVideoAdDelegate
     
     func onVideoAdDidLoad(adName: String!) {
