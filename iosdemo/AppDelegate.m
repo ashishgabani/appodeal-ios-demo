@@ -22,7 +22,9 @@
     NSString* appId = @"914fdb6d1757ead0524f2c9d8f1f040d372f7ad356213f83";
     
     [Appodeal initWithAppId:appId];
-    
+    //block adnetwork and types of ad
+    //[Appodeal disableAdNetwork:BANNER adName:@"admob"];
+    //[Appodeal disableAdNetwork:VIDEO adName:@"unity_ads"];
     return YES;
 }
 

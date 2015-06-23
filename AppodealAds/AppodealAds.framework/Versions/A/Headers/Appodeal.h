@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 enum {
+  //  NONE            = 0,
     INTERSTITIAL    = 1,
     VIDEO           = 2,
     BANNER          = 4,
@@ -349,6 +350,12 @@ typedef int AODAppodeal;
  @discussion This method must be executed after Appodeal intialization.
  */
 + (void)disableAdNetwork:(int)adType adName:(NSString*)adName;
+
+/*!
+ @abstract
+ Get sdk version
+ */
++ (NSString*)getVersion;
 
 /*!
  @abstract
