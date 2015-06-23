@@ -14,9 +14,9 @@ Run
 
 The Appodeal SDK is distributed as static library.
 
-- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.3.3/Appodeal-iOS-SDK.zip)**
+- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.3.4/AppodealAds.framework.zip)**
 
-The current version of the SDK is 0.3.3
+The current version of the SDK is 0.3.4
 
 ## Integrate
 
@@ -25,6 +25,12 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 ## Requirements
 
 iOS 6.0 and up
+
+0.3.4 Change Log:
+----------------------------------
+* fixed smaato banners  
+* fixed banenrs logic  
+* fixed bugs  
 
 0.3.3 Change Log:
 ----------------------------------
