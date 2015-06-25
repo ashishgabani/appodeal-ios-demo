@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062BDAD31B3BCCC50019C751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A76A4A51AE8B1E1004A434D /* Main.storyboard */; };
+		062BDAD41B3BCCC50019C751 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A76A4AA1AE8B1E1004A434D /* LaunchScreen.xib */; };
 		0684639F1B382C42005ABF40 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068462831B382C41005ABF40 /* AdColony.framework */; };
 		068463A01B382C43005ABF40 /* AerServSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068462841B382C41005ABF40 /* AerServSDK.framework */; };
 		068463A11B382C43005ABF40 /* AmazonAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068462851B382C41005ABF40 /* AmazonAd.framework */; };
@@ -1733,6 +1735,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062BDAD31B3BCCC50019C751 /* Main.storyboard in Resources */,
+				062BDAD41B3BCCC50019C751 /* LaunchScreen.xib in Resources */,
 				0684641C1B382C43005ABF40 /* UnityAds.bundle in Resources */,
 				0684641B1B382C43005ABF40 /* README.txt in Resources */,
 				068464141B382C43005ABF40 /* MRAID.bundle in Resources */,

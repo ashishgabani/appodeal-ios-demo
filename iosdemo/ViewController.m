@@ -42,9 +42,9 @@
 - (IBAction)showSmallBanner:(id)sender {
     // show small banner and set small banner delegate
     [Appodeal setBannerDelegate:self];
-    [Appodeal show:self adType:BANNER_CENTER];
+    [Appodeal show:self adType:BANNER_BOTTOM];
     // view banner from 1 adnetwork
-    [Appodeal showWithAdNetworkName:@"applovin" adType:BANNER_BOTTOM rootController:self];
+    //[Appodeal showWithAdNetworkName:@"applovin" adType:BANNER_BOTTOM rootController:self];
 }
 
 
