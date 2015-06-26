@@ -9,8 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_6_0
+#error The Appodeal Ads SDK requires a deployment target of iOS 6.0 or later.
+#endif
+
+FOUNDATION_EXPORT const unsigned char AppodealAdsVersionString[];
+
 typedef NS_OPTIONS(NSInteger, AODAppodealAdType) {
-    NONE            = 0,
     INTERSTITIAL    = 1,
     VIDEO           = 2,
     BANNER          = 4,
@@ -78,25 +83,73 @@ typedef NS_OPTIONS(NSInteger, AODAppodealAdType) {
  Called after an ad banner view has been clicked.
  */
 - (void)onAdBannerClicked;
-/*!
- @abstract
- Called after an ad banner view has been closed or dismissed.
- */
-- (void)onAdBannerClosed;
 
 @end
 
 @protocol AODVideoAdDelegate <NSObject>
 
 @optional
-- (void)onVideoAdDidLoad:(NSString*)adName;
-- (void)onVideoAdDidFailToLoad:(NSString*)adName;
-- (void)onVideoAdDidExpire:(NSString*)adName;
-- (void)onVideoAdDidFailToPlay:(NSString*)adName;
-- (void)onVideoAdDidAppear:(NSString*)adName;
-- (void)onVideoAdDidDisappear:(NSString*)adName;
-- (void)onVideoAdDidReceiveTapEvent:(NSString*)adName;
-- (void)onVideoAdShouldRewardUser:(NSString*)adName reward:(int)amount;
+/*!
+ @abstract
+ Called after a video has been loaded and cached locally.
+ 
+ @param adName ad name
+ 
+ @discussion Implement to be notified of when a video has been loaded and cached locally
+ */
+- (void)onVideoLoaded:(NSString*)adName;
+
+/*!
+ @abstract
+ Called after a video has attempted to load but failed.
+ 
+ @param adName ad name
+ 
+ @discussion Implement to be notified of when an video has attempted to load but failed
+ */
+- (void)onVideoFailedToLoad:(NSString*)adName;
+
+/*!
+ @abstract
+ Called after a video has been displayed on the screen.
+ 
+ @param adName ad name
+ 
+ @discussion Implement to be notified of when a video has
+ been displayed on the screen
+ */
+- (void)onVideoShown:(NSString*)adName;
+
+/*!
+ @abstract
+ Called after a video has been closed.
+ 
+ @param adName ad name
+ 
+ @discussion Implement to be notified of when a video has been closed
+ */
+- (void)onVideoClosed:(NSString*)adName;
+
+/*!
+ @abstract
+ Called after a video has been clicked.
+ 
+ @param adName ad name
+ 
+ @discussion Implement to be notified of when a video has been click.
+ "Clicked" is defined as clicking the creative interface for the video.
+ */
+- (void)onVideoClicked:(NSString*)adName;
+
+/*!
+ @abstract
+ Called after a video has been viewed completely and user is eligible for reward.
+ 
+ @param adName ad name
+
+ @discussion Implement to be notified of when a rewarded video has been viewed completely and user is eligible for reward.
+ */
+- (void)onVideoFinished:(NSString*)adName;
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AppodealAds
 
 class ViewController: UIViewController, AODInterstitialDelegate, AODAdBannerDelegate, AODVideoAdDelegate {
    

@@ -26,6 +26,14 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 
 iOS 6.0 and up
 
+
+0.3.5 Change Log:
+----------------------------------
+* adds AppLovin videos
+* adds Swift module map (obsoletes bridge header)
+* fixes ads logic
+* fixes bugs
+
 0.3.4 Change Log:
 ----------------------------------
 * fixed smaato banners  

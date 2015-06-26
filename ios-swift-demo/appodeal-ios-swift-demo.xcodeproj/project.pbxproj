@@ -217,7 +217,6 @@
 		E57243631B1F03880082B493 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		E57243651B1F038E0082B493 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		E57243671B1F03960082B493 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
-		E57243691B1F046E0082B493 /* Appodeal-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Appodeal-Bridging-Header.h"; sourceTree = "<group>"; };
 		F70FF0D11B39C04D00847065 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
 		F70FF0D21B39C04D00847065 /* AerServSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerServSDK.framework; sourceTree = "<group>"; };
 		F70FF0D31B39C04D00847065 /* AmazonAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AmazonAd.framework; sourceTree = "<group>"; };
@@ -585,7 +584,6 @@
 				E57241991B1F017F0082B493 /* Images.xcassets */,
 				E572419B1B1F017F0082B493 /* LaunchScreen.xib */,
 				E57241901B1F017F0082B493 /* Supporting Files */,
-				E57243691B1F046E0082B493 /* Appodeal-Bridging-Header.h */,
 			);
 			path = "appodeal-ios-swift-demo";
 			sourceTree = "<group>";
@@ -1416,7 +1414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/appodeal-ios-swift-demo/Appodeal-Bridging-Header.h";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/../AppodealAds/";
 			};
 			name = Debug;
 		};
@@ -1437,7 +1435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/appodeal-ios-swift-demo/Appodeal-Bridging-Header.h";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/../AppodealAds/";
 			};
 			name = Release;
 		};
