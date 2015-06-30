@@ -71,38 +71,34 @@ class ViewController: UIViewController, AODInterstitialDelegate, AODAdBannerDele
         NSLog("AdBanner has been clicked")
     }
     
-    func onAdBannerClosed() {
-        NSLog("AdBanner has been closed")
-    }
-    
     func onAdBannerShown() {
         NSLog("AdBanner has been shown")
     }
        
     //MARK: - AODVideoAdDelegate
     
-    func onVideoAdDidLoad(adName: String!) {
+    func onVideoLoaded(adName: String!) {
         NSLog("video ad from %@ did load", adName);
     }
     
-    func onVideoAdDidFailToLoad(adName: String!) {
+    func onVideoFailedToLoad(adName: String!) {
         NSLog("video ad from %@ failed to load", adName);
     }
     
-    func onVideoAdDidAppear(adName: String!) {
-        NSLog("video ad from %@ failed to load", adName);
+    func onVideoShown(adName: String!) {
+        NSLog("video ad from %@ shown", adName);
     }
     
-    func onVideoAdDidReceiveTapEvent(adName: String!) {
+    func onVideoClicked(adName: String!) {
         NSLog("video ad from %@ has been clicked", adName);
     }
     
-    func onVideoAdDidDisappear(adName: String!) {
+    func onVideoClosed(adName: String!) {
         NSLog("video ad from %@ has been closed or dismissed", adName);
     }
     
-    func onVideoAdShouldRewardUser(adName: String!, reward amount: Int32) {
-        NSLog("video ad from %@ has been completed and user rewarded %d virtual currency", adName, amount);
+    func onVideoFinished(adName: String!) {
+        NSLog("video ad from %@ has been completed and user should rewarded virtual currency", adName);
         
     }
 }

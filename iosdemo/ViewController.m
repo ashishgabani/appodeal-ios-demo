@@ -111,7 +111,7 @@
 }
 
 - (void)onVideoShown:(NSString*)adName {
-    NSLog(@"video ad from %@ failed to load", adName);
+    NSLog(@"video ad from %@ shown", adName);
 }
 
 - (void)onVideoClicked:(NSString*)adName {
