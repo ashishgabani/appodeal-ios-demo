@@ -11,5 +11,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = "AdSupport", "CoreLocation", "SystemConfiguration", "CoreTelephony", "CoreGraphics", "MediaPlayer", "EventKit", "EventKitUI", "Foundation", "MediaPlayer", "QuartzCore", "UIKit", "StoreKit"
   s.default_subspecs = 'MoPubSDK'
-  s.subspecs = { :name => "MoPubSDK", :source_files => "MoPubSDK/**/*.{h,m}", :resources => "MoPubSDK/**/*.{png,bundle,xib,nib}" }  
+  s.subspec "MoPubSDK" do |sp|
+    sp.source_files = 'MoPubSDK/**/*.{h,m}'
+    sp.resources = 'MoPubSDK/**/*.{png,bundle,xib,nib}'
+  end
 end
