@@ -14,9 +14,9 @@ Run
 
 The Appodeal SDK is distributed as static library.
 
-- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.3.5.1/AppodealAds.zip)**
+- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.3.6/AppodealAds.zip)**
 
-The current version of the SDK is 0.3.5
+The current version of the SDK is 0.3.6
 
 ## Integrate
 
@@ -26,11 +26,17 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 
 iOS 6.0 and up
 
+0.3.6 Change Log:
+----------------------------------
+* fixed video/sound playback
+* fixed 'applicationWillEnterForeground' for banners
+* fixed hide banner
+* fixed bugs
 
 0.3.5 Change Log:
 ----------------------------------
-* adds AppLovin videos
-* adds Swift module map (obsoletes bridge header)
+* added AppLovin videos
+* added Swift module map (obsoletes bridge header)
 * fixes ads logic
 * fixes bugs
 
