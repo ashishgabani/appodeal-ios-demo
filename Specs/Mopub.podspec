@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = 'mopub-ios-sdk'
+  s.name = 'mopub-ios-sdk-appodeal'
   s.version = '3.8.0.1'
   s.license = 'New BSD'
   s.summary = 'The Official MoPub Client SDK allows developers to easily monetize their apps by showing banner, interstitial, and native ads.'
