@@ -34,14 +34,7 @@
 {
     MPLogInfo(@"Loading MoPub HTML interstitial");
     MPAdConfiguration *configuration = [self.delegate configuration];
-    MPLogInfo(@"Loading HTML interstitial with source: %@", [configuration adResponseHTMLString]);
-    
-    NSString* HTML = [configuration adResponseHTMLString];
-    
-    if (!([HTML rangeOfString:@"video.play()"].location == NSNotFound)) {
-        [self.delegate interstitialCustomEvent:self didFailToLoadAdWithError:nil];
-        return;
-    }
+    MPLogTrace(@"Loading HTML interstitial with source: %@", [configuration adResponseHTMLString]);
 
     self.interstitial = [[MPInstanceProvider sharedProvider] buildMPHTMLInterstitialViewControllerWithDelegate:self
                                                                                                orientationType:configuration.orientationType];

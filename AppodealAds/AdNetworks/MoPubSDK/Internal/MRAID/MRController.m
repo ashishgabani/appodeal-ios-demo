@@ -148,12 +148,6 @@ static NSString *const kMRAIDCommandResize = @"resize";
 
     // This load is guaranteed to never be called for a two-part expand so we know we need to load the HTML into the default web view.
     NSString *HTML = [configuration adResponseHTMLString];
-    
-    if (!([HTML rangeOfString:@"video.play()"].location == NSNotFound)) {
-        [self adDidFailToLoad];
-        return;
-    }
-    
     [self.mraidBridge loadHTMLString:HTML baseURL:nil];
 }
 
@@ -177,6 +171,7 @@ static NSString *const kMRAIDCommandResize = @"resize";
 
 - (void)disableRequestHandling
 {
+    [self.mraidBridge setWebViewPlayBack:YES];
     self.mraidBridge.shouldHandleRequests = NO;
     self.mraidBridgeTwoPart.shouldHandleRequests = NO;
     [self.destinationDisplayAgent cancel];
@@ -499,6 +494,8 @@ static NSString *const kMRAIDCommandResize = @"resize";
 - (void)closeFromDefaultState
 {
     [self adWillClose];
+    
+    [self.mraidBridge clearWebView];
 
     self.mraidAdView.hidden = YES;
     [self changeStateTo:MRAdViewStateHidden];

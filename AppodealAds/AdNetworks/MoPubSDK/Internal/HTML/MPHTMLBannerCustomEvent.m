@@ -29,7 +29,7 @@
 - (void)requestAdWithSize:(CGSize)size customEventInfo:(NSDictionary *)info
 {
     MPLogInfo(@"Loading MoPub HTML banner");
-    MPLogInfo(@"Loading banner with HTML source: %@", [[self.delegate configuration] adResponseHTMLString]);
+    MPLogTrace(@"Loading banner with HTML source: %@", [[self.delegate configuration] adResponseHTMLString]);
 
     CGRect adWebViewFrame = CGRectMake(0, 0, size.width, size.height);
     self.bannerAgent = [[MPInstanceProvider sharedProvider] buildMPAdWebViewAgentWithAdWebViewFrame:adWebViewFrame

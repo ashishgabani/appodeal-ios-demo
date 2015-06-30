@@ -44,6 +44,9 @@
 - (void)fireSetDefaultPositionWithPositionRect:(CGRect)positionRect;
 - (void)fireSetMaxSize:(CGSize)maxSize;
 
+- (void)clearWebView;
+- (void)setWebViewPlayBack:(BOOL)playBack;
+
 @end
 
 /**

@@ -52,8 +52,6 @@ static NSString * const kMraidURLScheme = @"mraid";
         [self.delegate bridge:self didFailLoadingWebView:self.webView error:error];
         return;
     }
-    
-    MPLogInfo(@"Loading banner with MRAID HTML source: %@", HTML);
 
     if (HTML) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -68,6 +66,15 @@ static NSString * const kMraidURLScheme = @"mraid";
             });
         });
     }
+}
+
+- (void)clearWebView {
+    [self.webView loadHTMLString:@"" baseURL:nil];
+}
+
+- (void)setWebViewPlayBack:(BOOL)playBack {
+    self.webView.allowsInlineMediaPlayback = playBack;
+    self.webView.mediaPlaybackRequiresUserAction = !playBack;
 }
 
 - (void)fireReadyEvent
@@ -187,6 +194,7 @@ static NSString * const kMraidURLScheme = @"mraid";
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
+    [self setWebViewPlayBack:NO];
     [self.delegate bridge:self didFinishLoadingWebView:webView];
 }
 

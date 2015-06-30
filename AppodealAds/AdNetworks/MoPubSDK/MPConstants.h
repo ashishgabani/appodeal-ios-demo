@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define MP_DEBUG_MODE               0
+#define MP_DEBUG_MODE               1
 
 #define DEFAULT_PUB_ID              @"agltb3B1Yi1pbmNyDAsSBFNpdGUYkaoMDA"
 #define MP_SERVER_VERSION           @"8"
