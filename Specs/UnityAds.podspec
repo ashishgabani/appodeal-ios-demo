@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'UnityAds'
-  s.version = '1.4.2'
+  s.version = '1.4.5'
   s.license = 'Commercial'
   s.summary = 'UnityAds rewarded ads'
   s.homepage = "https://github.com/Applifier/unity-ads-sdk"

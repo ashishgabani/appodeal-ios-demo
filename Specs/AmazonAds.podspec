@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name = 'AmazonAds'
-  s.version = '2.2.5'
+  s.version = '2.2.8'
   s.license = 'Commercial'
   s.summary = 'AmazonAds'
   s.homepage = "https://developer.amazon.com/public/resources/development-tools/sdk"
   s.author = { "spdd" => "defaultqp@gmail.com" }
-  s.source = { :http => "http://dl.dropbox.com/s/kjjh51v6jksg1wd/AmazonAd.framework.zip" }  
+  s.source = { :http => "http://s3-us-west-1.amazonaws.com/appodeal-ios/AmazonAd/2.2.8/AmazonAd.framework.zip" }  
   s.description = 'AmazonAds'
   s.platform     = :ios, '6.0'
   s.requires_arc = true
