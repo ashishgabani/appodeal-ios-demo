@@ -102,28 +102,28 @@
 
 #pragma mark - <AODVideoAdDelegate>
 
-- (void)onVideoAdDidLoad:(NSString*)adName {
+- (void)onVideoLoaded:(NSString*)adName {
     NSLog(@"video ad from %@ did load", adName);
 }
 
-- (void)onVideoAdDidFailToLoad:(NSString*)adName {
+- (void)onVideoFailedToLoad:(NSString*)adName {
     NSLog(@"video ad from %@ failed to load", adName);
 }
 
-- (void)onVideoAdDidAppear:(NSString*)adName {
+- (void)onVideoShown:(NSString*)adName {
     NSLog(@"video ad from %@ failed to load", adName);
 }
 
-- (void)onVideoAdDidReceiveTapEvent:(NSString*)adName {
+- (void)onVideoClicked:(NSString*)adName {
     NSLog(@"video ad from %@ has been clicked", adName);
 }
 
-- (void)onVideoAdDidDisappear:(NSString*)adName {
+- (void)onVideoClosed:(NSString*)adName {
     NSLog(@"video ad from %@ has been closed or dismissed", adName);
 }
 
-- (void)onVideoAdShouldRewardUser:(NSString*)adName reward:(int)amount {
-    NSLog(@"video ad from %@ has been completed and user rewarded %d virtual currency", adName, amount);
+- (void)onVideoFinished:(NSString*)adName {
+    NSLog(@"video ad from %@ has been completed and user should rewarded virtual currency", adName);
 }
 
 @end
