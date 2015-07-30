@@ -32,15 +32,16 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (indexPath.row == 0) {
-        // show full screen banner
-        [Appodeal showAd:AppodealShowStyleInterstitial rootViewController:self];
-    }
+    if (indexPath.section == 0){
+        if (indexPath.row == 0) {
+            // show full screen banner
+            [Appodeal showAd:AppodealShowStyleInterstitial rootViewController:self];
+        }
 
-    if (indexPath.row == 1) {
-        // show video ads
-        [Appodeal showAd:AppodealShowStyleVideo rootViewController:self];
+        if (indexPath.row == 1) {
+            // show video ads
+            [Appodeal showAd:AppodealShowStyleVideo rootViewController:self];
+        }
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
