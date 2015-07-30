@@ -34,12 +34,7 @@
 		11A8A81B1B699A5E00EE376F /* AppodealBannersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppodealBannersViewController.h; sourceTree = "<group>"; };
 		11A8A81C1B699A5E00EE376F /* AppodealBannersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppodealBannersViewController.m; sourceTree = "<group>"; };
 		11A8A81E1B69A4C300EE376F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		11A8A8201B69A6B600EE376F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1F79559E98E0F1EF60490B43 /* libPods-iosdemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosdemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23AC11191B18777700F259B3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		23AC111B1B18777E00F259B3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		23AC111D1B18779C00F259B3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		23AC111F1B1877A300F259B3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4FAFEFF135643A925B52E5E0 /* Pods-iosdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosdemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosdemo/Pods-iosdemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9A76A4981AE8B1E1004A434D /* iosdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A76A49C1AE8B1E1004A434D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,24 +46,6 @@
 		9A76A4B11AE8B1E1004A434D /* iosdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A76A4B61AE8B1E1004A434D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A76A4B71AE8B1E1004A434D /* iosdemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosdemoTests.m; sourceTree = "<group>"; };
-		9A76A4C51AE8E318004A434D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		9A76A4C71AE8E320004A434D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		9A76A4C91AE8E333004A434D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		9A76A4CB1AE8E33E004A434D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		9A76A4CD1AE8E346004A434D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9A76A4CF1AE8E356004A434D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		9A76A4D01AE8E356004A434D /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		9A76A4D31AE8E361004A434D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		9A76A4D51AE8E370004A434D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		9A76A4D71AE8E381004A434D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9A76A4D91AE8E38D004A434D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		9A76A4DB1AE8E395004A434D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9A76A4DD1AE8E3A3004A434D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		9A76A4DF1AE8E3B6004A434D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		9A76A4E11AE8E3C7004A434D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9A76A4E31AE8E3D2004A434D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		9A76A4E51AE8E3DC004A434D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		9A76A4E71AE8E3EA004A434D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		A2C086A9F1881DBC6AB79FE1 /* Pods-iosdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosdemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosdemo/Pods-iosdemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,29 +134,6 @@
 		9A76A4C41AE8E2BE004A434D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				11A8A8201B69A6B600EE376F /* MobileCoreServices.framework */,
-				23AC111F1B1877A300F259B3 /* CFNetwork.framework */,
-				23AC111D1B18779C00F259B3 /* libsqlite3.dylib */,
-				23AC111B1B18777E00F259B3 /* Social.framework */,
-				23AC11191B18777700F259B3 /* WebKit.framework */,
-				9A76A4E71AE8E3EA004A434D /* libz.dylib */,
-				9A76A4E51AE8E3DC004A434D /* CoreFoundation.framework */,
-				9A76A4E31AE8E3D2004A434D /* CoreImage.framework */,
-				9A76A4E11AE8E3C7004A434D /* QuartzCore.framework */,
-				9A76A4DF1AE8E3B6004A434D /* MediaPlayer.framework */,
-				9A76A4DD1AE8E3A3004A434D /* CoreMedia.framework */,
-				9A76A4DB1AE8E395004A434D /* UIKit.framework */,
-				9A76A4D91AE8E38D004A434D /* CoreLocation.framework */,
-				9A76A4D71AE8E381004A434D /* SystemConfiguration.framework */,
-				9A76A4D51AE8E370004A434D /* StoreKit.framework */,
-				9A76A4D31AE8E361004A434D /* MessageUI.framework */,
-				9A76A4CF1AE8E356004A434D /* EventKit.framework */,
-				9A76A4D01AE8E356004A434D /* EventKitUI.framework */,
-				9A76A4CD1AE8E346004A434D /* CoreGraphics.framework */,
-				9A76A4CB1AE8E33E004A434D /* CoreTelephony.framework */,
-				9A76A4C91AE8E333004A434D /* AudioToolbox.framework */,
-				9A76A4C71AE8E320004A434D /* AVFoundation.framework */,
-				9A76A4C51AE8E318004A434D /* AdSupport.framework */,
 				1F79559E98E0F1EF60490B43 /* libPods-iosdemo.a */,
 			);
 			name = Frameworks;
