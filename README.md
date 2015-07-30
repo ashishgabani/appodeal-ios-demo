@@ -14,9 +14,9 @@ Run
 
 The Appodeal SDK is distributed as static library.
 
-- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.0/Appodeal.zip)**
+- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.1/Appodeal.zip)**
 
-The current version of the SDK is 0.4.0
+The current version of the SDK is 0.4.1
 
 ## Integrate
 
