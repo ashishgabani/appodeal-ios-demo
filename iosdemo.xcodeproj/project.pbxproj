@@ -12,32 +12,9 @@
 		11A8A8111B69960B00EE376F /* AppodealHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A8101B69960B00EE376F /* AppodealHubViewController.m */; };
 		11A8A81D1B699A5E00EE376F /* AppodealBannersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A81C1B699A5E00EE376F /* AppodealBannersViewController.m */; };
 		11A8A81F1B69A4C300EE376F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A8A81E1B69A4C300EE376F /* Images.xcassets */; };
-		11A8A8211B69A6B600EE376F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A8A8201B69A6B600EE376F /* MobileCoreServices.framework */; };
-		23AC111A1B18777700F259B3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC11191B18777700F259B3 /* WebKit.framework */; };
-		23AC111C1B18777E00F259B3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC111B1B18777E00F259B3 /* Social.framework */; };
-		23AC111E1B18779C00F259B3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC111D1B18779C00F259B3 /* libsqlite3.dylib */; };
-		23AC11201B1877A300F259B3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC111F1B1877A300F259B3 /* CFNetwork.framework */; };
 		9A76A49E1AE8B1E1004A434D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A49D1AE8B1E1004A434D /* main.m */; };
 		9A76A4A11AE8B1E1004A434D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A4A01AE8B1E1004A434D /* AppDelegate.m */; };
 		9A76A4B81AE8B1E1004A434D /* iosdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A4B71AE8B1E1004A434D /* iosdemoTests.m */; };
-		9A76A4C61AE8E318004A434D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4C51AE8E318004A434D /* AdSupport.framework */; };
-		9A76A4C81AE8E320004A434D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4C71AE8E320004A434D /* AVFoundation.framework */; };
-		9A76A4CA1AE8E333004A434D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4C91AE8E333004A434D /* AudioToolbox.framework */; };
-		9A76A4CC1AE8E33E004A434D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4CB1AE8E33E004A434D /* CoreTelephony.framework */; };
-		9A76A4CE1AE8E346004A434D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4CD1AE8E346004A434D /* CoreGraphics.framework */; };
-		9A76A4D11AE8E356004A434D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4CF1AE8E356004A434D /* EventKit.framework */; };
-		9A76A4D21AE8E356004A434D /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4D01AE8E356004A434D /* EventKitUI.framework */; };
-		9A76A4D41AE8E361004A434D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4D31AE8E361004A434D /* MessageUI.framework */; };
-		9A76A4D61AE8E370004A434D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4D51AE8E370004A434D /* StoreKit.framework */; };
-		9A76A4D81AE8E381004A434D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4D71AE8E381004A434D /* SystemConfiguration.framework */; };
-		9A76A4DA1AE8E38D004A434D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4D91AE8E38D004A434D /* CoreLocation.framework */; };
-		9A76A4DC1AE8E395004A434D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4DB1AE8E395004A434D /* UIKit.framework */; };
-		9A76A4DE1AE8E3A3004A434D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4DD1AE8E3A3004A434D /* CoreMedia.framework */; };
-		9A76A4E01AE8E3B6004A434D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4DF1AE8E3B6004A434D /* MediaPlayer.framework */; };
-		9A76A4E21AE8E3C7004A434D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4E11AE8E3C7004A434D /* QuartzCore.framework */; };
-		9A76A4E41AE8E3D2004A434D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4E31AE8E3D2004A434D /* CoreImage.framework */; };
-		9A76A4E61AE8E3DC004A434D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4E51AE8E3DC004A434D /* CoreFoundation.framework */; };
-		9A76A4E81AE8E3EA004A434D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76A4E71AE8E3EA004A434D /* libz.dylib */; };
 		C41F8A6F83D641FABCF0EE2C /* libPods-iosdemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F79559E98E0F1EF60490B43 /* libPods-iosdemo.a */; };
 /* End PBXBuildFile section */
 
@@ -100,29 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A8A8211B69A6B600EE376F /* MobileCoreServices.framework in Frameworks */,
-				23AC11201B1877A300F259B3 /* CFNetwork.framework in Frameworks */,
-				23AC111E1B18779C00F259B3 /* libsqlite3.dylib in Frameworks */,
-				23AC111C1B18777E00F259B3 /* Social.framework in Frameworks */,
-				23AC111A1B18777700F259B3 /* WebKit.framework in Frameworks */,
-				9A76A4E81AE8E3EA004A434D /* libz.dylib in Frameworks */,
-				9A76A4E61AE8E3DC004A434D /* CoreFoundation.framework in Frameworks */,
-				9A76A4E41AE8E3D2004A434D /* CoreImage.framework in Frameworks */,
-				9A76A4E21AE8E3C7004A434D /* QuartzCore.framework in Frameworks */,
-				9A76A4E01AE8E3B6004A434D /* MediaPlayer.framework in Frameworks */,
-				9A76A4DE1AE8E3A3004A434D /* CoreMedia.framework in Frameworks */,
-				9A76A4DC1AE8E395004A434D /* UIKit.framework in Frameworks */,
-				9A76A4DA1AE8E38D004A434D /* CoreLocation.framework in Frameworks */,
-				9A76A4D81AE8E381004A434D /* SystemConfiguration.framework in Frameworks */,
-				9A76A4D61AE8E370004A434D /* StoreKit.framework in Frameworks */,
-				9A76A4D41AE8E361004A434D /* MessageUI.framework in Frameworks */,
-				9A76A4D11AE8E356004A434D /* EventKit.framework in Frameworks */,
-				9A76A4D21AE8E356004A434D /* EventKitUI.framework in Frameworks */,
-				9A76A4CE1AE8E346004A434D /* CoreGraphics.framework in Frameworks */,
-				9A76A4CC1AE8E33E004A434D /* CoreTelephony.framework in Frameworks */,
-				9A76A4CA1AE8E333004A434D /* AudioToolbox.framework in Frameworks */,
-				9A76A4C81AE8E320004A434D /* AVFoundation.framework in Frameworks */,
-				9A76A4C61AE8E318004A434D /* AdSupport.framework in Frameworks */,
 				C41F8A6F83D641FABCF0EE2C /* libPods-iosdemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
