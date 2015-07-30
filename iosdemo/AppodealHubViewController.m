@@ -8,9 +8,9 @@
 
 #import "AppodealHubViewController.h"
 
-//#import <Appodeal/Appodeal.h>
+#import <Appodeal/Appodeal.h>
 
-@interface AppodealHubViewController ()// <AppodealInterstitialDelegate,AppodealVideoDelegate>
+@interface AppodealHubViewController () <AppodealInterstitialDelegate,AppodealVideoDelegate>
 
 @end
 
@@ -20,10 +20,10 @@
     [super viewDidLoad];
     
     //set Interstitial Delegate
-    //[Appodeal setInterstitialDelegate:self];
+    [Appodeal setInterstitialDelegate:self];
     
     //set Video Delegate
-    //[Appodeal setVideoDelegate:self];
+    [Appodeal setVideoDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,12 +35,12 @@
     
     if (indexPath.row == 0) {
         // show full screen banner
-        //[Appodeal showAd:AppodealShowStyleInterstitial rootViewController:self];
+        [Appodeal showAd:AppodealShowStyleInterstitial rootViewController:self];
     }
 
     if (indexPath.row == 1) {
         // show video ads
-        //[Appodeal showAd:AppodealShowStyleVideo rootViewController:self];
+        [Appodeal showAd:AppodealShowStyleVideo rootViewController:self];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

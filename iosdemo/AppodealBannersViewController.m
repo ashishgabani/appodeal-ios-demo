@@ -8,9 +8,9 @@
 
 #import "AppodealBannersViewController.h"
 
-//#import <Appodeal/Appodeal.h>
+#import <Appodeal/Appodeal.h>
 
-@interface AppodealBannersViewController () //<AppodealBannerDelegate>
+@interface AppodealBannersViewController () <AppodealBannerDelegate>
 
 @end
 
@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     //set banner delegate
-    //[Appodeal setBannerDelegate:self];
+    [Appodeal setBannerDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,31 +29,31 @@
 
 - (IBAction)showBannerTop:(id)sender {
     //show banner in top
-    //[Appodeal showAd:AppodealShowStyleBannerTop rootViewController:self];
+    [Appodeal showAd:AppodealShowStyleBannerTop rootViewController:self];
 }
 
 - (IBAction)showBannerCenter:(id)sender {
     //show banner in center
-    //[Appodeal showAd:AppodealShowStyleBannerCenter rootViewController:self];
+    [Appodeal showAd:AppodealShowStyleBannerCenter rootViewController:self];
 }
 
 - (IBAction)showBannerBottom:(id)sender {
     //show banner in bottom
-    //[Appodeal showAd:AppodealShowStyleBannerBottom rootViewController:self];
+    [Appodeal showAd:AppodealShowStyleBannerBottom rootViewController:self];
 }
 
 - (IBAction)hideBanner:(id)sender {
     //hide banner
-    //[Appodeal hideBanner];
+    [Appodeal hideBanner];
 }
 
 
 - (IBAction)showCustomSize:(id)sender {
-    //[[Appodeal banner] removeFromSuperview];
+    [[Appodeal banner] removeFromSuperview];
     
-    //[[Appodeal banner] setFrame:CGRectMake(0.0f, 200.0f, 320.0f, 100.0f)];
+    [[Appodeal banner] setFrame:CGRectMake(0.0f, 200.0f, 320.0f, 100.0f)];
     
-    //[self.view addSubview:[Appodeal banner]];
+    [self.view addSubview:[Appodeal banner]];
 }
 
 
