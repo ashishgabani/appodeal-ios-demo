@@ -8,7 +8,7 @@ source 'git@github.com:appodeal/CocoaPods.git'
 
 target 'iosdemo' do
 
-pod 'Appodeal', '~> 0.4.0’
+pod 'Appodeal', '~> 0.4.1’
 
 end
 
