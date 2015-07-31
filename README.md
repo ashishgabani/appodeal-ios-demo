@@ -31,7 +31,7 @@ iOS 7.0 and up
 
 0.4.1 Change Log:
 ----------------------------------
-* new adnetwork implementation - Target Mail.ru (Banners, Interstitials), Adcolony & Vungle (Video), Inmobi (Banner & Interstitials
+* new adnetwork implementation - Target Mail.ru (Banners, Interstitials), Adcolony & Vungle (Video), Inmobi (Banner & Interstitials)
 * improvement Banner integration
 * support iPAD (vertical orientation)
 * skip/non skip video
