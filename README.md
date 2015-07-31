@@ -26,11 +26,11 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 
 iOS 7.0 and up
 
-0.4.0 Change Log:
+0.4.1 Change Log:
 ----------------------------------
 * new adnetwork implementation - Target Mail.ru (Banners, Interstitials), Adcolony & Vungle (Video), Inmobi (Banner & Interstitials
 * improvement Banner integration
-* support iPAD
+* support iPAD (vertical orientation)
 * skip/non skip video
 * preroll video
 * apps for kids support
