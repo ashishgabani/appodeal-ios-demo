@@ -1,6 +1,0 @@
-framework module AppodealAds {
-  umbrella header "Appodeal.h"
-
-  export *
-  module * { export * }
-}
