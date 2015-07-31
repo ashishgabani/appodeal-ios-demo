@@ -14,9 +14,9 @@ Run
 
 The Appodeal SDK is distributed as static library.
 
-- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.0/Appodeal.zip)**
+- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.1/Appodeal.zip)**
 
-The current version of the SDK is 0.4.0
+The current version of the SDK is 0.4.1
 
 ## Integrate
 
@@ -26,11 +26,11 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 
 iOS 7.0 and up
 
-0.4.0 Change Log:
+0.4.1 Change Log:
 ----------------------------------
 * new adnetwork implementation - Target Mail.ru (Banners, Interstitials), Adcolony & Vungle (Video), Inmobi (Banner & Interstitials
 * improvement Banner integration
-* support iPAD
+* support iPAD (vertical orientation)
 * skip/non skip video
 * preroll video
 * apps for kids support
