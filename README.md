@@ -6,11 +6,11 @@ Sign up for an account at [http://appodeal.com/](http://appodeal.com/).
 
 ## Run
 
-Clone project 
-Install Cocoapods if you need
-Pod install
-Open iosdemo.xcworkspace   
-Change AppKey and Bundle ID 
+Clone project    
+Install Cocoapods if you need    
+Pod install    
+Open iosdemo.xcworkspace    
+Change AppKey and Bundle ID    
 Run  
 
 ## Download
