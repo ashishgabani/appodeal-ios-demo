@@ -33,7 +33,6 @@ typedef NS_ENUM(NSInteger, AppodealShowStyle) {
     AppodealShowStyleBannerBottom
 };
 
-
 @interface Appodeal : NSObject
 
 + (instancetype)alloc NS_UNAVAILABLE;
@@ -51,7 +50,6 @@ typedef NS_ENUM(NSInteger, AppodealShowStyle) {
 + (void)setInterstitialDelegate:(id<AppodealInterstitialDelegate>)interstitialDelegate;
 + (void)setBannerDelegate:(id<AppodealBannerDelegate>)bannerDelegate;
 + (void)setVideoDelegate:(id<AppodealVideoDelegate>)videoDelegate;
-
 
 + (UIView *)banner;
 

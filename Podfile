@@ -1,6 +1,5 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '6.0'
-
+platform :ios, '7.0'
 
 source 'git@github.com:CocoaPods/Specs.git'
 source 'git@github.com:appodeal/CocoaPods.git'
@@ -8,7 +7,7 @@ source 'git@github.com:appodeal/CocoaPods.git'
 
 target 'iosdemo' do
 
-pod 'Appodeal', '~> 0.4.1’
+pod 'Appodeal', '~> 0.4.0’
 
 end
 

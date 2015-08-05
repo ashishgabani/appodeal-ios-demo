@@ -25,3 +25,9 @@ FOUNDATION_EXPORT NSString *const kAppodealVungleNetworkName;
 FOUNDATION_EXPORT NSString *const kAppodealSmaatoNetworkName;
 
 FOUNDATION_EXPORT NSString * AppodealPrettyNetworkName(NSString *networkName);
+
+FOUNDATION_EXPORT NSArray * AppodealAllNetworkNames(void);
+
+FOUNDATION_EXPORT NSArray * AppodealBannerNetworksNames(void);
+FOUNDATION_EXPORT NSArray * AppodealInterstitialNetworksNames(void);
+FOUNDATION_EXPORT NSArray * AppodealVideoNetworksNames(void);
