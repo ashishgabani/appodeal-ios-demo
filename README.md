@@ -4,6 +4,9 @@ Thanks for taking a look at Appodeal! We take pride in having an easy-to-use, fl
 
 Sign up for an account at [http://appodeal.com/](http://appodeal.com/).
 
+If you encounter any issues, do not hesitate to contact our happy support team
+at [ios@appodeal.com](mailto:ios@appodeal.com).
+
 ## Run
 
 Clone project    
@@ -34,7 +37,7 @@ iOS 7.0 and up
 0.4.2 Change Log:
 ----------------------------------
 * banner for iPad (horizontal orientation)   
-* 
+* stability improovment
 
 0.4.1 Change Log:
 ----------------------------------
