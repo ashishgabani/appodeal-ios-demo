@@ -8,7 +8,9 @@ Sign up for an account at [http://appodeal.com/](http://appodeal.com/).
 
 Clone project    
 Install Cocoapods if you need    
-Pod install    
+```
+sudo gem install cocoapods
+```
 Open iosdemo.xcworkspace    
 Change AppKey and Bundle ID    
 Run  
@@ -17,9 +19,9 @@ Run
 
 The Appodeal SDK is distributed as static library.
 
-- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.1/Appodeal.zip)**
+- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.2/Appodeal.zip)**
 
-The current version of the SDK is 0.4.1
+The current version of the SDK is 0.4.2
 
 ## Integrate
 
@@ -28,6 +30,10 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 ## Requirements
 
 iOS 7.0 and up
+
+0.4.2 Change Log:
+----------------------------------
+* Stability :)
 
 0.4.1 Change Log:
 ----------------------------------
