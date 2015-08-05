@@ -7,7 +7,7 @@ Sign up for an account at [http://appodeal.com/](http://appodeal.com/).
 ## Run
 
 Clone project    
-Install Cocoapods if you need    
+* [Install CocoaPods](http://guides.cocoapods.org/using/getting-started.html) to simplify dependency management
 ```
 sudo gem install cocoapods
 ```
