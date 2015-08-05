@@ -33,15 +33,15 @@ iOS 7.0 and up
 
 0.4.2 Change Log:
 ----------------------------------
-* Stability :)
+* banner for iPad (horizontal orientation)   
+* 
 
 0.4.1 Change Log:
 ----------------------------------
 * new adnetwork implementation - Target Mail.ru (Banners, Interstitials), Adcolony & Vungle (Video), Inmobi (Banner & Interstitials)
 * improvement Banner integration
 * support iPAD (vertical orientation)
-* skip/non skip video
-* preroll video
+* skipppable/nonskippable video
 * apps for kids support
 
 0.3.6 Change Log:
