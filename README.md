@@ -6,14 +6,14 @@ Sign up for an account at [http://appodeal.com/](http://appodeal.com/).
 
 ## Run
 
-Clone project    
+* Clone project    
 * [Install CocoaPods](http://guides.cocoapods.org/using/getting-started.html) to simplify dependency management
 ```
 sudo gem install cocoapods
 ```
-Open iosdemo.xcworkspace    
-Change AppKey and Bundle ID    
-Run  
+* Open iosdemo.xcworkspace    
+* Change AppKey and Bundle ID    
+* Run  
 
 ## Download
 
