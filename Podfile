@@ -11,7 +11,3 @@ pod 'Appodeal', '~> 0.4.0’
 
 end
 
-target 'iosdemoTests' do
-
-end
-
