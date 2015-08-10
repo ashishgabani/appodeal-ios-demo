@@ -14,6 +14,7 @@ Clone project
 ```
 sudo gem install cocoapods
 ```
+Use [github help] (https://help.github.com/articles/generating-ssh-keys/) to add ssh key   
 Open iosdemo.xcworkspace    
 Change AppKey and Bundle ID    
 Run  
