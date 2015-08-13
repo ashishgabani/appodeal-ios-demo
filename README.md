@@ -23,9 +23,9 @@ Run
 
 The Appodeal SDK is distributed as static library.
 
-- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.2/Appodeal.zip)**
+- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.3/Appodeal.zip)**
 
-The current version of the SDK is 0.4.2
+The current version of the SDK is 0.4.3
 
 ## Integrate
 
@@ -34,6 +34,15 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 ## Requirements
 
 iOS 7.0 and up
+
+0.4.3 Change Log:
+----------------------------------
+
+* Facebook Audience Network added (Interstitials)   
+* Smaato added (Banner and Interstitials)   
+* Fix Amazon banner view   
+* Public methods added   
+* Fixes MRAID clicks handling   
 
 0.4.2 Change Log:
 ----------------------------------
