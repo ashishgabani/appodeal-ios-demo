@@ -49,6 +49,8 @@ sudo gem install cocoapods
 
 [Back to top](https://github.com/appodeal/appodeal-ios-demo#top)
 
+# Appodeal iOS SDK
+
 ## Download
 
 The Appodeal SDK is distributed as static library.
