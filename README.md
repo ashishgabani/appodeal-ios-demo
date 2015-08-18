@@ -6,7 +6,7 @@ Sign up for an account at [http://appodeal.com/](http://appodeal.com/).
 
 ## Integrate
 
-**Integration instructions** are available on the [WIKI](https://github.com/appodeal/appodeal-ios-demo/wiki).
+Integration instructions** are available on the **[wiki](https://github.com/appodeal/appodeal-ios-demo/wiki).**
 
 If you encounter any issues, do not hesitate to contact our happy support team
 at [ios@appodeal.com](mailto:ios@appodeal.com).
