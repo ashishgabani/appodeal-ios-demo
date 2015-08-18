@@ -12,6 +12,7 @@
 		11A8A8111B69960B00EE376F /* AppodealHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A8101B69960B00EE376F /* AppodealHubViewController.m */; };
 		11A8A81D1B699A5E00EE376F /* AppodealBannersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A81C1B699A5E00EE376F /* AppodealBannersViewController.m */; };
 		11A8A81F1B69A4C300EE376F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A8A81E1B69A4C300EE376F /* Images.xcassets */; };
+		5E310387F9C98A6806303177 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2C3CFCA8347E8BB06E8821 /* libPods.a */; };
 		9A76A49E1AE8B1E1004A434D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A49D1AE8B1E1004A434D /* main.m */; };
 		9A76A4A11AE8B1E1004A434D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A4A01AE8B1E1004A434D /* AppDelegate.m */; };
 		C41F8A6F83D641FABCF0EE2C /* libPods-iosdemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F79559E98E0F1EF60490B43 /* libPods-iosdemo.a */; };
@@ -23,6 +24,7 @@
 		11A8A81B1B699A5E00EE376F /* AppodealBannersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppodealBannersViewController.h; sourceTree = "<group>"; };
 		11A8A81C1B699A5E00EE376F /* AppodealBannersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppodealBannersViewController.m; sourceTree = "<group>"; };
 		11A8A81E1B69A4C300EE376F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1D2C3CFCA8347E8BB06E8821 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F79559E98E0F1EF60490B43 /* libPods-iosdemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosdemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAFEFF135643A925B52E5E0 /* Pods-iosdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosdemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosdemo/Pods-iosdemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9A76A4981AE8B1E1004A434D /* iosdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C41F8A6F83D641FABCF0EE2C /* libPods-iosdemo.a in Frameworks */,
+				5E310387F9C98A6806303177 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				1F79559E98E0F1EF60490B43 /* libPods-iosdemo.a */,
+				1D2C3CFCA8347E8BB06E8821 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,7 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosdemo/Pods-iosdemo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

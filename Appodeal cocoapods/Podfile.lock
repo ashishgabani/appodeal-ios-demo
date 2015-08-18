@@ -67,7 +67,7 @@ PODS:
   - VungleAdvertiserSDK (3.1.2)
 
 DEPENDENCIES:
-  - Appodeal (~> 0.4.0)
+  - Appodeal (~> 0.4.2)
 
 SPEC CHECKSUMS:
   AdColony: da5eeb1bb946f9f806917b9d9a27ea99542a475d
@@ -85,7 +85,7 @@ SPEC CHECKSUMS:
   mopub-ios-sdk: 74c66841809637f750b6ecba93e8c131da3969c6
   MyTarget: e6452808dc2b19257b43bcb7f0bea96aeadb2e9a
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
-  UnityAds: 1f54f474fc705f940b3a53685e6ae44e4638c2a6
+  UnityAds: 2eb8cb033f38953fcda04408098cb2d18cab3795
   VungleAdvertiserSDK: 31f17fea4935d0879eedfd7cebbeecb411f8a879
 
 COCOAPODS: 0.38.2
