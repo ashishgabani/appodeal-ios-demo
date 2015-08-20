@@ -16,46 +16,51 @@
 
 @implementation AppodealBannersViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    //set banner delegate
-    [Appodeal setBannerDelegate:self];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)showBannerTop:(id)sender {
-    //show banner in top
-    [Appodeal showAd:AppodealShowStyleBannerTop rootViewController:self];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    UIEdgeInsets insets = UIEdgeInsetsMake(50.0f, 0.0f, 0.0f, 0.0f);
+    self.tableView.contentInset = insets;
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemCancel target:self action:@selector(hide:)];
+    rightBarButtonItem.title = @"Hide";
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 }
 
-- (IBAction)showBannerCenter:(id)sender {
-    //show banner in center
-    [Appodeal showAd:AppodealShowStyleBannerCenter rootViewController:self];
+-(void) hide: (id) sender
+{
+    [Appodeal hideBanner];
 }
-
-- (IBAction)showBannerBottom:(id)sender {
-    //show banner in bottom
-    [Appodeal showAd:AppodealShowStyleBannerBottom rootViewController:self];
-}
-
-- (IBAction)hideBanner:(id)sender {
-    //hide banner
+-(void) viewWillDisappear:(BOOL)animated
+{
     [Appodeal hideBanner];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if ([indexPath section] == 0) {
+            AppodealShowStyle style = (AppodealShowStyle)cell.tag;
+            [Appodeal showAd:style rootViewController:self.parentViewController];
+    }
+    if ([indexPath section] == 1) {
+        CGFloat height = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? 50.0f : 90.0f;
+        CGRect frame = CGRectMake(0.0f, 0.0f, 320.0f, height);
+        
+        [Appodeal hideBanner];
+        tableView.tableFooterView = nil;
+        
+        UIView *banner = [Appodeal banner];
+        [banner setFrame:frame];
+        
+        tableView.tableFooterView = banner;
+    }
 
-- (IBAction)showCustomSize:(id)sender {
-    [[Appodeal banner] removeFromSuperview];
     
-    [[Appodeal banner] setFrame:CGRectMake(0.0f, 200.0f, 320.0f, 100.0f)];
-    
-    [self.view addSubview:[Appodeal banner]];
 }
-
 
 #pragma mark - AppodealBannerDelegate
 

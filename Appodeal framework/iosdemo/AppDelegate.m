@@ -20,27 +20,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     //Specify AppodealAppKey in Info.plist!
-    NSString *apiKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"AppodealAppKey"];
-    NSAssert(apiKey, @"Specify AppodealAppKey in Info.plist!");
-    
+    // NSAssert(apiKey, @"Specify AppodealAppKey in Info.plist!");
+    // NSString* apiKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"AppodealAppKey"];
     //init with api key - all ad types and autocache enabled
-    [Appodeal initializeWithApiKey:apiKey];
-    [Appodeal setDebugEnabled:YES];
-    
+    //  [Appodeal initializeWithApiKey:apiKey];
+    //[Appodeal setDebugEnabled:YES];
     //set debug mode
-    [Appodeal setDebugEnabled:YES];
-    
-    
+    //[Appodeal setDebugEnabled:YES];
     //set user metadata
-    [Appodeal setUserAge:23];
-    [Appodeal setUserGender:AppodealUserGenderMale];
-    
+    //[Appodeal setUserAge:23];
+    //[Appodeal setUserGender:AppodealUserGenderMale];
     //block adnetwork and types of ad
     //[Appodeal disableNetworkForAdType:AppodealAdTypeVideo name:kAppodealAdColonyNetworkName];
     //[Appodeal disableNetworkForAdType:AppodealAdTypeBanner name:kAppodealAdMobNetworkName];
-    
     [self configureAppearance];
-
     return YES;
 }
 

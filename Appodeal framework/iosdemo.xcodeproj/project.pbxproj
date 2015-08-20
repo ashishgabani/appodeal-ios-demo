@@ -34,27 +34,28 @@
 		06133BC81B83317B0074DE7A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06133BC71B83317B0074DE7A /* WebKit.framework */; };
 		06133BC91B8332DB0074DE7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A76A4A51AE8B1E1004A434D /* Main.storyboard */; };
 		06133BCA1B8332E30074DE7A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A76A4AA1AE8B1E1004A434D /* LaunchScreen.xib */; };
-		06C5D49B1B8335700074644B /* Appodeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5D4891B8335700074644B /* Appodeal.framework */; };
-		06C5D49C1B8335700074644B /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D48B1B8335700074644B /* __vungle.db */; };
-		06C5D49D1B8335700074644B /* appodeal_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D48C1B8335700074644B /* appodeal_pattern.png */; };
-		06C5D49E1B8335700074644B /* appodeal_pattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D48D1B8335700074644B /* appodeal_pattern@2x.png */; };
-		06C5D4A01B8335700074644B /* MPAdBrowserController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D48F1B8335700074644B /* MPAdBrowserController.nib */; };
-		06C5D4A11B8335700074644B /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4901B8335700074644B /* MPCloseButtonX.png */; };
-		06C5D4A21B8335700074644B /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4911B8335700074644B /* MPCloseButtonX@2x.png */; };
-		06C5D4A31B8335700074644B /* MPCloseButtonX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4921B8335700074644B /* MPCloseButtonX@3x.png */; };
-		06C5D4A41B8335700074644B /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4931B8335700074644B /* MRAID.bundle */; };
-		06C5D4A51B8335700074644B /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4941B8335700074644B /* SVProgressHUD.bundle */; };
-		06C5D4A61B8335700074644B /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4951B8335700074644B /* UnityAds.bundle */; };
-		06C5D4A71B8335700074644B /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4961B8335700074644B /* vg_close.png */; };
-		06C5D4A81B8335700074644B /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4971B8335700074644B /* vg_cta.png */; };
-		06C5D4A91B8335700074644B /* vg_mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4981B8335700074644B /* vg_mute_off.png */; };
-		06C5D4AA1B8335700074644B /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D4991B8335700074644B /* vg_mute_on.png */; };
-		06C5D4AB1B8335700074644B /* vg_privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D49A1B8335700074644B /* vg_privacy.png */; };
 		11A8A8111B69960B00EE376F /* AppodealHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A8101B69960B00EE376F /* AppodealHubViewController.m */; };
 		11A8A81D1B699A5E00EE376F /* AppodealBannersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A81C1B699A5E00EE376F /* AppodealBannersViewController.m */; };
 		11A8A81F1B69A4C300EE376F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A8A81E1B69A4C300EE376F /* Images.xcassets */; };
 		9A76A49E1AE8B1E1004A434D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A49D1AE8B1E1004A434D /* main.m */; };
 		9A76A4A11AE8B1E1004A434D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76A4A01AE8B1E1004A434D /* AppDelegate.m */; };
+		CEDDF0CB1B86269300439FD6 /* Appodeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDDF0BA1B86269300439FD6 /* Appodeal.framework */; };
+		CEDDF0CC1B86269300439FD6 /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0BC1B86269300439FD6 /* __vungle.db */; };
+		CEDDF0CD1B86269300439FD6 /* appodeal_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0BD1B86269300439FD6 /* appodeal_pattern.png */; };
+		CEDDF0CE1B86269300439FD6 /* appodeal_pattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0BE1B86269300439FD6 /* appodeal_pattern@2x.png */; };
+		CEDDF0CF1B86269300439FD6 /* MPAdBrowserController.nib in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0BF1B86269300439FD6 /* MPAdBrowserController.nib */; };
+		CEDDF0D01B86269300439FD6 /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C01B86269300439FD6 /* MPCloseButtonX.png */; };
+		CEDDF0D11B86269300439FD6 /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C11B86269300439FD6 /* MPCloseButtonX@2x.png */; };
+		CEDDF0D21B86269300439FD6 /* MPCloseButtonX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C21B86269300439FD6 /* MPCloseButtonX@3x.png */; };
+		CEDDF0D31B86269300439FD6 /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C31B86269300439FD6 /* MRAID.bundle */; };
+		CEDDF0D41B86269300439FD6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C41B86269300439FD6 /* SVProgressHUD.bundle */; };
+		CEDDF0D51B86269300439FD6 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C51B86269300439FD6 /* UnityAds.bundle */; };
+		CEDDF0D61B86269300439FD6 /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C61B86269300439FD6 /* vg_close.png */; };
+		CEDDF0D71B86269300439FD6 /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C71B86269300439FD6 /* vg_cta.png */; };
+		CEDDF0D81B86269300439FD6 /* vg_mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C81B86269300439FD6 /* vg_mute_off.png */; };
+		CEDDF0D91B86269300439FD6 /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0C91B86269300439FD6 /* vg_mute_on.png */; };
+		CEDDF0DA1B86269300439FD6 /* vg_privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDDF0CA1B86269300439FD6 /* vg_privacy.png */; };
+		CEDDF0DD1B86293200439FD6 /* AppodealAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDDF0DC1B86293200439FD6 /* AppodealAdsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,22 +84,6 @@
 		06133BC31B83316E0074DE7A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		06133BC51B8331750074DE7A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06133BC71B83317B0074DE7A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		06C5D4891B8335700074644B /* Appodeal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Appodeal.framework; sourceTree = "<group>"; };
-		06C5D48B1B8335700074644B /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
-		06C5D48C1B8335700074644B /* appodeal_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appodeal_pattern.png; sourceTree = "<group>"; };
-		06C5D48D1B8335700074644B /* appodeal_pattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appodeal_pattern@2x.png"; sourceTree = "<group>"; };
-		06C5D48F1B8335700074644B /* MPAdBrowserController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = MPAdBrowserController.nib; sourceTree = "<group>"; };
-		06C5D4901B8335700074644B /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
-		06C5D4911B8335700074644B /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
-		06C5D4921B8335700074644B /* MPCloseButtonX@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@3x.png"; sourceTree = "<group>"; };
-		06C5D4931B8335700074644B /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
-		06C5D4941B8335700074644B /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		06C5D4951B8335700074644B /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
-		06C5D4961B8335700074644B /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
-		06C5D4971B8335700074644B /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
-		06C5D4981B8335700074644B /* vg_mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_off.png; sourceTree = "<group>"; };
-		06C5D4991B8335700074644B /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
-		06C5D49A1B8335700074644B /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
 		11A8A80F1B69960B00EE376F /* AppodealHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppodealHubViewController.h; sourceTree = "<group>"; };
 		11A8A8101B69960B00EE376F /* AppodealHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppodealHubViewController.m; sourceTree = "<group>"; };
 		11A8A81B1B699A5E00EE376F /* AppodealBannersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppodealBannersViewController.h; sourceTree = "<group>"; };
@@ -111,6 +96,24 @@
 		9A76A4A01AE8B1E1004A434D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9A76A4A61AE8B1E1004A434D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A76A4AB1AE8B1E1004A434D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CEDDF0BA1B86269300439FD6 /* Appodeal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Appodeal.framework; sourceTree = "<group>"; };
+		CEDDF0BC1B86269300439FD6 /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
+		CEDDF0BD1B86269300439FD6 /* appodeal_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appodeal_pattern.png; sourceTree = "<group>"; };
+		CEDDF0BE1B86269300439FD6 /* appodeal_pattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appodeal_pattern@2x.png"; sourceTree = "<group>"; };
+		CEDDF0BF1B86269300439FD6 /* MPAdBrowserController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = MPAdBrowserController.nib; sourceTree = "<group>"; };
+		CEDDF0C01B86269300439FD6 /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
+		CEDDF0C11B86269300439FD6 /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
+		CEDDF0C21B86269300439FD6 /* MPCloseButtonX@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@3x.png"; sourceTree = "<group>"; };
+		CEDDF0C31B86269300439FD6 /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
+		CEDDF0C41B86269300439FD6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		CEDDF0C51B86269300439FD6 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
+		CEDDF0C61B86269300439FD6 /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
+		CEDDF0C71B86269300439FD6 /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
+		CEDDF0C81B86269300439FD6 /* vg_mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_off.png; sourceTree = "<group>"; };
+		CEDDF0C91B86269300439FD6 /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
+		CEDDF0CA1B86269300439FD6 /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
+		CEDDF0DB1B86293200439FD6 /* AppodealAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppodealAdsViewController.h; sourceTree = "<group>"; };
+		CEDDF0DC1B86293200439FD6 /* AppodealAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppodealAdsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +123,7 @@
 			files = (
 				06133BC81B83317B0074DE7A /* WebKit.framework in Frameworks */,
 				06133BC61B8331750074DE7A /* UIKit.framework in Frameworks */,
-				06C5D49B1B8335700074644B /* Appodeal.framework in Frameworks */,
+				CEDDF0CB1B86269300439FD6 /* Appodeal.framework in Frameworks */,
 				06133BC41B83316E0074DE7A /* SystemConfiguration.framework in Frameworks */,
 				06133BC21B8331640074DE7A /* StoreKit.framework in Frameworks */,
 				06133BC01B83315E0074DE7A /* Social.framework in Frameworks */,
@@ -150,28 +153,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06C5D48A1B8335700074644B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				06C5D48B1B8335700074644B /* __vungle.db */,
-				06C5D48C1B8335700074644B /* appodeal_pattern.png */,
-				06C5D48D1B8335700074644B /* appodeal_pattern@2x.png */,
-				06C5D48F1B8335700074644B /* MPAdBrowserController.nib */,
-				06C5D4901B8335700074644B /* MPCloseButtonX.png */,
-				06C5D4911B8335700074644B /* MPCloseButtonX@2x.png */,
-				06C5D4921B8335700074644B /* MPCloseButtonX@3x.png */,
-				06C5D4931B8335700074644B /* MRAID.bundle */,
-				06C5D4941B8335700074644B /* SVProgressHUD.bundle */,
-				06C5D4951B8335700074644B /* UnityAds.bundle */,
-				06C5D4961B8335700074644B /* vg_close.png */,
-				06C5D4971B8335700074644B /* vg_cta.png */,
-				06C5D4981B8335700074644B /* vg_mute_off.png */,
-				06C5D4991B8335700074644B /* vg_mute_on.png */,
-				06C5D49A1B8335700074644B /* vg_privacy.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		9A76A48F1AE8B1E1004A434D = {
 			isa = PBXGroup;
 			children = (
@@ -192,14 +173,16 @@
 		9A76A49A1AE8B1E1004A434D /* iosdemo */ = {
 			isa = PBXGroup;
 			children = (
-				06C5D4891B8335700074644B /* Appodeal.framework */,
-				06C5D48A1B8335700074644B /* Resources */,
-				9A76A49F1AE8B1E1004A434D /* AppDelegate.h */,
+				CEDDF0BA1B86269300439FD6 /* Appodeal.framework */,
+				CEDDF0BB1B86269300439FD6 /* Resources */,
 				9A76A4A01AE8B1E1004A434D /* AppDelegate.m */,
+				9A76A49F1AE8B1E1004A434D /* AppDelegate.h */,
 				11A8A80F1B69960B00EE376F /* AppodealHubViewController.h */,
 				11A8A8101B69960B00EE376F /* AppodealHubViewController.m */,
 				11A8A81B1B699A5E00EE376F /* AppodealBannersViewController.h */,
 				11A8A81C1B699A5E00EE376F /* AppodealBannersViewController.m */,
+				CEDDF0DB1B86293200439FD6 /* AppodealAdsViewController.h */,
+				CEDDF0DC1B86293200439FD6 /* AppodealAdsViewController.m */,
 				9A76A4A51AE8B1E1004A434D /* Main.storyboard */,
 				9A76A4AA1AE8B1E1004A434D /* LaunchScreen.xib */,
 				11A8A81E1B69A4C300EE376F /* Images.xcassets */,
@@ -247,6 +230,28 @@
 				06133B971B8330A90074DE7A /* AdSupport.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEDDF0BB1B86269300439FD6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEDDF0BC1B86269300439FD6 /* __vungle.db */,
+				CEDDF0BD1B86269300439FD6 /* appodeal_pattern.png */,
+				CEDDF0BE1B86269300439FD6 /* appodeal_pattern@2x.png */,
+				CEDDF0BF1B86269300439FD6 /* MPAdBrowserController.nib */,
+				CEDDF0C01B86269300439FD6 /* MPCloseButtonX.png */,
+				CEDDF0C11B86269300439FD6 /* MPCloseButtonX@2x.png */,
+				CEDDF0C21B86269300439FD6 /* MPCloseButtonX@3x.png */,
+				CEDDF0C31B86269300439FD6 /* MRAID.bundle */,
+				CEDDF0C41B86269300439FD6 /* SVProgressHUD.bundle */,
+				CEDDF0C51B86269300439FD6 /* UnityAds.bundle */,
+				CEDDF0C61B86269300439FD6 /* vg_close.png */,
+				CEDDF0C71B86269300439FD6 /* vg_cta.png */,
+				CEDDF0C81B86269300439FD6 /* vg_mute_off.png */,
+				CEDDF0C91B86269300439FD6 /* vg_mute_on.png */,
+				CEDDF0CA1B86269300439FD6 /* vg_privacy.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,22 +313,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				06133BCA1B8332E30074DE7A /* LaunchScreen.xib in Resources */,
-				06C5D4A81B8335700074644B /* vg_cta.png in Resources */,
-				06C5D4AA1B8335700074644B /* vg_mute_on.png in Resources */,
-				06C5D4A21B8335700074644B /* MPCloseButtonX@2x.png in Resources */,
-				06C5D4A91B8335700074644B /* vg_mute_off.png in Resources */,
-				06C5D4A11B8335700074644B /* MPCloseButtonX.png in Resources */,
-				06C5D4A61B8335700074644B /* UnityAds.bundle in Resources */,
-				06C5D4A01B8335700074644B /* MPAdBrowserController.nib in Resources */,
-				06C5D49E1B8335700074644B /* appodeal_pattern@2x.png in Resources */,
+				CEDDF0CE1B86269300439FD6 /* appodeal_pattern@2x.png in Resources */,
 				06133BC91B8332DB0074DE7A /* Main.storyboard in Resources */,
-				06C5D4AB1B8335700074644B /* vg_privacy.png in Resources */,
-				06C5D4A31B8335700074644B /* MPCloseButtonX@3x.png in Resources */,
-				06C5D4A51B8335700074644B /* SVProgressHUD.bundle in Resources */,
-				06C5D49D1B8335700074644B /* appodeal_pattern.png in Resources */,
-				06C5D4A41B8335700074644B /* MRAID.bundle in Resources */,
-				06C5D49C1B8335700074644B /* __vungle.db in Resources */,
-				06C5D4A71B8335700074644B /* vg_close.png in Resources */,
+				CEDDF0D81B86269300439FD6 /* vg_mute_off.png in Resources */,
+				CEDDF0D51B86269300439FD6 /* UnityAds.bundle in Resources */,
+				CEDDF0DA1B86269300439FD6 /* vg_privacy.png in Resources */,
+				CEDDF0CF1B86269300439FD6 /* MPAdBrowserController.nib in Resources */,
+				CEDDF0D11B86269300439FD6 /* MPCloseButtonX@2x.png in Resources */,
+				CEDDF0D71B86269300439FD6 /* vg_cta.png in Resources */,
+				CEDDF0D01B86269300439FD6 /* MPCloseButtonX.png in Resources */,
+				CEDDF0D61B86269300439FD6 /* vg_close.png in Resources */,
+				CEDDF0D31B86269300439FD6 /* MRAID.bundle in Resources */,
+				CEDDF0D91B86269300439FD6 /* vg_mute_on.png in Resources */,
+				CEDDF0D41B86269300439FD6 /* SVProgressHUD.bundle in Resources */,
+				CEDDF0D21B86269300439FD6 /* MPCloseButtonX@3x.png in Resources */,
+				CEDDF0CD1B86269300439FD6 /* appodeal_pattern.png in Resources */,
+				CEDDF0CC1B86269300439FD6 /* __vungle.db in Resources */,
 				11A8A81F1B69A4C300EE376F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +342,7 @@
 			files = (
 				11A8A81D1B699A5E00EE376F /* AppodealBannersViewController.m in Sources */,
 				9A76A4A11AE8B1E1004A434D /* AppDelegate.m in Sources */,
+				CEDDF0DD1B86293200439FD6 /* AppodealAdsViewController.m in Sources */,
 				9A76A49E1AE8B1E1004A434D /* main.m in Sources */,
 				11A8A8111B69960B00EE376F /* AppodealHubViewController.m in Sources */,
 			);

@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppodealBannersViewController : UIViewController
-
+@interface AppodealBannersViewController : UITableViewController
 @end

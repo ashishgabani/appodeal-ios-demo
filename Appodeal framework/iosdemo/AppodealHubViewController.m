@@ -7,10 +7,19 @@
 //
 
 #import "AppodealHubViewController.h"
-
+#import "AppodealAdsViewController.h"
 #import <Appodeal/Appodeal.h>
 
 @interface AppodealHubViewController () <AppodealInterstitialDelegate,AppodealVideoDelegate>
+
+- (IBAction)autocacheSwitch:(id)sender;
+- (IBAction)debugSwitch:(id)sender;
+
+@property (nonatomic, strong) NSString* apiKey;
+@property (nonatomic) BOOL initalize;
+@property (nonatomic) BOOL autocache;
+@property (nonatomic) BOOL debug;
+@property (assign, nonatomic) AppodealAdType types;
 
 @end
 
@@ -18,12 +27,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //set Interstitial Delegate
-    [Appodeal setInterstitialDelegate:self];
-    
-    //set Video Delegate
-    [Appodeal setVideoDelegate:self];
+    self.navigationItem.title = [ @"Initalization SDK v" stringByAppendingString: AppodealSdkVersionString( )];
+    self.apiKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"AppodealAppKey"];
+    self.types = AppodealAdTypeAll;    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,64 +38,47 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0){
-        if (indexPath.row == 0) {
-            // show full screen banner
-            [Appodeal showAd:AppodealShowStyleInterstitial rootViewController:self];
-        }
-
-        if (indexPath.row == 1) {
-            // show video ads
-            [Appodeal showAd:AppodealShowStyleVideo rootViewController:self];
-        }
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if (cell.tag == 88)
+    {
+        [Appodeal initializeWithApiKey:self.apiKey types:self.types];
+        [Appodeal setDebugEnabled:self.debug];
     }
-    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 
 #pragma mark - AppodealInterstitialDelegate
 
-- (void)interstitialDidLoadAd {
-    NSLog(@"interstitial did load");
+- (IBAction)adTypeSwitchValueChanged:(UISwitch *)sender {
+    AppodealAdType type = (AppodealAdType)sender.tag;
+    
+    if (sender.isOn) {
+        self.types |= type;
+    } else {
+        self.types ^= type;
+    }
 }
 
-- (void)interstitialDidFailToLoadAd {
-    NSLog(@"interstitial did fail to load");
+
+- (IBAction)autocacheSwitch:(UISwitch*)sender {
+    self.autocache = sender.isOn;
+    [Appodeal setAutocache:sender.isOn types:sender.tag];
+    
 }
 
-- (void)interstitialWillPresent {
-    NSLog(@"interstitial will present");
+- (IBAction)debugSwitch:(UISwitch*)sender {
+    self.debug = sender.isOn;
+    if (self.initalize)
+        [Appodeal setDebugEnabled:self.debug];
 }
 
-- (void)interstitialDidDismiss {
-    NSLog(@"interstitial did dismiss");
-}
-
-- (void)interstitialDidClick {
-    NSLog(@"interstital did click");
-}
-
-#pragma mark - AppodealVideoDelegate
-
-- (void)videoDidLoadAd {
-    NSLog(@"video did load");
-}
-
-- (void)videoDidFailToLoadAd {
-    NSLog(@"video did fail to load");
-}
-
-- (void)videoDidPresent {
-    NSLog(@"video ad did present");
-}
-
-- (void)videoWillDismiss {
-    NSLog(@"vide ad will dismiss");
-}
-
-- (void)videoDidFinish {
-    NSLog(@"video ad did finish");
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Init"]) {
+        [(HubViewController *)segue.destinationViewController setAdType:self.types];
+        [(HubViewController *)segue.destinationViewController setAutocache:self.autocache];
+    }
+    
 }
 
 @end
