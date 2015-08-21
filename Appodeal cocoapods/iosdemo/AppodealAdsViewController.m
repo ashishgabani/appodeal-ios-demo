@@ -30,6 +30,10 @@
     cell.detailTextLabel.text = @"Ready";
 }
 
+- (void)configureCellForNotReady:(UITableViewCell *)cell {
+    cell.detailTextLabel.text = @"Not Ready";
+}
+
 - (void)configureCellForFail:(UITableViewCell *)cell {
     cell.detailTextLabel.text = @"Failed";
 }
@@ -40,20 +44,23 @@
 
 - (void)updateCells {
     if (self.adType & AppodealAdTypeInterstitial) {
+        if ([Appodeal isReadyForShowWithStyle:AppodealShowStyleInterstitial]) {
             [self configureCellForReady:self.showInterstitialCell];
-    } else
-        [self configureCellForDisabled:self.showInterstitialCell];
-    
-    if (self.adType & AppodealAdTypeVideo) {
-        [self configureCellForReady:self.showVideoCell];
+        } else {
+            [self configureCellForNotReady:self.showInterstitialCell];
+        }
     } else {
-        [self configureCellForDisabled:self.showVideoCell];
+        [self configureCellForDisabled:self.showInterstitialCell];
     }
     
-    if ((self.adType & AppodealAdTypeInterstitial) || (self.adType & AppodealAdTypeVideo)) {
-            [self configureCellForReady:self.showInterstitialOrVideoCell];
+    if (self.adType & AppodealAdTypeVideo) {
+        if ([Appodeal isReadyForShowWithStyle:AppodealShowStyleVideo]) {
+            [self configureCellForReady:self.showVideoCell];
+        } else {
+            [self configureCellForNotReady:self.showVideoCell];
+        }
     } else {
-        [self configureCellForDisabled:self.showInterstitialOrVideoCell];
+        [self configureCellForDisabled:self.showVideoCell];
     }
 }
 
@@ -62,13 +69,18 @@
     [super viewDidLoad];
     [Appodeal setInterstitialDelegate:self];
     [Appodeal setVideoDelegate:self];
-  //  [self updateCells];
+    self.navigationItem.hidesBackButton = YES;
+    if (!self.adType & AppodealAdTypeBanner)
+    {
+        self.showBannerCell.userInteractionEnabled = NO;
+        self.showBannerCell.contentView.alpha = 0.5f;
+    }
+    [self updateCells];
 }
 
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
- //   [self updateCells];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -81,7 +93,6 @@
     if (indexPath.section == 0 || indexPath.section == 1) {
         AppodealShowStyle style = (AppodealShowStyle)cell.tag;
         [Appodeal showAd:style rootViewController:self];
-       // [self updateCells];
     }
     if (cell.tag == 99) {
         [Appodeal showAd:AppodealShowStyleVideoOrInterstitial rootViewController:self];
@@ -92,22 +103,21 @@
 #pragma mark - AppodealInterstitialDelegate
 
 - (void)interstitialDidLoadAd {
-   // [self updateCells];
-    
+    [self updateCells];
 }
 
 - (void)interstitialDidFailToLoadAd {
-    //[self configureCellForFail:self.showInterstitialCell];
+    [self configureCellForFail:self.showInterstitialCell];
 }
 
 #pragma mark - AppodealVideoDelegate
 
 - (void)videoDidLoadAd {
-   // [self updateCells];
+    [self updateCells];
 }
 
 - (void)videoDidFailToLoadAd {
-   // [self configureCellForFail:self.showVideoCell];
+   [self configureCellForFail:self.showVideoCell];
 }
 
 @end

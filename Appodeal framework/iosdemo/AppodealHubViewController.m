@@ -8,7 +8,7 @@
 
 #import "AppodealHubViewController.h"
 #import "AppodealAdsViewController.h"
-#import <Appodeal/Appodeal.h>
+
 
 @interface AppodealHubViewController () <AppodealInterstitialDelegate,AppodealVideoDelegate>
 
@@ -20,6 +20,7 @@
 @property (nonatomic) BOOL autocache;
 @property (nonatomic) BOOL debug;
 @property (assign, nonatomic) AppodealAdType types;
+
 
 @end
 
@@ -41,6 +42,9 @@
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if (cell.tag == 88)
     {
+        // You can disable any network for any AdType before initaliztion by use
+        // [Appodeal disableNetworkForAdType:AppodealAdTypeVideo name:@"yandex"];
+        
         [Appodeal initializeWithApiKey:self.apiKey types:self.types];
         [Appodeal setDebugEnabled:self.debug];
     }
@@ -59,7 +63,6 @@
         self.types ^= type;
     }
 }
-
 
 - (IBAction)autocacheSwitch:(UISwitch*)sender {
     self.autocache = sender.isOn;

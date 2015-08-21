@@ -25,8 +25,8 @@
     [super viewDidLoad];
     UIEdgeInsets insets = UIEdgeInsetsMake(50.0f, 0.0f, 0.0f, 0.0f);
     self.tableView.contentInset = insets;
-    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemCancel target:self action:@selector(hide:)];
-    rightBarButtonItem.title = @"Hide";
+   // UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemCancel target:self action:@selector(hide:)];
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Hide" style:UIBarButtonItemStylePlain target:self action:@selector(hide:)];
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 }
 
