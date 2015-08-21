@@ -1,0 +1,9 @@
+platform :ios, '7.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/appodeal/CocoaPods.git'
+
+target 'Swift Appodeal Cocoapods' do
+    pod 'Appodeal', '~> 0.4.4'
+
+end
