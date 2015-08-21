@@ -17,7 +17,8 @@ at [ios@appodeal.com](mailto:ios@appodeal.com).
 
 1.Clone project   
 2.Go to **Appodeal cocoapods** folder   
-3.[Install CocoaPods](http://guides.cocoapods.org/using/getting-started.html) to simplify dependency management
+3.Make **pod update** to update CocoaPods dependencies   
+[Install CocoaPods](http://guides.cocoapods.org/using/getting-started.html) to simplify dependency management
 ```
 sudo gem install cocoapods
 ```
@@ -69,7 +70,7 @@ iOS 7.0 and up
 
 0.4.4 Change Log:
 ----------------------------------
-* Unity plugin integration
+* Unity plugin integration SDK ready
 * Inmobi banners and interstitials
 
 0.4.3 Change Log:
