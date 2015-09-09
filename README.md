@@ -37,7 +37,7 @@ sudo gem install cocoapods
 1.Clone project  
 2.Go to **Appodeal framework** folder   
 3.Download SDK   
-3.1Download the [latest iOS SDK version](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.6/Appodeal.zip) and extract Appodeal iOS SDK.   
+3.1Download the [latest iOS SDK version](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.7/Appodeal.zip) and extract Appodeal iOS SDK.   
 4.Open Demo project in Xcode, then drag and drop **Appodeal.framework** and **Resources** folder onto your project or workspace (use the "Product Navigator view") and choose *"Copy items into destination group's folder and click Finish"*.     
 
 ![](http://dl.dropbox.com/s/8z80aridd4gqxub/Screen%20Shot%202015-04-23%20at%204.30.58%20PM.png)
@@ -56,9 +56,9 @@ sudo gem install cocoapods
 
 The Appodeal SDK is distributed as static library.
 
-- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.6/Appodeal.zip)**
+- **[Appodeal SDK.zip](https://s3-us-west-1.amazonaws.com/appodeal-ios/0.4.7/Appodeal.zip)**
 
-The current version of the SDK is 0.4.6
+The current version of the SDK is 0.4.7
 
 ## Integrate
 
@@ -67,6 +67,17 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 ## Requirements
 
 iOS 7.0 and up
+
+0.4.76 Change Log:
+----------------------------------
+* fix Mopub video error   
+* add Rubicon banner   
+* add Rubicon interstitials   
+* add OpenX banners   
+* stop SDK public method   
+* https support (for iOS 9)   
+* improve MRAID (banners and interstitials)   
+
 
 0.4.6 Change Log:
 ----------------------------------
