@@ -68,7 +68,7 @@ Integration instructions are available on the [wiki](https://github.com/appodeal
 
 iOS 7.0 and up
 
-0.4.76 Change Log:
+0.4.7 Change Log:
 ----------------------------------
 * fix Mopub video error   
 * add Rubicon banner   
