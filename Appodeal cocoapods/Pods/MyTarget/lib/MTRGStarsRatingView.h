@@ -1,6 +1,9 @@
 //
-// Created by Igor Glotov on 12/08/14.
-// Copyright (c) 2014 Mail.ru. All rights reserved.
+//  MTRGStarsRatingView.h
+//  myTarget
+//
+//  Created by Igor Glotov on 12.08.14.
+//  Copyright (c) 2014 Mail.ru. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

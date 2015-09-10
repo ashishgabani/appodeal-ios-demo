@@ -423,6 +423,35 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 Оферта для разработчиков Дополнительное соглашение №1(далее – «Соглашение») к оферте на оказание услуг по привлечению пользователей к Сайту (далее – «Оферта»)  1. Стороны пришли к соглашению, об оказании дополнительных услуг Заказчику по размещению рекламных материалов Рекламодателей в рамках выделенного Информационного пространства за вознаграждение размер и порядок расчета которого предусмотрен в настоящем Соглашении. 2. Исполнитель оказывает услугу путем предоставления Заказчику права размещать рекламные материалы Рекламодателей в автоматическом режиме в рамках выделенного Информационного пространства. 3. Доступ к Информационному пространству с целью размещения рекламных материалов обеспечивается с помощью Системы Заказчика. 4. Стороны прикладывают все необходимые и достаточные усилия, позволяющие поддерживать работоспособность Системы Заказчика и осуществлять взаимодействие программных средств Заказчика и Исполнителя. 5. Неотъемлемой частью настоящего Соглашения являются Правила оказания рекламных услуг для Исполнителя, которые размещены в сети Интернет по адресу: https://target.odnoklassniki.ru/partner/doc/partner_rules_dev.    6. Порядок расчета стоимости услуг Исполнителя (вознаграждение Исполнителя) указывается в Приложении № 1 к настоящему Соглашению.   7. Расчет стоимости услуг Исполнителя производится в рублях РФ. 8. По факту оказания услуг Исполнителя по размещению рекламных материалов в Информационном пространстве Стороны, при отсутствии разногласий, подписывают Акт об оказанных услугах согласно Данным статистики Заказчика. 9. Сроки и порядок направления/выставления Исполнителем Справки, Акта и счета, указанны в разделе 4 Правил оказания услуг к Оферте. 10. Оплата услуг Исполнителя, указанных в п. 1 настоящего Соглашения, за соответствующий Отчетный период, производится Заказчиком в сроки и в соответствии с условиями указанными в п.6 и п.7 Оферты. 11. Настоящее Соглашение является неотъемлемой частью Оферты. 12. Недействительность какого-либо из положений настоящего Соглашения или Правил не влечет за собой недействительности других положений или Соглашения в целом. 13. Иные условия оказания услуг содержаться в Правилах оказания рекламных услуг для Исполнителя, которые являются Приложением к настоящему Соглашению.  ООО «Одноклассники»    Р/С 40702810300001431102  Банк ЗАО "РАЙФФАЙЗЕНБАНК" Г. МОСКВА  К/С 30101810200000000700  БИК 044525700  ИНН/КПП 7705773443/771401001  ОГРН 1077746039271  Юридический адрес: 125167, г. Москва, Ленинградский проспект, д. 47, стр. 2  Телефон/факс: +7 (495) 725-63-57 Приложение №1к Соглашению                  1. Стороны установили следующий размер и порядок расчета вознаграждения Исполнителя: размер вознаграждения Исполнителя представляет долю от общей суммы денежных средств (без учета НДС), полученных Заказчиком от размещения рекламных материалов через Систему Заказчика в Отчетном периоде. Размер вознаграждения определяется в зависимости от следующих факторов: а) количество Кликов по рекламным материалам Рекламодателей, б) количество Показов рекламных материалов Рекламодателей  и (или) г) любые другие события, включая Действия, произошедшие в связи с отображением рекламных материалов Рекламодателей. Размер вознаграждения периодически определяется Заказчиком по ее собственному усмотрению. 2. Стороны соглашаются, что Заказчик не будет и не должен сообщать Исполнителю, каким образом рассчитывается доля  от общей суммы денежных средств (без учета НДС), полученных Заказчиком от размещения рекламных материалов через Систему Заказчика в Информационном пространстве Исполнителя в Отчетном периоде. Размер вознаграждения рассчитывается только на основании Данных статистики, ведущихся Заказчиком. 3. Заказчик размещает информацию о размере вознаграждения Исполнителя  в Личном кабинете Исполнителя. 4. Стороны соглашаются, что в случае выявления Заказчиком недобросовестного (искусственного) воспроизведения кликов и/или показов рекламных материалов, и/или  Действий размер вознаграждения Заказчика подлежит пересмотру и уменьшению на стоимость общего количества кликов и/или показов, и/или Действий, воспроизведенных таким способом. 5. В случае неоднократного выявления  недобросовестного (искусственного) воспроизведения Кликов и/или Показов рекламных материалов, и/или  иных Действий, Заказчик оставляет за собой право в одностороннем порядке расторгнуть Договор без предварительного письменного уведомления Исполнителя и возмещения каких-либо убытков последнему.  ООО «Одноклассники»    Р/С 40702810300001431102  Банк ЗАО "РАЙФФАЙЗЕНБАНК" Г. МОСКВА  К/С 30101810200000000700  БИК 044525700  ИНН/КПП 7705773443/771401001  ОГРН 1077746039271  Юридический адрес: 125167, г. Москва, Ленинградский проспект, д. 47, стр. 2  Телефон/факс: +7 (495) 725-63-57
 
 
+## NexageSourceKitCommon
+
+Copyright (c) 2013, Nexage, Inc.
+All rights reserved.
+Provided under BSD-3 license as follows:
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Neither the name of Nexage nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+## NexageSourceKitMRAID
+
+Copyright (c) 2013, Nexage, Inc.
+All rights reserved.
+Provided under BSD-3 license as follows:
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Neither the name of Nexage nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+## RevvForMobile
+
+License text here
+
+
 ## SVProgressHUD
 
 Copyright (c) 2011-2014 Sam Vermette
@@ -451,6 +480,21 @@ OTHER DEALINGS IN THE SOFTWARE.
 A different license may apply to other resources included in this package, 
 including Freepik Icons. Please consult their 
 respective headers for the terms of their individual licenses.
+
+## StartApp
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
 
 ## UnityAds
 

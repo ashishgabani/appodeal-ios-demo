@@ -1,6 +1,9 @@
 //
-// Created by Igor Glotov on 23/07/14.
-// Copyright (c) 2014 Mailru Group. All rights reserved.
+//  MTRGTracer.h
+//  myTarget
+//
+//  Created by Igor Glotov on 23.07.14.
+//  Copyright (c) 2014 Mail.ru. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

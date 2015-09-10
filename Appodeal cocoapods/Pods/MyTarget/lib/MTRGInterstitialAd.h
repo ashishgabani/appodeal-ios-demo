@@ -1,6 +1,6 @@
 //
 //  InterstitialAd.h
-//  myTargetSDK, 4.0.13
+//  myTargetSDK, 4.0.17
 //
 //  Created by Anton Bulankin on 04.02.15.
 //  Copyright (c) 2015 Mail.ru Group. All rights reserved.
@@ -21,6 +21,7 @@
 
 -(void)onClickWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd;
 -(void)onCloseWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd;
+-(void)onVideoCompleteWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd;
 
 @end
 
@@ -29,8 +30,6 @@
 
 -(instancetype) initWithSlotId:(NSString*)slotId;
 
-//Слот
-@property (copy, nonatomic) NSString * slotId;
 //Загрузить банер (будут вызваны методы делегата)
 -(void) load;
 //Показать рекламу

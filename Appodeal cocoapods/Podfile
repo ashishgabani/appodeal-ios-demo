@@ -5,7 +5,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/appodeal/CocoaPods.git'
 
 target 'iosdemo' do
-    pod 'Appodeal', '~> 0.4.4'
+    pod 'Appodeal', '~> 0.4.7'
 
 end
 

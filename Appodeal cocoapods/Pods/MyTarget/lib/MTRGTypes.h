@@ -1,6 +1,6 @@
 //
 //  MTRGTypes.h
-//  myTargetSDK, 4.0.13
+//  myTargetSDK, 4.0.17
 //
 //  Created by Anton Bulankin on 28.11.14.
 //  Copyright (c) 2014 Mail.ru Group. All rights reserved.

@@ -40,11 +40,16 @@ typedef NS_ENUM(NSInteger, AppodealShowStyle) {
 + (instancetype)new NS_UNAVAILABLE;
 
 + (void)disableNetworkForAdType:(AppodealAdType)adType name:(NSString *)networkName;
++ (void)disableLocationPermissionCheck;
 + (void)setAutocache:(BOOL)autocache types:(AppodealAdType)types;
 + (BOOL)isAutocacheEnabled:(AppodealAdType)types;
 
 + (void)initializeWithApiKey:(NSString *)apiKey; // All ad types with autocache
 + (void)initializeWithApiKey:(NSString *)apiKey types:(AppodealAdType)types;
+
++ (void)deinitialize;
+
++ (BOOL)isInitalized;
 
 + (void)setInterstitialDelegate:(id<AppodealInterstitialDelegate>)interstitialDelegate;
 + (void)setBannerDelegate:(id<AppodealBannerDelegate>)bannerDelegate;
@@ -76,5 +81,6 @@ typedef NS_ENUM(NSInteger, AppodealShowStyle) {
 + (void)setUserRelationship:(AppodealUserRelationship)relationship;
 + (void)setUserSmokingAttitude:(AppodealUserSmokingAttitude)smokingAttitude;
 + (void)setUserAlcoholAttitude:(AppodealUserAlcoholAttitude)alcoholAttitude;
++ (void)setUserInterests:(NSString *)interests;
 
 @end

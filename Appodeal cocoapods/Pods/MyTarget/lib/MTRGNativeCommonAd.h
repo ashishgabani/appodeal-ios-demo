@@ -1,6 +1,6 @@
 //
 //  MTRGNativeCommonAd.h
-//  myTargetSDK, 4.0.13
+//  myTargetSDK, 4.0.17
 //
 //  Created by Anton Bulankin on 22.12.14.
 //  Copyright (c) 2014 Mail.ru Group. All rights reserved.
