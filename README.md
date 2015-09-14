@@ -50,6 +50,16 @@ sudo gem install cocoapods
 
 [Back to top](https://github.com/appodeal/appodeal-ios-demo#top)
 
+## **Updating your IDFA Settings**
+
+when you submit your application to the App you need to update its "Advertising Identifier (IDFA)" settings in order to comply with Apple advertising policy.
+
+On the "Advertising Identifier" section: 
+* Turn-on "Yes" on the right pane 
+* Opt-in the "Serve advertisements within the app" checkbox 
+* Opt-in the confirmation checkbox under "Limit Ad tracking setting in iOS" 
+![](https://s3.amazonaws.com/appodeal-images/idfa-1.jpg)
+
 # Appodeal iOS SDK
 
 ## Download
