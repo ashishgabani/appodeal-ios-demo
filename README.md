@@ -58,7 +58,7 @@ On the "Advertising Identifier" section:
 * Turn-on "Yes" on the right pane 
 * Opt-in the "Serve advertisements within the app" checkbox 
 * Opt-in the confirmation checkbox under "Limit Ad tracking setting in iOS" 
-![](https://s3.amazonaws.com/appodeal-images/idfa-1.jpg)
+![](https://s3.amazonaws.com/appodeal-images/idfa.png)
 
 # Appodeal iOS SDK
 
