@@ -4,6 +4,22 @@ Thanks for taking a look at Appodeal! We take pride in having an easy-to-use, fl
 
 Sign up for an account at [http://appodeal.com/](http://appodeal.com/).
 
+
+# Preparing Your Apps for iOS9 
+To avoid a major drop in revenue publishers should turn off App Transport Security until further notice.
+
+To ensure monetization with some adnetworks in Appodeal is not impacted, publishers should add the following to their plist file to allow any insecure connection:
+
+<key>NSAppTransportSecurity</key> 
+<dict> 
+  <key>NSAllowsArbitraryLoads</key> 
+  <true/> 
+</dict> 
+Developers can also edit the plist by adding `NSAppTransportSecurity` key of dictionary type with a dictionary element of `NSAllowsArbitraryLoads` of boolean type set to “Yes”.
+
+![](https://s3.amazonaws.com/appodeal-images/ATS.png)
+
+
 ## Integrate
 
 Integration instructions** are available on the **[wiki](https://github.com/appodeal/appodeal-ios-demo/wiki).**
